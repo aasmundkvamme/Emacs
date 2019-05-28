@@ -1,0 +1,306 @@
+
+* Emacs
+** Emacs generelt
+| Funksjon      | Kode          |
+|---------------+---------------|
+| Bokmerke      | C-x r m       |
+| Zoom inn/ut   | C-x C-+ / C-- |
+| Lagre oppsett | C-x r w a     |
+| Hente oppsett | C-x r j a     |
+|               |               |
+
+** Calc
+| Funksjon                  | Kode         |
+|---------------------------+--------------|
+| Invers / Negativ          | & / n        |
+| Heiltal / Rest            | \ / %        |
+| Grader                    | m d          |
+| Radianar                  | m r          |
+| Kvadratrot                | Q            |
+| Sinus / Cosinus / Tangens | S / C / T    |
+| Exp / Ln                  | E / L        |
+| 10^x / Log                | H E / H L    |
+| Last x                    | M-<RET>      |
+| x!                        | !            |
+| Kopier inn i tekst        | y            |
+| Swap (byt om x og y)      | TAB          |
+| Gauss                     | 'm 's 'x k N |
+| Lagre x i s               |              |
+|                           |              |
+|                           |              |
+|                           |              |
+
+** CSV
+| Funksjon                   | Kode        |
+|----------------------------+-------------|
+| Sorter alfabetisk          | C-c C-s     |
+| Sorter numerisk            | C-c C-n     |
+| Omvendt sortering          | C-c C-r     |
+| Tving avtakande rekkefølge | C-c C-d     |
+| Kill (kolonner)            | C-c C-k     |
+| Yank (kolonner)            | C-c C-y     |
+| Yank som ny tabell         | C-c C-z     |
+| Juster til kolonner        | C-c C-a     |
+| Juster til felt            | C-c C-u     |
+| Transponer                 | C-c C-t     |
+| Neste felt                 | C-M-f       |
+| Førre felt                 | C-M-b       |
+| Kill felt framover         | C-M-k       |
+| Kill felt bakover          | C-backspace |
+
+** Maxima
+| Funksjon   | Kode           |
+|------------+----------------|
+| Tilordne   |                |
+| - verdi    | a : 6;         |
+| - funksjon | f(x) = x^2 - 3 |
+| Derivere   | diff(f(x),x);  |
+|            |                |
+|            |                |
+
+** Org mode
+| Funksjon           | Kode                           |
+|--------------------+--------------------------------|
+| Eksport            | C-c C-e (og mange val etterpå) |
+| Eksport til PDF    | C-c C-e l o                    |
+| Eksport til HTML   | C-c C-e h o                    |
+| Zoom inn (narrow)  | C-x n s                        |
+| Zoom ut (widen)    | C-x n w                        |
+| Førre node         | C-c C-b                        |
+| Neste node         | C-c C-f                        |
+| Opp i treet        | C-c C-u                        |
+| Redigere lenke     | C-c C-l                        |
+| Sette inn tag      | C-c C-q                        |
+| TODO kryss av boks |                                |
+|                    |                                |
+|                    |                                |
+|                    |                                |
+|                    |                                |
+|                    |                                |
+|                    |                                |
+|                    |                                |
+|                    |                                |
+|                    |                                |
+|                    |                                |
+
+OAuth client ID: 343173781428-hkh195ceauvjgonbcud8p8gbmqmo0npk.apps.googleusercontent.com
+OAuth secret: 4aLEL_OUnU80E2u-OsJwWsgW
+
+** Journal
+| Funksjon                | Kode    |
+|-------------------------+---------|
+| Ny oppføring for i dag  | C-c C-j |
+| Ny oppføring i Calendar | i j     |
+| Neste oppføring         | C-c C-f |
+| Førre oppføring         | C-c C-b |
+| Sette inn tag           | C-c C-q |
+|                         |         |
+
+** SQLite
+
+*** SQLite
+
+| .archive ...           | Manage SQL archives: ".archive --help" for details    |
+| .auth ON/OFF           | Show authorizer callbacks                             |
+| .backup ?DB? FILE      | Backup DB (default "main") to FILE                    |
+|                        | Add "--append" to open using appendvfs.               |
+| .bail on/off           | Stop after hitting an error.  Default OFF             |
+| .binary on/off         | Turn binary output on or off.  Default OFF            |
+| .cd DIRECTORY          | Change the working directory to DIRECTORY             |
+| .changes on/off        | Show number of rows changed by SQL                    |
+| .check GLOB            | Fail if output since .testcase does not match         |
+| .clone NEWDB           | Clone data into NEWDB from the existing database      |
+| .databases             | List names and files of attached databases            |
+| .dbconfig ?op? ?val?   | List or change sqlite3_db_config() options            |
+| .dbinfo ?DB?           | Show status information about the database            |
+| .dump ?TABLE? ...      | Dump the database in an SQL text format               |
+|                        | If TABLE specified, only dump tables matching         |
+|                        | LIKE pattern TABLE.                                   |
+| .echo on/off           | Turn command echo on or off                           |
+| .eqp on/off/full       | Enable or disable automatic EXPLAIN QUERY PLAN        |
+| .excel                 | Display the output of next command in a spreadsheet   |
+| .exit                  | Exit this program                                     |
+| .expert                | EXPERIMENTAL. Suggest indexes for specified queries   |
+| .fullschema ?--indent? | Show schema and the content of sqlite_stat tables     |
+| .headers on/off        | Turn display of headers on or off                     |
+| .help                  | Show this message                                     |
+| .import FILE TABLE     | Import data from FILE into TABLE                      |
+| .imposter INDEX TABLE  | Create imposter table TABLE on index INDEX            |
+| .indexes ?TABLE?       | Show names of all indexes                             |
+|                        | If TABLE specified, only show indexes for tables      |
+|                        | matching LIKE pattern TABLE.                          |
+| .iotrace FILE          | Enable I/O diagnostic logging to FILE                 |
+| .limit ?LIMIT? ?VAL?   | Display or change the value of an SQLITE_LIMIT        |
+| .lint OPTIONS          | Report potential schema issues. Options:              |
+|                        | fkey-indexes  Find missing foreign key indexes        |
+| .load FILE ?ENTRY?     | Load an extension library                             |
+| .log FILE/off          | Turn logging on or off.  FILE can be stderr/stdout    |
+| .mode MODE ?TABLE?     | Set output mode where MODE is one of:                 |
+|                        | ascii  Columns/rows delimited by 0x1F and 0x1E        |
+|                        | csv  Comma-separated values                           |
+|                        | column  Left-aligned columns. (See .width)            |
+|                        | html HTML <table> code                                |
+|                        | insert SQL insert statements for TABLE                |
+|                        | line  One value per line                              |
+|                        | list  Values delimited by "loddrett strek"            |
+|                        | quote  Escape answers as for SQL                      |
+|                        | tabs  Tab-separated values                            |
+|                        | tcl  TCL list elements                                |
+| .nullvalue STRING      | Use STRING in place of NULL values                    |
+| .once (-e/-x/FILE)     | Output for the next SQL command only to FILE          |
+|                        | or invoke system text editor (-e) or spreadsheet (-x) |
+|                        | on the output.                                        |
+| .open ?OPTIONS? ?FILE? | Close existing database and reopen FILE               |
+|                        | The --new option starts with an empty file            |
+|                        | Other options: --readonly --append --zip              |
+| .output ?FILE?         | Send output to FILE or stdout                         |
+| .print STRING...       | Print literal STRING                                  |
+| .prompt MAIN CONTINUE  | Replace the standard prompts                          |
+| .quit                  | Exit this program                                     |
+| .read FILENAME         | Execute SQL in FILENAME                               |
+| .restore ?DB? FILE     | Restore content of DB (default "main") from FILE      |
+| .save FILE             | Write in-memory database into FILE                    |
+| .scanstats on/off      | Turn sqlite3_stmt_scanstatus() metrics on or off      |
+| .schema ?PATTERN?      | Show the CREATE statements matching PATTERN           |
+|                        | Add --indent for pretty-printing                      |
+| .selftest ?--init?     | Run tests defined in the SELFTEST table               |
+| .separator COL ?ROW?   | Change the column separator and optionally the row    |
+|                        | separator for both the output mode and .import        |
+| .session CMD ...       | Create or control sessions                            |
+| .sha3sum ?OPTIONS...?  | Compute a SHA3 hash of database content               |
+| .shell CMD ARGS...     | Run CMD ARGS... in a system shell                     |
+| .show                  | Show the current values for various settings          |
+| .stats ?on/off?        | Show stats or turn stats on or off                    |
+| .system CMD ARGS...    | Run CMD ARGS... in a system shell                     |
+| .tables ?TABLE?        | List names of tables                                  |
+|                        | If TABLE specified, only list tables matching         |
+|                        | LIKE pattern TABLE.                                   |
+| .testcase NAME         | Begin redirecting output to 'testcase-out.txt'        |
+| .timeout MS            | Try opening locked tables for MS milliseconds         |
+| .timer on/off          | Turn SQL timer on or off                              |
+| .trace FILE/off        | Output each SQL statement as it is run                |
+| .vfsinfo ?AUX?         | Information about the top-level VFS                   |
+| .vfslist               | List all available VFSes                              |
+| .vfsname ?AUX?         | Print the name of the VFS stack                       |
+| .width NUM1 NUM2 ...   | Set column widths for "column" mode                   |
+|                        | Negative values right-justify                         |
+
+
+*** Python interface
+
+**** Oppstart / avslutting (av eksisterande database)
+
+***** Oppstart
+ import sqlite3
+ conn = sqlite3.connect(sqlite_file)
+ c = conn.cursor()
+
+***** Avslutting
+ c.commit()
+ c.close()
+
+**** Endring av data
+
+***** Innlegging av nye data
+
+***** Oppdatering av eksisterande data
+
+** Elisp
+| Funksjon          | Kode                  |
+|-------------------+-----------------------|
+| Addere            | (+ a b)               |
+| Definere variabel | (setq namn "Aasmund") |
+|                   | (setq x 3)            |
+|                   |                       |
+|                   |                       |
+
+** Shell
+| Funksjon | Kode |
+|----------+------|
+|          |      |
+
+** Kalender/dato
+| Funksjon             | kode            |
+|----------------------+-----------------|
+| Sett inn dagens dato | C-c .           |
+| Sett inn annan dato  | C-c . Shift-Pil |
+|                      |                 |
+
+
+* R
+| Funksjon         | Kode                     |
+|------------------+--------------------------|
+| Installere pakke | install.packages("namn") |
+| Tilfeldige tal   |                          |
+
+
+* Julia
+| Funksjon       | Kode |
+|----------------+------|
+| Tilfeldige tal |      |
+| Uniforme       |      |
+| Gauss          |      |
+|                |      |
+|                |      |
+|                |      |
+|                |      |
+|                |      |
+|                |      |
+|                |      |
+
+
+* Maxima
+| Funksjon       | Kode    | Kommentar        |
+|----------------+---------+------------------|
+| Numerisk verdi | ,numer; | Etter kommandoen |
+|                |         |                  |
+
+
+* MATLAB
+
+** random
+Generer tilfeldige tal ved kommandoen 
+
+random('namn', [liste over parametre], (rader))
+| name                        | Distribution                           | Input Parameter A                | Input Parameter B                                                    | Input Parameter C                 | Input Parameter D     |
+|-----------------------------+----------------------------------------+----------------------------------+----------------------------------------------------------------------+-----------------------------------+-----------------------|
+| 'Beta'                      | Beta Distribution                      | a: first shape parameter         | b: second shape parameter                                            | —                                 | —                     |
+| 'Binomial'                  | Binomial Distribution                  | n: number of trials              | p: probability of success for each trial                             | —                                 | —                     |
+| 'BirnbaumSaunders'          | Birnbaum-Saunders Distribution         | β: scale parameter               | γ: shape parameter                                                   | —                                 | —                     |
+| 'Burr'                      | Burr Type XII Distribution             | α: scale parameter               | c: first shape parameter                                             | k: second shape parameter         | —                     |
+| 'Chisquare'                 | Chi-Square Distribution                | ν: degrees of freedom            | —                                                                    | —                                 | —                     |
+| 'Exponential'               | Exponential Distribution               | μ: mean                          | —                                                                    | —                                 | —                     |
+| 'Extreme Value'             | Extreme Value Distribution             | μ: location parameter            | σ: scale parameter                                                   | —                                 | —                     |
+| 'F'                         | F Distribution                         | ν1: numerator degrees of freedom | ν2: denominator degrees of freedom                                   | —                                 | —                     |
+| 'Gamma'                     | Gamma Distribution                     | a: shape parameter               | b: scale parameter                                                   | —                                 | —                     |
+| 'Generalized Extreme Value' | Generalized Extreme Value Distribution | k: shape parameter               | σ: scale parameter                                                   | μ: location parameter             | —                     |
+| 'Generalized Pareto'        | Generalized Pareto Distribution        | k: tail index (shape) parameter  | σ: scale parameter                                                   | μ: threshold (location) parameter | —                     |
+| 'Geometric'                 | Geometric Distribution                 | p: probability parameter         | —                                                                    | —                                 | —                     |
+| 'HalfNormal'                | Half-Normal Distribution               | μ: location parameter            | σ: scale parameter                                                   | —                                 | —                     |
+| 'Hypergeometric'            | Hypergeometric Distribution            | m: size of the population        | k: number of items with the desired characteristic in the population | n: number of samples drawn        | —                     |
+| 'InverseGaussian'           | Inverse Gaussian Distribution          | μ: scale parameter               | λ: shape parameter                                                   | —                                 | —                     |
+| 'Logistic'                  | Logistic Distribution                  | μ: mean                          | σ: scale parameter                                                   | —                                 | —                     |
+| 'LogLogistic'               | Loglogistic Distribution               | μ: mean of logarithmic values    | σ: scale parameter of logarithmic values                             | —                                 | —                     |
+| 'Lognormal'                 | Lognormal Distribution                 | μ: mean of logarithmic values    | σ: standard deviation of logarithmic values                          | —                                 | —                     |
+| 'Nakagami'                  | Nakagami Distribution                  | μ: shape parameter               | ω: scale parameter                                                   | —                                 | —                     |
+| 'Negative Binomial'         | Negative Binomial Distribution         | r: number of successes           | p: probability of success in a single trial                          | —                                 | —                     |
+| 'Noncentral F'              | Noncentral F Distribution              | ν1: numerator degrees of freedom | ν2: denominator degrees of freedom                                   | δ: noncentrality parameter        | —                     |
+| 'Noncentral t'              | Noncentral t Distribution              | ν: degrees of freedom            | δ: noncentrality parameter                                           | —                                 | —                     |
+| 'Noncentral Chi-square'     | Noncentral Chi-Square Distribution     | ν: degrees of freedom            | δ: noncentrality parameter                                           | —                                 | —                     |
+| 'Normal'                    | Normal Distribution                    | μ: mean                          | σ: standard deviation                                                | —                                 | —                     |
+| 'Poisson'                   | Poisson Distribution                   | λ: mean                          | —                                                                    | —                                 | —                     |
+| 'Rayleigh'                  | Rayleigh Distribution                  | b: scale parameter               | —                                                                    | —                                 | —                     |
+| 'Rician'                    | Rician Distribution                    | s: noncentrality parameter       | σ: scale parameter                                                   | —                                 | —                     |
+| 'Stable'                    | Stable Distribution                    | α: first shape parameter         | β: second shape parameter                                            | γ: scale parameter                | δ: location parameter |
+| 'T'                         | Student's t Distribution               | ν: degrees of freedom            | —                                                                    | —                                 | —                     |
+| 'tLocationScale'            | t Location-Scale Distribution          | μ: location parameter            | σ: scale parameter                                                   | ν: shape parameter                | —                     |
+| 'Uniform'                   | Uniform Distribution (Continuous)      | a: lower endpoint (minimum)      | b: upper endpoint (maximum)                                          | —                                 | —                     |
+| 'Discrete Uniform'          | Uniform Distribution (Discrete)        | n: maximum observable value      | —                                                                    | —                                 | —                     |
+| 'Weibull'                   | Weibull Distribution                   | a: scale parameter               | b: shape parameter                                                   | —                                 | —                     |
+
+
+* Windows
+
+** Tastatur
+*** AltGr
+*Altgr virker ikkje*: The issue happens when you open a RDP connection. Just bring the RDP window in foreground and press ALT+ENTER. The issue will disappear on all other windows too.

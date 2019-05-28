@@ -1,0 +1,1160 @@
+* Fag og fagstoff
+
+** BYG102
+
+*** Vår 2019
+ 
+**** Vekefordeling
+
+| Veke | Lærar | Kommentar                         |
+|------+-------+-----------------------------------|
+|    2 | HNY   |                                   |
+|    3 | HNY   |                                   |
+|    4 | AKV   | Sannsynlighetsrekning             |
+|    5 | AKV   | Fordeling, usikkerhet, estimering |
+|    6 | HNY   |                                   |
+|    7 | HNY   |                                   |
+|    8 | AKV   | Vekting, minste kvadraters metode |
+|    9 |       | Studieveke                        |
+|   10 | HNY   |                                   |
+|   11 | HNY   |                                   |
+|   12 | AKV   | Testing                           |
+|   13 | HNY   |                                   |
+|   14 | HNY   |                                   |
+|   15 | AKV   | Testing                           |
+|   16 |       | Påske                             |
+|   17 | PNS   |                                   |
+|   18 | PNS   |                                   |
+|   19 | AKV   | Regresjon, oppsummering           |
+|      |       |                                   |
+**** Veke 4 Sannsynlighetsrekning/fordelingar
+***** Innleiing/overbygging
+To hovudmål:
+ 1. Definere sannsynlighet og vanlege reknereglar ($P(A)=gunstige/mulige$, $P(A\cup B) = P(A) + P(B) - P(A\cap B)$, *uavhengighet* ($P(A\cap B) = P(A)\cdot P(B)$), $P(A|B) = P(A\cap B)/P(B)/$). Den siste kan vi godt vise ved hjelp av ein tabell.
+ 2. Vise sannsynlighetsfordelingar som *tabell*; etablere aksioma ($\sum P(x)=1$), *fordelingsfunksjonen* $F(x) = P(X\leq x)$ og *forventing* $E(X) = \sum x\cdot P(X=x)$.
+
+***** Detaljar
+Vi har kjøpt inn ein del GPS-instrument som kan bli styrt frå Android-telefonar (men ikkje iPhone). På feltkurset skal desse bli brukt, og det er difor tvingande nødvendig at det på kvar gruppe ($n=4$ studentar) er minst ein som har Android-telefon. 
+Vi skal i denne timen finne ut
+ - Kor stor er sjansen for at ein tilfeldig valgt student har Android-telefon
+ - Kor stor er sjansen for at ei gruppe på $n=4$ studentar har minst ein Android-telefon
+ - Kor mange på ei gruppe kan vi *forvente* skal ha ein Android-telefon
+
+Vi starter med å etablere sannsynlighhet som ein av tre ulike modellar:
+ 1. Direkte utrekna (som ved terningkast)
+ 2. Estimert ved prøving/feiling (som ved meiningsmåling)
+ 3. Subjektivt estimert (som ved "Tar Brann seriegull i 2019?")
+
+Så finn vi ut at det er 2. som er den beste måten, og vi gjennomfører estimeringa ved hjelp av Smart Response.
+Når vi så har etablert $p$ som $P(ein tilfeldig valgt student har Android)$ så kan vi rekne ut følgjande:
+ 1. $P(A)$ (ein enkelt student) og $P(B)$
+ 2. Studenten har ikkje
+ 3. Begge har: $P(A\cap B)$
+ 4. Minst ein av dei har: $P(A\cup B) = P(A) + P(B) - P(A\cap B)$
+ 5. Eg kan rekne ut fordelinga for $X=0, 1, 2, 3, 4$ ved hjelp av binomisk sannsynlighet (dette utset vi til neste veke)
+ 6. Vi kan rekne på fordelingsfunksjonen
+ 7. Vi kan rekne forventinga
+
+Vi treng eit anna døme for å introdusere *betinga sannsynlighet*, så det tar eg frå ei anna lærebok.
+Eg viser tala frå tre bedrifter som *produserer* varer av eit slag. Her har bedrifta sjølvsagt full kontroll over kor mange feil dei har kvar dag:
+| Bedrift | Dagsproduksjon | Feil |
+|---------+----------------+------|
+| A       |            263 |    4 |
+| B       |            526 |    2 |
+| C       |            289 |    4 |
+ 
+Her kan vi no stille spørsmål av typen
+ 1. Kva er $P(A)$?
+ 2. Kva er $P(F|A)$?
+ 3. Kva er $P(A|F)$?
+
+Dersom tida tillet det kan eg endre dømet til å sjå på ein kunde som *kjøper* varer. Kunden har ingen annan "kontroll" over feilraten enn den ein *historisk* har observert:
+| Bedrift | Feilrate ($P(F gitt bedrift)$) | Andel |
+|---------+--------------------------------+-------|
+| A       |                           0.03 |  0.30 |
+| B       |                           0.05 |  0.10 |
+| C       |                           0.01 |  0.60 |
+
+Vi kan stille dei same 
+Her kan vi utlede (tett på forventinga) *lov om total sannsynlighet*, og ut frå den *Bayes setning* 
+
+
+**** Veke 5 Fordeling, usikkerheit, estimering
+
+***** Innleiing/Oversikt
+ Stor vekt på forskjellen på diskret og kontinuerleg. Går gjennom eit par dømer:
+  1. Binomisk
+  2. Poisson (?)
+  3. Normalfordeling
+  4. t- og kjikvadrat-fordeling som teoretiske storleikar
+
+ Estimering som måte for å finne parametrane i fordelingane:
+  - gjennomsnitt og standardavvik i normalfordeling 
+  - suksessrate for p i binomisk
+
+ Usikkerheit som gjennomgåande tema; det er først og fremst ein eigenskap ved *alle* fordelingar, og det er i tillegg ein parameter i normalfordelinga.
+
+***** Detaljar
+1. Bruk dømet med grupper på fire og Android-telefon for å vise *binomisk* fordeling i detaljar.
+   1. Vi må ha alle fire personane dekka, difor vil $X=1$ vere $P(S_1=A\cap S_2=I\cap S_3=I\cap S_4=I)$, og av di dei er *uavhengige* kan vi finne produktet.
+   2. Men det er fire ulike studentar som alle gir *same sannsynlighet*, så vi må gange med $\binom{4}{1}$ (ikkje legg vekt på denne!)
+   3. Vis den generelle formelen, og sei at skriptet ligg klar til nedlasting.
+2. 
+3. 
+
+
+
+***** Manglar
+ *Oppgåver* om normalfordelt sum, om kvantilar og om estimering.
+
+
+#  LocalWords:  S A cap sannsynlighet skriptet nedlasting
+
+**** Veke 8 Vekting, minste kvadraters metode
+Mest om minste kvadrater som verktøy; stort sett ikkje "statistikk"
+Gå gjennom Helge sitt kompendium, med vekt på utjamning
+
+***** Oversikt
+Kva *er* eigentleg utjamning? Dersom vi har eit sett med observasjonar, med ei blanding av kjende og ukjende koordinatar, vil vi ha eitt av tre tilfeller:
+ 1. Vi har *like mange* likningar som ukjende, og systemet er bestemt (men veldig sårbart for feil)
+ 2. Vi har *færre* likningar enn ukjende, og vi klarer ikkje å bestemme verdiane
+ 3. Vi har *fleire* likningar enn ukjende.
+
+I prinsippet kan vi i punkt 3. ikkje bestemme verdiane på dei ukjende, for vi har ulike målingar av same verdi. Men det som skjer er at vi kan nytte "overskotsmålingane" til å gjere svaret meir nøyaktig. Det viser seg at vi får mange relativt like verdiar av same ukjende, og ved å bruke gjennomsnittet av desse (indirekte) kan vi får ei betre resultat.
+Vi får også (via litt mikkmakk) ein oversikt over *usikkerheten* i observasjonane.
+Vi må også snakke litt meir om usikkerhet; til dømes i GPS-koordinater så er det mogleg å få posisjonen (X-, Y- og Z-koordinater) ned i eit standardavvik på 2 cm (0.02 meter). Det betyr at 68 % av alle observasjonar ligg innanfor $\pm 0.02$, og 95 % innanfor $\pm 0.04$.
+
+
+***** Detaljar
+
+****** Introdøme
+Start med eit lite introdøme med to ukjende punt og to fastmerke (løyst grafisk). Viser at unøyaktighet i enkeltobservasjonar gir til dels motstridande svar (eit punkt har to ulike høgder over havet). Dette løyser vi ved å innføre *residualar*; ukjende storleikar som "tar opp i seg" unøyaktighetane. Vi prøver så å finne verdiar av dei ukjende som gjer summen av residualane minst mogleg. 
+Utan å bevise det så viser eg at det litt sære matriseproduktet $X = A^T\cdot L A$ er det som løyser biffen.
+
+ 
+**** Veke 12 Testing
+Lage konfidensintervall; bruke dette som verktøy for å repetere fordelingar/estimering.
+
+Å måle ein avstand er avhengig av to faktorar:
+ 1. Rett avstand er målt (at vi ikkje måler konsekvent 10 meter for kort) 
+ 2. Presisjonen i måleresultatet er god nok (at ikkje resultata spriker i alle retningar)
+
+Situasjon 1 kan vi få kontroll over ved å lage eit *konfidensintervall*. Vi estimerer avstanden ved å måle ein del ganger, og så ta gjennomsnittet som eit representativt mål på avstanden. I Scilab bruker du mean(). Men av di vi er 100 % overbevist om at dette ikkje er rett lager vi oss eit intervall som er slik at vi er 95 % sikre på at den sanne avstanden ligg inne i dette intervallet. Det vil ha sentrum i gjennomsnittet, men breidda er bestemt av tre faktorar:
+ 1. Usikkerheten i observasjonane/måleapparatet
+ 2. Talet på observasjonar (jo fleire jo betre)
+ 3. Ein faktor (kvantil) som er avhengig av "95 %"
+
+Dersom du er trygg på deg sjølv som observatør (du kan bruke apparatet), og du i tillegg har fått oppgitt usikkerheten i apparatet (svært vanleg) kan du ta denne usikkerheten for gitt. Faktoren i punkt 3 er då ein kvantil frå *standard normalfordeling*. Dersom du /ikkje/ er sikker på deg sjølv, eller dersom du /ikkje/ har fått oppgitt ein usikkerhet i apparatet, må vi først estimere denne usikkerheten, og vi må bruke kvantilar frå *t-fordelinga*. Den er i så fall avhengig av talet på observasjonar.
+
+Intervallet vil alltid ha forma "estimert verdi pluss/minus usikkerhet vektlagt med kvantil".
+
+Situasjon 2 kan vi få kontroll over ved å estimere usikkerheten. I Scilab bruker du stdev(). Intervallet rundt denne estimatoren er bygd opp annleis, men det inneheld allikevel dei tre faktorane
+ 1. Usikkerheten i observasjonane/måleapparatet
+ 2. Talet på observasjonar (jo fleire jo betre)
+ 3. Ein faktor (kvantil) som er avhengig av "95 %"
+
+Av tekniske grunnar hentar vi kvantilen frå *kjikvadrat-fordelinga*. Den er i seg sjølv avhengig av talet på observasjonar.
+
+***** Hugseliste
+ - Talet på overbestemmelser/frihetsgrader i utjevning er viktig for størrelsen på standardavviket. Dersom vi har *få* overbestemmelser får vi *stort* standardavvik, og dermed eit *usikkert* resultat.
+ - Bruk "Estimering 1" frå Obligatorisk 2 del 2:
+ - Du har målt ein og same vinkel mange ganger, og fått desse verdiane:
+ [26.9941 26.9967 26.9995 27.0017 26.9967 27.0049 27.0030 27.0042 27.0070 26.9977 27.0103 26.9989 26.9986 27.0029 26.9955]
+ Bruk Scilab sine innebygde kommandoar "mean()" og "stdev()" til å svare på spørsmåla.
+ Alle svar skal vere med fire desimalar, og hugs å bruke punktum, ikkje komma (altså: 3.13 og ikkje 3,14).
+ a) Finn eit estimat for forventingsverdien  μ : 
+ b) Finn eit estimat for standardavviket  σ : 
+
+
+**** Veke 15 Testing
+Hypoteser
+
+No stiller vi mykje dei same spørsmåla som i forrige veke, men vrir litt på det. Då var spørsmålet av typen "Kva verdi er det truleg at parameteren har?"  No er det "Alle seier at verdien er *slik*, men vi trur at den eigentleg er *slik*". 
+
+**** Veke 19 Regresjon, oppsummering
+Enkel regresjon. Repetisjon av alt.
+
+***** Regresjon
+Lesestoff: 7.1, 7.2, 7.3.1, 7.3.2, 7.3.3 (*Regel 7.3*)
+
+**** WeBWorK
+Bruker ikkje WeBWorK, berre WISEflow
+
+**** Feltarbeid, oppgåve
+Lag spørsmål [[http://home.hib.no/ansatte/hny/feltkurs/statisk2019.html][her]] (etter "Utjevning i Gemini Oppmåling") om litt statistikk:
+ 1. Kvar vektor målt ein gang, standardavviket er oppgitt. dx er avstand i meter (3 desimal), sx er standardavvik i meter (4 desimalar)
+    1) konfidensintervall?
+    2) hypotese? 
+ 2. Be dei kontrollmåle ein av vektorane med totalstasjon (gjerne ein eldre og ein nyare), og samanlikne resultata
+    1) Samanlikne satelitt med totalstasjon
+    2) Samanlikne eldre og nyare totalstasjon
+
+<h2>Litt statistikk</h2>
+
+<ol>
+  <li>Bruk data fra utjevningen til å lage 95 % konfidensintervall for de nye fastmerkene. Hvis oppdragsgiver har et toleransekrav på "1 cm", er dette oppfylt?</li>
+  <li>Velg en av vektorene, og kontrollmål denne med totalstasjon. Lag 95 % konfidensintervall for denne vektoren basert på totalstasjonen, og sammenlign med intervallet du fikk for satelitt. Måler de samme avstand?</li>
+<li>Vurder bruken av satelitt versus totalstasjon på bakgrunn av det du gjorde i spørsmål 2.</li>
+</ol>
+
+
+*** Vår 2020
+
+Kan eg flette inn at fleire faktorar i ein prosess er usikre? Ei kjede av hendingar som kvar for seg har ein viss usikkerhet, og så sjå på samla usikkerhet i heile kjeden. Det vil sei: kombinert usikkerhet frå Helga si bok. Gjerne berre med linær funksjon? Legg dette inni teorien, og i oppgåver (a la eksamen ELE103[oppgåve 2] og BYG102[oppgåve 4] våren 2019)
+
+Kan eg ta med kjikvadrattest for samanlikning mellom to grupper? Dette vil vere nyttig for bacheloroppgåver (dei som samler inn data via spørjeskjema). Bruk data frå studentane eg fekk i e-post [finn denne ...]
+
+Eg må ta meir tydeleg med (også i oppgåvene) at eit /konfidensintervall/ eigentleg berre er på forma "estimator +/- kvantil*standardavvik", og ikkje /alltid/ inneheld "delt på roten av n".
+
+Omarbeide formlane slik at vi fokuserer på "overbestemmelser" og ikkje "n - 1". Nevne at overbestemmelser er ein ting, talet på observasjonar er ein annan situasjon.
+
+Presisere at vi har oppgitt signifikansnivå, vi vel det ikkje sjølv.
+
+Kan eg innføre p-verdi i testing? Vi har jo MATLAB, så det er enkelt å finne sannsynet.
+- *normalfordeling*: normcdf(x, mu, sigma)
+- *t-fordeling*: tcdf(x, v)
+- *kjikvadratfordeling*: chi2cdf(x, v)
+- *Fisherfordeling*: fcdf(x, v1, v2)
+
+
+
+*** FERDIG BYG102 <2019-05-14 ty.>
+  Feltarbeidoppgåver måndag, diskutere med Helge tysdag
+
+*** PÅGÅR BYG102
+  Fire eksamensoppgåver (nr 4, 5, 6 og 7) om statistikk.
+  4: Enkel sannsynlighetsregning (Innlevering 2 del 1 og 2)
+  5: Estimering og konfidensintervall (Innlevering 6)
+  6: Hypotesetesting (Innlevering veke 15)
+  7: Kombinasjon av intervall og testing, kopla mot feltarbeidet
+** ELE103
+*** Gjeremål
+ * Haust 2017 2 c), d) og 3 b) Sjekk fasit
+ * Kont 2016 4 b) sjekk fasit
+*** Haust 2018
+**** Framdriftsplan
+| Uke | Dato         | Emne                                        | Litteratur                                | Foreleser | Regneøvinger  |
+|-----+--------------+---------------------------------------------+-------------------------------------------+-----------+---------------|
+|  34 | 23.8, 24.8   | Orientering og innføring i faget            | Løvås: kap. 1 og kap. 2                   | LAJ       |               |
+|  35 | 30.8, 31.8   | Sannsynlighetsregning                       | Løvås: kap. 3.1-3.5                       | LAJ       |               |
+|  36 | 6.9, 7.9     | Telleregler og tilfeldige variable          | Løvås: kap. 3.6, og 4.1-4.2               | LAJ       |               |
+|  37 | 13.9, 14.9   | Tilfeldige variable, sannsynlighetsmodeller | Løvås: 4.3-4 og 5.1-5.5                   | LAJ       | 1. regneøving |
+|  38 | 20.9, 21.9   | Normalfordeling og andre fordelinger        | Løvås: 5.7-5.8, HJ: 6 og 7.1 (side 41-44) | LAJ       |               |
+|  39 | 27.9, 28.9   | Estimering og måling                        | HJ: kap. 1-5, Løvås: 6.1-6.3              | AKV       | 2. regneøving |
+|  40 | 4.10, 5.10   | Estimering, måling og usikkerhet            | HJ: kap. 7.1-7.4                          | AKV       |               |
+|  41 | 11.10, 12.10 | Kombinert standard usikkerhet               | HJ: kap. 7.5-7.6                          | AKV       |               |
+|  42 | 18.10, 19.10 | Konfidensintervaller og hypotesetesting     | Løvås: 6.3-6.4                            | LAJ       | 3. regneøving |
+|  43 | 25.10, 26.10 | Hypotesetesting                             | Løvås: 6.4-6.5                            | LAJ       |               |
+|  44 | 1.11, 2.11   | Kontrolldiagrammer                          | Løvås: kap. 11.1                          | AKV       |               |
+|  45 | 8.11, 9.11   | Regresjon og korrelasjon                    | Løvås: kap. 7.1-7.3                       | AKV       | 4. regneøving |
+|  46 | 15.11, 16.11 | Kalibreringskurver                          | HJ: kap 8                                 | AKV       |               |
+|  47 | 22.11, 23.11 | Målesystemer                                | ???                                       | AKV       |               |
+|  48 | 29.11, 30.11 | Repetisjon                                  |                                           | AKV/LAJ   |               |
+|  49 | 5.12         | Eksamen                                     |                                           | AKV/LAJ   |               |
+
+**** Veke 39 (24.-28.9)
+Helga: Kapittel 4 og 5; generelt om målingar
+Løvås: kapittel 6.1 og 6.2, om punktestimering 
+Stikkord:
+
+***** ulike måtar å måle på
+  * direkte måling
+  * indirekte måling
+  * usikkerhet kobla til ulike måleoppsett
+***** nøyaktighet / presisjon
+  * nøyaktighet: *systematiske feil* i målemetoden. God nøyaktighet betyr "forventingsrett"
+  * presisjon: *tilfeldige variasjonar* i målemetoden. God presisjon betyr "liten varians"
+  * Døme: vis [[https://www.youtube.com/watch?v=kE8CUT66AMs][Wilhem Tell]]-videoen
+***** målesystem (HJ kapittel 5)
+  * fleire ledd med omforming frå *innsignal* til *utsignal*
+  * tar ikkje dette kapittelet alt for tungt
+***** forventingsrett ("bias" på engelsk)
+  * Dette er viktig for å sikre god *presisjon* i målingane (at vi måler det vi skal måle)
+  * Kan eg finne eit "naturleg" døme på ein ikkje forventingsrett estimator for forventingsverdi? (fokuser på /metode/, ikkje /formel/?)
+  * Vis for ein del tilfeller, som til dømes
+  * *Døme 1* La $p$ vere andelen av studentar med ein eigenskap. Vi tar ein stikkprøve på $n$ studentar, og ser at her er det $X$ som har den eigenskapen. Vi argumenterer for at $X$ er /binomisk/ fordelt, og veit då at $E(X) = np$. Forventinga til ein stikkprøve vert då $$E(\hat{p}) = E\left(\frac{X}{n}\right) = \frac{1}{n}E(X) = \frac{1}{n}np = p,$$ og vi ser at estimatoren er forventingsrett.
+  * *Døme 2* La $\hat{\mu}=\overline{X}$ vere estimatoren for forventinga til ein variabel $X \sim N(\mu, \sigma)$. Då veit vi at $E(X)=\mu$, og vi kan finne at $$E(\hat{\mu})=\frac{1}{n}E\left(\sum X_i\right)=\frac{1}{n}n\mu = \mu,$$ altså er også denne estimatoren forventingsrett.
+  * *Døme 3* La $Z = X + Y$, der $X\sim N(\mu, \sigma_X)$ og $Y\sim N(\mu, \sigma_Y)$. Då veit vi at $E(Z)=2\mu$. Vi ønsker så ein estimator basert på $n_X=5$ observasjonar av $X$, og $n_Y=10$ observasjonar av $Y$. Å estimere summen ved å vekte begge gjennomsnitta likt gir oss ein forventingsrett estimator. Vi set opp ein estimator for $Z$ der vi /vekter/ dei to variablane ulikt: $\hat{\mu}_1 = \frac{10\overline{X}+20\overline{Y}}{15}$. Dette må til for at den skal bli forventingsrett.
+***** minst mogleg varians
+  * Dette er viktig for å unngå dårleg *presisjon* i målingane.
+***** ulike parametre
+| *Parameter*               | *Estimator*            | *Formel*                                      | *Varians*            |
+| *forventingsverdi*        | $\mu$                  | $\overline{X} = \frac{1}{n}\sum X_i$          | $\frac{\sigma^2}{n}$ |
+| *standardavvik* / varians | $\sigma$  / $\sigma^2$ | $S^2 = \frac{1}{n-1}\sum(X_i-\overline{X})^2$ |                      |
+| *andel*                   | $p$                    | $\frac{X}{n}$                                 | $\frac{p(1-p)}{n}$   |
+| *intensitet* / frekvens   | $\lambda$              | $\frac{X}{t}$                                 | $\frac{\lambda}{t}$  |
+
+**** Veke 40 (1.-5.10)
+Estimering, måling og usikkerhet, HJ: kap. 7.1-7.4
+Lars Arne har tatt 7.1, trekant- og firkantfordeling (side 39-44)
+
+***** Generelt om kapittelet
+"Usikkerhet" er eit vanskeleg omgrep å definere. Det er to hovedtypar: A- og B-usikkerhet, som vi skal gå gjennom. Og vi skal definere "standard usikkerhet" i ein variabel.
+***** 7.1 Standard usikkerhet
+For å ha eit felles mål å omtale usikkerhet under definerer vi /standard usikkerhet/.
+Generelt har vi at standard usikkerhet til ein variabel er standardavviket til estimatoren av den variabelen.
+Men dette er ein definisjonssak. Frå læreboka (HJ, side 29): "[...] estimert standardavvik i fordelingen til en målestørrelse." Men andre stader står det "Standardavviket eller standard usikkerhet". Eg tolker dette slik at dersom vi /estimerer/ ein parameter (Type A) så er standard usikkerhet lik det /estimerte/ standardavviket, men dersom vi antar usikkerheten /kjent/ (Type B) så er standard usikkerhet det same som standardavviket. 
+Dersom vi er interessert i ein normalfordelt størrelse $M$, så kan vi /estimere/ dei to parametrane $\mu_M$ og $\sigma_M$ ved hjelp av standard-estimatorane (frå førre veke), og så set vi /standard usikkerhet/ $u(M)$ lik det estimerte standardavviket, $S$.
+I tillegg til standard usikkerhet i /måleverdien/ har vi også standard usikkerhet for /gjennomsnittet/ i stikkprøva. Denne kaller vi (naturleg nok) $u(\overline{M})$, og dersom vi set $u(M)=S$  så vert $u(\overline{M})=\frac{S}{\sqrt{n}}$.
+***** 7.1.2 Type A-usikkerhet
+Type A-usikkerhet er usikkerhet som vi har funnet ved gjentatte målingar av ein variabel. Dersom desse målingane oppfyller ein del krav kan vi sei at denne usikkerheten er god, og vi kan bruke den.
+Krava er mellom anna
+  * *Mange målingar*. Det er ikkje eit fasitsvar på kor mange ein treng, men ein god tommelfingerregel er at det bør vere meir enn 30 (jfr. $t$-fordelinga, GL side 210).
+  * *Uavhengige målingar* Dersom vi gjentar ei måling av den same fysiske (uendra) gjenstanden fleire ganger må vi rekne med at desse observasjonane er /avhengige/ av kvarandre.
+  * *Reproduserbare målingar* Du må vere i stand til å måle under tilnærma same forhold kvar gang.
+Dersom vi ikkje kan gå ut frå /uavhengighet/ må vi estimere /kovariansen/ (HJ side 60) og bruke denne (meir om det i neste veke).
+***** 7.1.1 Type B-usikkerhet
+Dette er usikkerhet der vi går ut frå at dei opplysingane vi får frå andre (eller dei vi har samla opp sjølve) stemmer. Då treng vi ikkje ta meir enn /ei/ måling. Med berre ei måling vert altså standard usikkerhet lik standardavviket. Vi må kjenne til eit par sentrale faktorar:
+  * *Fordelinga*. Her er det svært vanleg å snakke om /symmetriske fordelingar/; og vi kjenner til 
+    1. Firkantfordeling (parameter $a$, standard usikkerhet $\frac{a}{\sqrt{6}}$ ved symmetrisk om origo)
+    2. Trekantfordeling (parameter $a$, standard usikkerhet $\frac{a}{\sqrt{3}}$)
+    3. Normalfordelinga (parametre  $\mu$ og $\sigma$, standard usikkerhet $\sigma$)
+  * *Presentasjon av usikkerhet* Er det 90~\%, 95~\%, eller noko heilt anna? Eit intervall med /ein/ standard usikkerhet i kvar retning vil normalt stå for ein sikkerhet på 68~\% (jfr. GL side 197 (Figur 5.17), og spredningsintervall i Regel 5.16). Vi vil gjerne ha betre presisjon enn det, så det er ofte vanleg å snakke om /dekningsfaktor/ 2 (jfr. HJ side 29) som gir ein /utvida usikkerhet/ (HJ side 30) som tilsvarer 95~\%. Det er verdt å merke seg at /utvida usikkerhet/ er eksakt det same som eit /spredningsintervall/ (jfr. GL side 198). Og at vi bruker *tabell E.4* (også gjengitt i Figur 5.18) 
+    Det vert ofte synda mykje mot denne siste opplysinga; eit [[https://www.xn--verkty-fya.no/bosch-laser-og-avstandsmaler-glm-40-professional?ads_cmpid=1372375833&ads_adid=54889743015&ads_matchtype=&ads_network=g&ads_creative=266523982237&utm_term=&ads_targetid=pla-493204485032&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2&gclid=Cj0KCQjwi8fdBRCVARIsAEkDvnIkNCyLVh4RYWRp5jUD8Kxr60nZ1fsGHb7LPDZS-7lalmN93PDQvVQaAkC2EALw_wcB][raskt søk på nettet]] gir til dømes denne opplysinga: "Målenøyaktighet, typisk: +/- 1,5 mm". Kva tyder "typisk" i denne situasjonen? Alltid (altså 99~\% av tilfella)? Ofte (90~\% av tilfella)? Annan kvar gang (50~\% av tilfella)? *Eksempel 7.2* er veldig godt for å illustrere dette.
+  * *Presentasjon av moglege resultat* I enkelte situasjonar (til dømes etter ein vrakeprosess) /veit vi/ at ingen bolter er kortare enn 49,9~mm eller lengre enn 50,1~mm. Dersom vi i tillegg veit at boltane er trekant-, firkant- eller normalfordelt kan vi lage standard usikkerhet direkte frå formlane. Trekantfordeling: $u(X) = 0,1/\sqrt{6} \approx 0,0408$. Ønsker vi no ein /utvida usikkerhet/ på 95~\% multilpliserer vi med ein dekningsfaktor på 1,96, og får $1,96\cdot 0,0408 \approx 0,0800$ (multipliserer vi med 2 får vi 0,0816, altså 2~\% feil).
+  * *Andre måtar å presentere usikkerhet* Ein måte kan vere som "siffer". Det viser då til det /siste synlege sifferet/ i displayet. *Døme*: Eit apparat viser 12,02~A, og har ein usikkerhet med dekningsfaktor 2 på "3 siffer". Det vil då sei at $u(X) = 0,03/2 = 0,015$~A. 
+***** 7.2 Målefunksjon
+Når det indirekte måleresultatet er rekna ut som ein funksjon av ein eller fleire direkte målingar. 
+
+*Døme*: volumet av ein sylinder er gitt ved $V(d,h)=\pi/4 d^2h$, der $d$ og $h$ er direkte målt.
+Usikkerheten i $d$ og $h$ vil påvirke usikkerheten i $V$.   
+
+***** 7.3 Presentasjon av måleresultat
+Vi presenterer måleresultatet som "oppgitt verdi +/- usikkerhet". Vis til HJ kapittel 6.2.1.
+
+**** Veke 41 (8.-12.10)
+HJ: kap. 7.5 og 7.6, kombinert standard usikkerhet.
+Dette er eit matematikktungt kapittel, med mykje derivasjon.
+
+***** Ulike inngangsvariable
+Det er to måtar vi kan få bidrag frå ulike variable inn i ein målesituasjon:
+  1. Fleire variable inngår i det vi skal måle (til dømes vil eit /volum/ ofte ha tre ulike dimensjonar vi må måle)
+  2. Det er andre faktorar enn dei direkte avleste verdiane (som kalibrering, avlesingsusikkerhet og anna)
+
+Variablane i punkt 1 kan godt vere /avhengige/ av kvarandre; dei kan til dømes vere gjort med det same måleapparatet. Variablane i punkt 2 vil sværet ofte vere /uavhengige/ av kvarandre. 
+
+***** Estimert varians / kovarians / standard usikkerhet
+Den estimerte variansen vil vere kvadratet av dei estimerte standardavvika, altså av /standard usikkerhet/ $u(X_i)$. Denne har vi mange måtar å finne (HJ kapittel 7.1.1 og 7.1.2).
+Dersom variable er avhengige av kvarandre treng vi i tillegg estimerte /kovariansar/, og for dette treng vi gjentatte observasjonar (formel øverst side 60 HJ eller formel (7.1) i GL).
+
+Når vi har funnet varians (med eller utan kovarians) tar vi kvadratrota av uttrykket for å finne /standard usikkerhet/.
+
+***** Lineære funksjonar
+Ein svært enkel /lineær/ funksjon kan vere følgande: eit multimeter har usikkerhet oppgitt som "$\pm(0,5~\% + 2~\text{siffer})$". Dersom vi les av 12,02 på skjermen vil eitt bidrag til usikkerheten vere $12,02\cdot\frac{0,5}{100} = 0,0601$. Det andre bidraget vil vere 0,02 (ein usikkerhet på 2 i det sist avleste sifferet). Til saman vil usikkerheten vere $0,0601 + 0,02 = 0,0801$. (Feil!!!) Vi runder av dette til 0,08. 
+I meir detalj: vi ser på funksjonen $Y = f(X_1, X_2) = X_1 + X_2$ der $X_1$ er bidraget til usikkerhet frå prosent og $X_2$ er bidraget til usikkerhet frå det siste sifferet. Vi veit då at $u(X_1) = 12,02\cdot 0,005 = 0,0601$ og $u(X_2) = 0,02$. Funksjonen $Y$ er ein /lineær funksjon/, og dei to variablane er /uavhengige/ av kvarandre.
+Vi kan bruke *Regel 4.17* i GL for å finne variansen til $Y$, og så tar vi kvadratrota for å finne standard usikkerhet:
+$$Var(Y) = Var(X_1)+Var(X_2)=u(X_1)^2+u(X_2)^2 = 0,0601^2 + 0,2^2 \approx 0,00401$$
+$$u(Y) = \sqrt{Var(Y)} = \sqrt{0,00401}\approx 0,0633$$
+som vi runder av til 0,06
+
+***** Ikkje-lineære funksjonar (uavhengige)
+Ein svært enkel /ikkje-lineær/ funksjon er volumet av ein sylinder. Vi måler høgda $h$ med eitt måleapparat (til dømes ein meterstav) og diameter $d$ med eit anna (til dømnes skyvelære). Volumet er gitt ved formelen $V(h, d) = \pi\cdot \left(\frac{d}{2}\right)^2\cdot h = \frac{1}{4}\pi d^2 h$. Vi kan no /ikkje/ bruke formelen frå 4.17, for den gjeld /eksplisitt/ for lineære funksjonar.
+
+Vi må bruke ei tilnærming. Denne tilnærminga er eit første-ordens Taylor-polynom. Vi tar utgangspunkt i funksjonen $Y = f(X_1, X_2, \ldots)$. Etter ein del arbeid kjem vi fram til at
+
+$$Var(Y) = \sum \left(\frac{\partial f}{\partial X_i}\right)^2 Var(X_i) + 2\sum \sum \left(\frac{\partial f}{\partial X_i}\right)\left(\frac{\partial f}{\partial X_j}\right)Cov(X_i, X_j) $$
+
+Dersom variablane er /uavhengige/ kan vi sløyfe det siste leddet, og vi står att med den enklare
+$$Var(Y) = \sum \left(\frac{\partial f}{\partial X_i}\right)^2 Var(X_i)$$
+
+Her er jo $Var(X_i) = u(X_i)^2$, så vi bruker det uttrykket i staden for (både i den generelle og den spesielle):
+$$u(Y)^2 = \sum \left(\frac{\partial f}{\partial X_i}\right)^2 u(X_i)^2$$
+
+*Døme* Vi måler dei to dimensjonane med to ulike måleapparat, og få oppgitt /nominelle/ verdiar som $d = 50,3$~mm og $h = 1385,4$~mm, med $u(d) = 0,05$~mm og $u(h) = 0,08$~mm. Frå funksjonen $f(d, h) = \frac{1}{4}\pi d^2 h$ får vi dei to partiellderiverte
+
+$$\frac{\partial V}{\partial d} = \frac{1}{2} \pi d h \quad \text{og} \quad \frac{\partial V}{\partial h} = \frac{1}{4}\pi d^2$$
+
+Set vi inn dei nominelle verdiane får vi
+
+$$\frac{\partial V}{\partial d} = 330.8503 \quad \text{og} \quad \frac{\partial V}{\partial h} = 1987.1280$$
+Kombinerer vi no alle tala får vi
+
+$$u(Y)^2=0.05^2\cdot330.8503^2+0.08^2\cdot1987.1280^2 = 25545.1930$$
+
+som gir oss
+
+$$u(Y) = \sqrt{25545.1930}\approx 159.8286$$
+
+Den /nominelle/ verdien av volumet er $V(50.3, 1385.4) = 2752967.1856$. Når ingen av målingane har meir enn eitt desimal så oppgir vi svaret med det også. Vi bruker i tillegg ein dekningsfaktor på 2, slik at /utvida usikkerhet/ vert $2\cdot 159.8286 = 319.6573$
+
+$$V = 2752967.2 \pm 319.7$$
+
+***** Ikkje-lineære funksjonar (avhengige)
+Bakgrunnen er den same, men vi ser no på at nokre (eller alle) variablane er /avhengige/. Formelen med standard usikkerhet vert då
+
+$$Var(Y) = \sum \left(\frac{\partial f}{\partial X_i}\right)^2 u(X_i)^2 + 2\sum \sum \left(\frac{\partial f}{\partial X_i}\right)\left(\frac{\partial f}{\partial X_j}\right)u(X_i, X_j) $$
+
+NB! her har vi brukt at korrelasjonskoeffisienten (GL *Definisjon 4.14*) er $\rho(X_i, X_j) = \frac{Cov(X_i, X_j)}{\sigma_{X_i}\sigma_{X_j}}$ som ved å multiplisere med nevnar gir $Cov(X_i, X_j) = \sigma_{X_i}\sigma_{X_j}\rho(X_i, X_j)$, og brukar vi /estimatorane/ får vi $Cov(X_i, X_j)\approx u(X_i)u(X_j)r(X_i, X_j)$. Den siste ($r(X_i, X_j)$) kan vi estimere /dersom vi har mange observasjonar/ (altså Type A), eller vi kan /gå ut frå/ at den har ein viss verdi (sjå dømet).
+
+*Døme* Dersom du seriekopler $n=10$ motstander som alle er /kalibrert/ (meir om det seinare) opp mot same kontrollmotstand, så vil dei vere avhengige av kvarandre. Det er her trygt å gå ut frå at alle er "tilnærma perfekt" korrelert med kvarandre (dei er tilnærma perfekte kopiar av standarden), slik at vi kan setje $r(X_i, X_j)=1$ for alle saman.
+
+**** Veke 44 (29.10-2.11) 
+Kontrolldiagram, GL kapittel 10 (?)
+
+***** Oversikt
+Ønsker meg eit godt introduksjonsdøme, gjerne eit der studentane sjølve lager diagrammet.
+Hovedpoeng:
+ * Kontrollgrensene er (nesten) "kunstig" laga, då dekningsfaktor 3 er "lett å hugse".
+ * Vi kan sei noko om kor lang tid det tar til neste alarm (Helgas notat)
+ * Litt om at vi kan sjå på trender.
+
+***** Kontrolldiagram for $\mu$
+Vi har ei nullhypotese om at "produksjonen er stabilt god". Det betyr $H_0: \mu_0\in [-a, a]$, der $-a$ og $a$ er grenser som er satt. Valet av grenser må oppfylle to motstridande krav:
+1. Vi vil oppdage feil så snart som råd (smale grenser)
+2. Vi vil ikkje ha for mange falske alarmar (vide grenser)
+
+For å veie desse to krava mot kvarandre valgte Shewhart (som metoden er oppkalt etter) å setje grensene til $a = 3\cdot\frac{\sigma}{\sqrt{n}}$. Dette er (nesten) det same som kvantilen i ein tosidig 99,8~\% /hypotesetest/. Meir presist er det kvantilen i ein 99,7~\% test.
+
+Vi bestemmer $\sigma$ ut frå /historiske data/; dersom vi går inn i ein eksisterande prosess kan vi basere oss på den (vi går ut frå at data har vore samla inn på ein tilfredsstilande måte), men dersom vi starter opp ein ny prosess må vi først la den gå ei stund, slik at vi kan danne oss eit inntrykk av kva som er "normalt". Vi tar i så fall stikkprøver i ein periode vi kan gå ut frå er "normal", og så rekner vi gjennomsnitt ($\overline{x}_i$) og standardavvik ($s_i$) i kvar stikkprøve. Til slutt tar vi gjennomsnittet av desse verdiane også: $\overline{\overline{x}} = \frac{1}{n}\sum \overline{x}_i_$ og $s^2 = \frac{1}{n}\sum s_i^2$. NB! Legg merke til at det er /variansen/ vi rekner gjennomsnittet av!
+
+Vi adresserer så to spørsmål:
+1. Kva er sjansen for alarm gitt at det er eit avvik?
+2. Kor lenge må vi vente på ein alarm (gitt eit avvik)?
+
+I det første spørsmålet så definerer vi avviket som ein brøkdel $\theta$ av kontrollgrensene (avstanden frå $\mu_0$ til $C_U$ eller $C_L$): Eit avvik skjer ved at forventingsverdien endrar seg frå $\mu_0$ til $\mu = \mu_0 + \theta\cdot\frac{\sigma}{\sqrt{n}}$. På denne måten vert $\theta$ lik $\pm 3$ dersom avviket passerer ei av grensene (hugs at $\theta$ kan vere negativ), og vi kan definere $\theta = \frac{\mu-\mu_0}{\sigma/\sqrt{n}}$.
+Sjansen for at det /ikkje/ skjer alarm er då $P(\mu_0-3\frac{\sigma}{\sqrt{n}} < \overline{x} < \mu_0+3\frac{\sigma}{\sqrt{n}})$. Denne kan vi så omforme til $G(3-\theta) - G(-3-\theta)$, som vi kaller for $K(\theta)$, /karakteristikken/ til dette kontrolldiagrammet.
+Som vi ser er karakteristikken avhengig av endringsfaktoren $\theta$, men ikkje (direkte) av andre parametre. Indirekte er den derimot avhengig av mellom anna $n$, talet på målingar i stikkprøvene. 
+
+*Døme* Gitt eit avvik frå $\mu=1,5$ til $\mu = 1,6$ i ein prosess som har $\sigma = 0,1$. Kva er sjansen for at det skal gå alarm no? Vi må no finne ut kva $\theta$ er, og då treng vi talet på målingar i stikkprøva. La oss sei at $n=5$. Då vert $\theta = (0.6-0.5)/(0.1/\sqrt{n}) = 2,23$, og vi finn karakteristikken som $K(2,23) = G(3-2,23) - G(-3-2,23) = G(0,77) - G(-5,23) = 0,22$, og sannsynligheten for alarm vert då 0,78.
+
+Kor "lenge vi må vente" vert no ein /geometrisk/ prosess; kvar stikkprøve er eit stokastisk forsøk med eitt av to utfall (der "suksess" er alarm), og vi lar $Y$ vere talet på forsøk inntil "suksess". Parameteren $p$ er $p = P(oppdage feil) = 1-K(\theta)$, og forventa tid til "alarm" i ein geometrisk prosess er $L = E(Y) = \frac{1}{p} = \frac{1}{1-K(\theta)}$.
+
+*Døme* Gitt avviket frå 0,5 til 0,6. Forventa ventetid til alarm vert no $L(2,23) = 1/(1-0,22) = 1,28$, altså veldig raskt.
+
+****** Varselgrense og kontrollgrense
+I tillegg til "alarm" kan vi setje opp grenser som gir eit "varsel" om at noko kanskje er galt. Vanleg er ofte at "to stikkprøver på rad som er meir enn $2\sigma$ frå $\mu_0$" gir eit varsel. Kva er sjansen for det?
+
+Sannsynligheten for at ei stikkprøve skal havne meir enn $2\sigma$ frå $\mu_0$ er $p=0,025$ dersom $H_0$ gjeld (når vi ser på /ei/ retning om gangen). Og sannsynligheten for to slike på rad er eit /binomisk/ forsøk; vi har $n=2$, $p=0,025$ og $x=2$: $P(X=2) = 0,000625$. Det er altså forsvinnande liten sjanse for at dette skal inntreffe, så /dersom/ det inntreffer trur vi umiddelbart at noko er galt.
+
+***** Kontrolldiagram for s
+Den same tankgangen gjeld her: vi har $H_0$ "alt er ok", eller $\sigma = \sigma_0$, og $H_1$ "noko er galt", $\sigma \neq \sigma_0$. No er testobservatoren $Y=(n-1)S^2/\sigma$ /kjikvadratfordelt/, og vi kan lage kontrollgrensene $C_L$ og  $C_U$. Vi set $\alpha = 0,004$ for å få omtrent same sannsynlighet for falsk alarm som i Shewharts diagram. Då vert dei to kvantilane første og siste kolonne i tabell E.6 (avhengig av talet på /fridomsgrader/).
+
+**** Veke 45 (5.11-9.11)
+Regresjon og korrelasjon, Løvås: kap. 7.1-7.3
+
+***** Gjennomgang
+Vi trur veldig lett at når to variable viser ein eller annan form for samanheng, så /er/ det ein slik samanheng. Vis døme frå [[][Tylervigen]] på dette. Men når det er sagt, så kan vi ofte tenke at det er /naturleg/ vere ein samanheng, og så leiter vi etter /kor god/ denne er.
+
+Reint praktisk vil vi konsentrere oss om /lineær regresjon/, det vil sei at dei to variablane ligg omtrent langs ei rett linje når vi presenterer dei grafisk [vis til Excel-ark]. 
+
+Først må vi definere /korrelasjon/. Dersom eit datasett består av $n$ /par/ av observasjonar $(X_i, Y_i)$ kan vi rekne ut den empiriske /kovariansen/. Denne vil vere eit mål på kor god samvariasjon det er mellom data; jo nærare 0 jo dårlegare samvariasjon. Men den har ein innebygd svakhet: den er avhengig av /skala/. [Vis til døme i Excel-ark]. Vi definerer difor /korrelasjonskoeffisienten/ som er uavhengig av skala; den ligg alltid mellom $\rho = -1$ og $\rho = 1$, med ytterpunkta som "perfekt" samvariasjon, og 0 som "ingen samvariasjon".
+
+Når vi så har etablert at det /kan/ vere ein samanheng ser vi om vi kan finne ei rett linje som "passer bra" med dei ulike punkta. Dersom vi definerer den uavhengige variabelen ("forklaringsvariabel") som $X$ og den avhengige ("responsvariabel") som $Y$, kan vi setje opp funksjonen $Y_i = \alpha + \beta x_i + \epsilon$ som ein funksjon som forklarer korleis $Y_i$ er rekna ut frå $x_i$. Her er $\alpha$ og $\beta$ to konstantar, slik at vi dersom det /ikkje er tilfeldighet/ kan setje $Y_i = \alpha + \beta x_i$. For å ta høgde for tilfeldig variasjon legg vi på  $\epsilon_i$, som er ein stokastisk variabel. Veldig vanleg er det å gå ut frå at $\epsilon_i \sim N(0,\sigma)$, også kalt "kvit støy".
+
+Den stokastiske variabelen $Y_i$ vil no vere /normalfordelt/, med forventing $\alpha + \beta x_i$ og varians $\sigma^2$. Vi estimerer $\alpha$ 0g $\beta$ ved hjelp av /minste kvadraters metode/; vi finn dei to verdiane som gir minst mogleg verdi av ein gitt funksjon (ved hjelp av partiellderivasjon). Resultatet vert *Regel 7.2*.  
+
+ * Argumenter for at minste kvadraters metode virker
+ * Kor god er modellen? Sjå på $SS_T$, $SS_R$ og $SS_E$, og på $r^2 = SS_R/SS_T$.
+ * Lag ein testobservator for $\beta$. NB! Lag gjerne den "gode" formelen, som er lettare enn den som står i boka? Men det er jo eit poeng at dei sjelden eller aldri rekner ut denne for hand ...
+ * Forskjellen på 7.3.6 og 7.3.7: i 7.3.6 er det usikkerhet "berre" i variabelen $Y = \hat{\alpha} + \hat{\beta}X$, men i 7.3.7 ser vi på at kvar enkelt observasjon i tillegg har ein usikkerhet $\epsilon$, slik at vi får usikkerheten i $\epsilon$ i tillegg. Denne har jo varians $\sigma^2$, og dermed er det leddet på plass. (Forklaringa i boka er ikkje så god.)
+
+
+**** Veke 46 (12.11-16.11)
+Kalibreringskurver (HJ: kapittel 8)
+Bruke regresjonslinjer til å kalibrere for verdiar inne i dataområdet.
+Starte med litt intro om kalibrering, og vise traileren til [[https://www.imdb.com/title/tt3346824/videoplayer/vi2753280025?ref_=tt_pv_vi_aiv_1]["1001 gram"]]
+
+***** Oversikt
+1) *Første tilfelle* Vi ser på om eit apparat "måler det det skal", ved å samanlikne mot eit kjent (og mykje meir presist) instrument. Det er krav til kor mykje meir presist kontrollapparatet skal vere (HJ side 79/80). Denne kontrollen skjer i eit avgrensa område (gjerne berre for ein enkelt verdi). Usikkerheten i referansen vert overført direkte til det kontrollerte apparatet. 
+2) *Andre tilfelle* Det kan vere andre faktorar enn berre usikkerheten i referansen; her lister vi 
+   * Endring i referansen sidan sist
+   * Usikkerhet i kontrollmålinga
+   * (Mogleg) ulik målesituasjon for referanse og kontroll
+   I dette tilfellet vert det satt opp eit /usikkerhetsbudsjett/ for situasjonen.
+3) *Tredje tilfelle* Vi har ein del observasjonar for nokre gitte verdiar av forklaringsvariabelen, og har gode grunnar for å tru at det er (tilnærma) lineær proporsjonalitet mellom forklarings- og responsvariabelen. Då kan vi bruke regresjonslinja /både/ til å estimere forklaringsvariabelen dersom vi kjenner responsen, eller responsen dersom vi kjenner forklaringsvariabelen. Vi må ta omsyn til usikkerheten som ligg i regresjonslinja; difor held vi oss til linjer utan konstantleddet $\alpha$ (for då slepp vi å finne usikkerhet i $\alpha$). 
+
+
+
+**** Veke 47 (19.11-23.11)
+Målesystemer/Sensitivitet (HJ: ???)
+Litt om sensitivitet, NB! Gå gjennom nok stoff til å dekke eksamensoppgåva.
+
+
+
+**** Eksamen
+ *Aasmund*: Oppgåve om regresjon. Kan ikkje gi oppgåve om konfidensintervall utan at vi samtidig gir formlane for intervallet (dei står ikkje i formelsaminga). Kan heller ikkje be dei teste om $\beta$. 
+
+***** Oppgave vår 2016 (Kontinuasjon)
+ Når en lyspære plasseres i en lukket eske vil temperaturen stige til den når et maksimum. Temperaturstigningen vil avhenge av effekten i lyspæren. Vi har med andre ord at forskjellen mellom start- og sluttemperatur i esken er proporsjonal med effekten i lyspæren. Man har målt temperaturøkningen ved å bruke lyspærer med fem ulike effekter: 15, 25, 40, 75 og 100 W.
+ Følgende sammenheng er gitt (en kalibreringskurve som er funnet ved minste kvadraters metode):
+ y = 0,0516x + 0,0666
+ der y er temperaturstigningen målt i ◦C og x er effekten målt i W. Det oppgis videre at
+ s_y = 0,30
+ \sum (x_i − x)^2 = 6330, 
+ x = 48 og y = 2,41.
+
+ a) Skisser figur som viser kalibreringskurven. Hva blir forventet temperaturøkning ved effekt på 64 W? Vis dette i skissen.
+ b) Finn et 95 % konfidensintervall for forventet temperaturøkning ved effekt på 64 W.
+
+***** Framlegg 1 a
+Talet på feil i ei stikkprøve er avhengig av storleiken på stikkprøva. Fire stikkprøver har gitt desse feila:
+(100,6), (200,5), (500,9) og (700,7)
+[Nødvendige tal er utrekna og oppgitt]
+1) Gå ut frå at $X$, talet på feil i stikkprøva, er ein binomisk fordelt variabel. Kvifor kan du allikevel gå ut frå at den er /tilnærma normalfordelt/?
+2) Finn /korrelasjonskoeffisienten/ til datasettet.
+3) Finn eit estimat for regresjonslinja $y=\alpha + \beta x$.
+4) Vi tar ut ein stikkprøve på $n=300$. Kor mange feil /forventer/ du å finne i stikkprøva? Set også opp eit 95 \% /konfidensintervall/ for talet på feil.
+
+***** Framlegg 1 b
+I ei målebru er temperaturen ein funksjon av påtrykt spenning. Fire verdiar frå eit forsøk på lab har gitt desse verdiane:
+(0, 29), (0,5, 33), (1, 49) og (1,5, 73)
+[Nødvendige tal er utrekna og oppgitt]
+1) Finn /korrelasjonskoeffisienten/ til datasettet.
+2) Finn eit estimat for regresjonslinja $y=\alpha + \beta x$.
+3) Du set på ei spenning på 1,3 V. Kva temperatur /forventer/ du å finne i stikkprøva? Set også opp eit 95 \% /konfidensintervall/ for temperaturen.
+
+***** Framlegg 2
+Tabellen viser den simultane sannsynsfordelinga til to variable $X$ og $Y$. 
+
+1) Finn den /marginale/ fordelinga til dei to variablane.
+2) Finn også fordelinga til produktet $X\cdot Y$.
+3) Finn til slutt /korrelasjonen/ til dei to variablane.
+     
+
+**** Klage på formelle feil, [2019-01-07 man.]
+Den aktuelle feilen (eitt tal i ein tabell) vart oppdaga dagen før. Den korrigerte oppgåveteksten vart skrevet på eit eige ark (A5-format) og kopiert opp. Etter samråd med eksamenskontoret vart dette arket levert til eksamensvaktene ca. 08.30 på eksamensdagen. Vi ga ingen konkrete instruksar til vaktene om korleis dette arket skulle delast ut eller korleis informasjon burde bli gitt.
+
+Til spørsmålet om denne feilen kan ha hatt innverknad på kandidatens prestasjon: Spørsmåla var uendra i den korrigerte versjonen, og det var berre i delspørsmål 1 a) om marginalfordelingane at ein kunne oppdage at noko var galt. To faglærarar gjekk ein lengre runde i eksamenslokalet (start ca. 10.30) og det var då ingen spørsmål om denne detaljen. Det er difor vår oppfatning at denne feilen i liten grad har påverka prestasjonen på eksamen. Ved sensur har vi sett at enkelte kandidatar har løyst oppgåva utan å ha sett dette arket med korrigerte tal. Alle desse har blitt vurdert med utgangspunkt i framgangsmåten for å løyse oppgåva, utan at det har blitt trekt for feile talsvar. 
+
+***** Oppfølging<2019-01-21 man.>
+
+Den aktuelle feilen (eitt tal i ein tabell) vart oppdaga dagen før. Den korrigerte oppgåveteksten vart skrevet på eit eige ark (A5-format) og kopiert opp. Etter samråd med eksamenskontoret vart dette arket levert til eksamensvaktene ca. 08.30 på eksamensdagen. Vi ga ingen konkrete instruksar til vaktene om korleis dette arket skulle delast ut eller korleis informasjon burde bli gitt. To faglærarar gjekk ein lengre runde i eksamenslokalet (start ca. 10.30) og det var då ingen spørsmål om denne detaljen.
+
+Til spørsmålet om denne feilen kan ha hatt innverknad på kandidatens prestasjon (for dei som måtte rekne oppgåva på nytt): 
+Det korrigerte talet endra ikkje måten deloppgåvene skulle løysast på. Ettersom det difor berre var snakk om å setje inn eitt korrigert tal i korte utrekningar som studenten alt hadde gjort, så er vår vurdering at det eventuelle meirarbeidet er som skissert:
+ - Delspørsmål 1 a) (finne marginalfordelingane): Mindre enn eitt minutt.
+ - Delspørsmål 1 b) (sannsynsfordelinga til produktet): Her er det snakk om ei oppdatering av tre tal i ein tabell. Medrekna tid til å skrive heile tabellen på nytt er det snakk om mindre enn to minutt.
+ - Delspørsmål 1 c) (finne korrelasjonen): Her er det nødvendig å gjere ein del korte mellomrekningar på nytt, etter vår vurdering høgst fem-seks minutt.
+
+Samla sett trur vi at det burde ta maksimalt ti minutt å korrigere alle svara for ein student som måtte gjere oppgåva på nytt. Vi vurderer det difor slik at denne korrigeringa ikkje burde ha hatt innverknad på studenten sin prestasjon.
+
+Til spørsmålet om denne feilen kan ha hatt innverknad på vurderinga (for dei som ikkje oppdaga korrigeringa):
+Ved sensur har vi sett at enkelte kandidatar har løyst oppgåva utan å ha sett dette arket med korrigerte tal. Alle desse har blitt vurdert med omsyn til framgangsmåten for å løyse oppgåva, utan at det har blitt trekt for feile talsvar. Denne korrigeringa har difor  ikkje hatt innverknad på vurderinga av desse studentane sine prestasjonar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Spørsmåla var uendra i den korrigerte versjonen, og det var berre i delspørsmål 1 a) om marginalfordelingane at ein kunne oppdage at noko var galt. To faglærarar gjekk ein lengre runde i eksamenslokalet (start ca. 10.30) og det var då ingen spørsmål om denne detaljen. Det er difor vår oppfatning at denne feilen i liten grad har påverka prestasjonen på eksamen. Ved sensur har vi sett at enkelte kandidatar har løyst oppgåva utan å ha sett dette arket med korrigerte tal. Alle desse har blitt vurdert med utgangspunkt i framgangsmåten for å løyse oppgåva, utan at det har blitt trekt for feile talsvar. 
+
+Vurdering av ekstra tidsbruk for dei studentane som måtte føre oppgåva på nytt etter at dei oppdaga arket med korrigert tabell. 
+
+Det korrigerte talet endra ikkje måten deloppgåvene skulle løysast på. Ettersom det difor berre var snakk om å setje inn eitt korrigert tal i korte utrekningar som studenten alt hadde gjort, så er vår vurdering at det eventuelle meirarbeidet er som skissert:
+ - Delspørsmål 1 a) (finne marginalfordelingane): Mindre enn eitt minutt.
+ - Delspørsmål 1 b) (sannsynsfordelinga til produktet): Her er det snakk om ei oppdatering av tre tal i ein tabell. Medrekna tid til å skrive heile tabellen på nytt er det snakk om mindre enn to minutt.
+ - Delspørsmål 1 c) (finne korrelasjonen): Her er det nødvendig å gjere ein del korte mellomrekningar på nytt, etter vår vurdering høgst fem-seks minutt.
+
+Samla sett trur vi at ein student som gjer oppgåva på nytt treng maksimalt ti minutt for å korrigere alle svara. Vi vurderer det difor slik at denne korrigeringa ikkje burde ha hatt innverknad på studenten sin prestasjon.
+
+
+*** Haust 2019
+NB! Vi bør ha innlevering i WeBWorK kvar veke!
+
+
+*** FERDIG ELE103 <2019-05-14 tir.>
+  Eksamensoppgåver tysdag morgon
+
+** MATLAB
+
+*** MAT100
+ * Kalkulator
+ * Tilordning
+ * Presedens
+ * Script
+ * Gjenbruk av kode
+ * MATLABs innebygde GUI
+ * Løkker (for- og while)
+ * Val (if)
+ * Anonyme funksjonar
+ * Plotte funksjonar
+ * Tabellar/matriser (element, rekker/kolonner)
+ * Numeriske metodar:
+   * Midtpunkt
+   * Newtons metode
+   * Derivasjon
+   * Integrasjon
+   * Eulers metode
+   * rref(A) for rekkereduksjon av matriser
+
+
+*** Statistikk
+ 1. Går ut frå at dei er "løfta" frå nivå 1 (kalkulator) til nivå 2 (programmering)
+ 2. Men det betyr eit løft frå "peik og klikk" til å skrive kode
+ 3. Bruker MATLAB som /verktøy/, tester ikkje kompetanse i MATLAB (men bruker det aktivt under eksamen)
+ 4. Ser først og fremst på det vi gjer /i dag/; bør også tenkje på kva /nytt/ vi kan gjere i emnet 
+ 5. Lese data frå filer, skrive data til filer (CSV, Excel)
+ 6. Lagre oppsett som .m-filer
+ 7. Lage script som simulerer
+    * rand-funksjonar, (NB! reproduserbare)
+    * løkker,
+    * if-setningar
+    * anonyme funksjonar
+ 8. Plotte data (fleire datasett samtidig)
+ 9. Inferens (hypotesetesting)
+ 10. Regresjonsanalyse
+ 11. Korleis kan vi lage gode rapportar i MATLAB? (Noko a la Jupyter Notebook)
+
+
+*** Live Script
+
+**** Sjølvstudium
+Kan eg lage eit sjølvstudium i Live Script? Eitt der eg presenterer lærestoffet i mindre bitar, og der studentane sjølve skal fylle inn det som manghhlar for at koden skal virke. 
+
+*Problem*: Korleis kan studentane sjekke at dei gjer det rett? Korleis kan /eg/ sjekke at studentane gjer det dei skal?
+
+
+* Programmering
+
+** Python
+
+*** RealPython
+
+**** Tips & triks
+
+***** Sjekk om alle element i ei liste er like
+# Pythonic ways of checking if all
+# items in a list are equal:
+
+>>> lst = ['a', 'a', 'a']
+
+>>> len(set(lst)) == 1
+True
+
+>>> all(x == lst[0] for x in lst)
+True
+
+>>> lst.count(lst[0]) == len(lst)
+True
+
+# I ordered those from "most Pythonic" to "least Pythonic" 
+# and  "least efficient" to "most efficient". 
+# The len(set()) solution is idiomatic,  but constructing 
+# a set is less efficient memory and speed-wise.
+
+** SQL
+
+*** Døme: tel kor mange innleveringar som har ulike vurderingstyper 
+# Svært enkelt døme; eg veit på førehand kva typer det er spørsmål om, og eg lister berre utdata på skjermen.
+
+innleveringstype = ('points','letter_grade','pass_fail','not_graded','percent','gpa_scale',)
+
+for t in innleveringstype:
+    c.execute('select count(id) from innlevering where grading_type like ?', (t,))
+    # print(t, c.fetchone())
+    tal = list(c)[0][0]
+    print(t,tal)
+
+*** Døme: (avansert) tel kor mange innleveringar som har ulike vurderingstyper 
+c.execute('select distinct grading_type from innlevering')
+innleveringstype = c.fetchall()
+
+with open(sti + "innleveringsstatus.csv", "w") as fil:
+    for t in innleveringstype:
+        c.execute('select count(id) from innlevering where workflow_state = ?',(t[0],))
+        tal = c.fetchone()[0]
+        fil.write('\n' + str(t[0]) + "\t" + str(tal))
+   
+** MATLAB
+
+
+* WISEflow
+
+** Webinar 
+
+*** Poengbasert vurdering [2018-11-06 tir.]
+Alt i webinaret er ting vi kan gjere før, under eller etter eksamen.
+Vi kan mellom anna skifte mellom poengbasert vurdering eller ikkje undervegs.
+
+**** Oppretting av flow
+Dei ulike sensorane vert tildelt ulike seksjonar. 
+Dersom det ikkje er autoscoring på ein seksjon må sensor sjølv legge inn poeng.
+Vi kan tildele  sensor til seksjon med  autoscoring ("semiautoscoring"); her må sensor godkjenne poengsummen før den vert sendt inn.
+Vi kan dele ein seksjon mellom fleire sensorar; då vil dei få tildelt /tilfeldige/ kandidatar på kvar seksjon dei er med i.
+Vi kan også lage "sensorgrupper" for å sikre at to sensorar ser på same student [Dette var uklart; spør om det].
+
+**** Sensuren
+Under sensuren får vi ulike opplysingar. Ved ei sensorgruppe får vi meir enn ein strek for poeng
+Fargekode:
+ - Grøn: alt OK, poemng sendt inn
+ - Gul: har opna/lest, men ikkje satt poeng
+ - Blått: Opna/lest, registrert, men ikkje sendt inn poeng
+ - Raudt: Konflikt i sensorgruppe; ulike poeng på ein seksjon/kandidat
+ - Kvitt: Ikkje opna/lest
+
+Vi kan deaktivere ein heil seksjon dersom vi (etter/under eksamen) ser at det var noko galt med seksjonen. 
+Vi kan også gjere om mellom autoscoring eller ikkje (dersom ein seksjon er satt opp for dette).
+Vi kan låse opp poeng (for ny vurddeeing) frå ein navngitt sensor på alt, eller for ein enkelt seksjon. 
+
+Sensor kan godkjenne alle under eitt.
+Sensor kan sensurere /horisontalt/ (alle seksjonar for ein kandidat) eller /vertikalt/ (same seksjon på alle kandidatar)
+
+
+**** Spørsmål:
+1. Kan du gjenta deling av senorar?
+     
+
+*** Rubrikker[2018-11-13 tir.]
+Har vi dette ved HVL? Skulle vore mellom "Oppgavesett" og "Tilknyttede flows".
+[Bernt: vi har ikkje, men kan teste ut].
+NB! Fungerer ikkje i FLOW Multi, men det er på trappane. 
+
+NHH ønsker å ta ut gode statistikkar til læringsanalyse. Dette er på veg, men ikkje før ut i 2019. 
+
+**** Opprette nye rubrikker 
+Veldig likt å opprette nye oppgåver. Kan også lagre dei i innhaldsbanken.
+WISEflow nyttar omgrepet "rubrikkmatrise" og "matrise" om kvarandre. Noko for Canvas?
+
+Det er mogleg å gi tilbakemelding til studenten som tekst og/eller lyd på kvart læringsmål. Det vil vel langt på veg møte kravet om grunngjeving?
+
+
+**** Karaktersetting 
+Kan bruke rubrikkar som rettleiing undervegs i sensuren, men det er også mogleg å koble inn ein "karakterkalkulator". Ein kan la denne bestemme karakteren heilt (ikkje overstyre), eller 
+ein kan overstyre denne ved endeleg sensur. 
+Forfattar (faglærar) kan setje inn rubrikkar, eller administrasjonen kan tilordne denne. 
+Det er også mogleg å dele rubrikkane med studentane.
+
+**** Eigendefinerte rubrikkar
+Desse kan innehalde spørsmål (seksjonar) som ein lager sjølv. Desse spørsmåla oppfører seg som vanlege spørsmål for studentane, men det er spørsmål som sensor svarer på:
+
+ * "Var det feil med brøkrekning? [Fleirval; Ja/Nei]"
+ * "Korleis vurderer du argumentet? [Fleirval; 1/2/3/.../10 poeng]"
+
+Denne kan vi koble til ein karakterkalkulator.
+
+Eller vi kan lage eit "blankt" retteskjema: alle spørsmåla er reine tekstboksar der sensor skriv sine kommentarar (og ingen poeng vert rekna ut).
+
+Meir info under "Support?" (sender til Knowledge Base). 
+
+
+** Ulike innstillingar når vi lager ei oppgåve
+
+*** Når vi lager oppgåva
+ * Når vi krysser av for "Tilbakemelding" gir vi /mulighet/ for at studentane kan kontrollere svaret sitt (men denne kan vi slå av når vi aktiverer flowen).
+ * Vi kan også gi eit tal på kor mange gonger studenten kan kontrollere svaret sitt. Men dersom studenten har brukt opp alle desse forsøka så er det framleis mogleg å skrive inn eit nytt svar; du får berre ikkje kontrollert det.
+ * For kvart svar vi ber om ("Response") kan vi både ha ulike alternativ, /og/ ulike variantar. Kvart alternativt svar kan ha ulike poengsummer, medan kvar variant har same poengsum. Det betyr at vi /kan/ oppgi både komma- og punktumdesimal som /variantar/ av same svar, medan vi kan ha svar som er "nesten" rette som alternative svar med ulike poengsummar.
+
+*** Når vi aktiverer flowen
+
+**** Deltakar skal ha tilgang til svaret etter innlevering
+Slår vi på denne kan studenten sjå sine eigne svar utan markering av om det er rett eller galt. Dette får dei lov til etter at alle har levert (eller fristen har gått ut).
+
+**** Deltakar skal ha tilgang til automatisk validering etter innlevering
+Slår vi på denne så ser studenten raudt eller grønt på alle svar som har automatisk retting. 
+
+**** Tillat deltakarane å sjekke om riktig svar er vald
+Slår vi på denne så vil alle svar med "Tilbakemelding" avkryssa gi studenten høve til å sjekke svaret sitt.
+
+**** Gi deltakarane tilgang til resultatet etter endt vurdering
+Gir studentane full innsikt i alle poeng og ekstra poeng og kommentarar som sensorane har gitt (og delt med studentane).
+
+
+** Fagdag om WISEflow
+
+*** Opplegg
+ + Kort intro om meg sjølv
+ + Kva har eg brukt WISEflow til, og litt om det. Nevne også Lars Arne, og hans rapport.
+ + Demonstrere korleis ein kan lage ei /enkel/ oppgåve i WISEflow, og la dei lage ei slik.
+ + Etter dette går eg gjennom ein god del av vala du har i WISEflow.
+ + Til slutt lar eg dei gå gjennom eksamenssettet dei sendte meg, og sjå på kva oppgåver som er 
+   * direkte overførbare,
+   * omskrivbare til WISEflow,
+   * ikkje mogleg å teste gjennom WISEflow.
+
+
+
+** Digital eksamen Lodz
+
+*** Administrasjon
+- integrasjon med FS (og andre system)
+- studentvakter (teknisk)
+- bring your own device (men også lånePC, men lite)
+
+*** Fagleg
+- digital flyt
+- type spørsmål
+- brukt i obligatorisk aktivitet
+
+
+* Enkeltsaker HVL
+
+** 2019 Eining for undervising og læring
+
+*** Innspel frå Canvas-gruppa [2019-01-25 fre.] 
+ - Eininga må ha folk som har minst eitt bein i undervising, gjerne delte stillingar?
+
+*** Presentasjon av deltakarane [2019-02-01 fre.] 
+ - Aasmund: 
+ - Anne Kristin: Stord, FLKI. Ønsker å vere med. HSH (2004) --> HVL. Interesse for høgskolepedagogikk, og arbeider no med å utvikle kurs for lærarar som skal undervise i høgskolepedagogikk. IKT i læring, studieansvarleg for ???
+ - Knut Steffen: Haugesund, FØS. Ønsker å vere med. Underviser i økonomi/reknskap, interessert i å undervise. 
+ - Xavier: Bergen, SFNM. Ønsker å vere med. UiB (1992) --> HiB --> HVL. Brubyggar mellom medieteknologi og fagmiljø. Ser at endringar som "ny teknologi" krev støtte til lærarane.
+
+*** Definisjon av kva vi skal arbeide med [2019-02-01 fre.] 
+Med utgangspunkt i "Skisse til prosjektplan"?
+
+ 1. Ansvarsfelt og organisatorisk løysing: Vi bør sjå kva andre har gjort (UiS, USN, ...)
+ 2. Forholdet mellom denne eininga og eksisterande/nye einingar 
+ 3. Bemanningsbehov må komme etter at vi har definert punkt 1
+ 4. Utlysing av stillinga (denne er på trappene ganske snart?)
+
+Kan eg finne ut kvar skoen trykker frå FIN med tanke på høgskolepedagogikk, kva treng ein av støtte for å utvikle eigen undervising, kva finst no, kva ønsker ein seg? Kursing? E-læring?
+
+*** Tanker om organisering [2019-02-03 søn.] 
+
+**** Med utgangspunkt i [[https://blogg.hvl.no/edu/wp-content/uploads/sites/60/2018/06/22.6.18-Rapport-Eining-for-utvikling-av-undervisning-og-laering.pdf][rapporten]] frå utvalet i 2018.
+
+  - Eg stemmer nok for å gå meir i retning av TLC2; la det vere mange "spesialiserte" einingar rundt omkring i HVL-systemet, og leiinga skal samordne desse (spreie informasjon i HVL-systemet om kven kvar som kan kva, og arbeide for at alle einingane veit mest mogleg om kvarandre, slik at dei kan inspirere/utfordre kvarandre)
+  - Eg støtter utvalet si tilråding i punkt B side 9.
+  - Eg er kansje mest einig i at det er "kontaktpunkt" ved kvart fakultet/fagleg eining som kan formidle kontakt mellom fagleg tilsette og eininga. Døme ved FIN vil vere Casper Håland.
+  - Eg er veldig einig i at eininga vert plassert direkte under prorektor for utdanning. Om den skal vere i ein av dei to eksisterande seksjonane er eg usikker på.
+
+
+
+**** Med utgangspunkt i [[https://blogg.hvl.no/edu/innspel/][innspela]] på bloggen frå 2018
+NB! Det virker som at mange av kommentarane har hengt seg opp i at eininga heiter "EDU" - altså noko med "Eining for Digitalisering ..."?
+ - Fagfellevurdering? Merittering av undervising? Evaluering av emne?
+ - Digital verktøykasse, samlingar for å diskutere pedagogikk
+ - Faren for overdigitalisering av undervisinga
+ - Studentaktive læringsformer, simulering/ferdighetstrening/
+ - "Digitale verktøy vil i mange høve kunne bidra til å realisere gode studentaktive lærings- og vurderingsformer og til å binde våre campusar saman. Men ein må ikkje gi slepp på at hovudutfordringa er det didaktiske, å få i gang fornying i fag og fagundervisninga, på fagmiljøa sine premissar. Her vil digitale verktøy, saman med andre ting, vere viktige attributtar til det som er sentralt, – gode undervisnings og læringsformer."
+ - Læringsanalyse
+ - Fysisk / virtuelt / mobilt? *Fysisk* er gode produksjonslokaler, *Virtuelt* er gode samarbeidsverktøy (Slack, Teams, Connect, ...), *Mobilt* er ting ein kan ta med seg rundt
+ - 
+
+*** Samling på Stord [2019-02-06 on.]
+
+**** Dagsorden
+Eg har booka rommet UND111  (i nærleiken av resepsjon/studenttorget) til møtet i morgon. 
+Om de ikkje finn fram, ring meg på 41175418
+
+Eg foreslår at oppgåvene til prosjektet blir strukturen på dagen, men at me brukar lengst tid på punkt 1. 
+
+ 1. Ansvarsfelt og organisatorisk løysing for eininga
+    - Anne Kristin presenterer ulike løysingar i andre institusjonar
+    - Xavier presenterer erfaringar/arbeid ved Senter for nye medier
+    - Aasmund presenterer utfordringar/status ved FIN
+    - Knut Steffen presenterer utfordringar/status ved FØS
+
+ 2. Forholdet mellom denne eininga og einingar med tilgrensande oppgåver ved HVL
+    - Solveig presenterer ei skisse over dialog/samarbeid med andre einingar
+ 3. Bemanningsbehov, inkludert kva kompetanse som må inngå i eininga
+ 4. Ei stillingsutlysing for leiarfunksjonen i den nye stillinga
+    - Solveig presenterer status
+    - Innspel
+
+Lunsj ca halv 12 i kantina
+
+Måla for dagen er:
+ - Felles forståing av prosjektet
+ - Møteplan og milepælar for arbeidet i perioden februar-juni
+ - Fordeling av ansvar og konkrete oppgåver
+
+
+**** Anne Karin: Kva gjer andre?
+ - UiA, UiO, UiT
+ - Heilskapleg og breitt samansatt
+ - "Utdanningsfagleg kompetanse" er både pedagogikk/didaktikk, men også digital kompetanse. [Studiekvalitetsforskriften § 2.3 ???]
+ - UiA: PULS
+   - Virksomhet:
+     - Basiskurs
+     - Forsking / utvikling
+     - Nasjonalt / internasjonalt
+     - Kurs og "konsultasjoner" (ein-til-ein, spesialtilpassa)
+   - Organisatorisk plassert utanfor fakulteta
+   - Ni tilsette, det er ei *forskingseining*
+   - Dei starter *alltid* forskingsprosjekt etter innspel frå fagmiljø
+   - *PULSLUNSJ* 30 minutt med matpakke (og kaffe/kake) i rom D4 Gimlekollen. Presentasjon av ulike ting som gjeld pedagogikk.
+ - UiT: RESULT
+   - Organisert under biblioteket
+   - 18 tilsette (faglege og teknisk/operative)
+   - To "faggrupper" (pedagogisk og IKT/læring)
+ - UiO: LINK
+   - 27 tilsette (11 med førstekompetanse)
+   - Organisert under "Det utdanningsvitenskaplige fakultet"
+   - Spesielle kurs
+     - Utvikling av læringsutbyttebeskrivelser
+     - Utvikling av sensorrettleiingar
+   - UiO er ein stor institusjon som på ein del område kan virke som trekkraft for oss andre. 
+
+
+**** Xavier: SFNM 
+ - Kort om forhistoria, problematiserer at dei har blitt sett på som "på sida" av HVL
+ - Ny rolle (frå og med [2019-02-05 ty.]):
+   - Formidling
+   - Læringsressursar
+   - Læringsmiljø
+   - Hybrid kompetanse i grensesnittet mellom pedagogikk <-> formidling <-> teknikk
+ - Ulike arbeidsområder
+   - Rådgiving til søknadskriving (?)
+   - Teknisk rådgiving
+   - Konseptutvikling (à la epraksis.no)
+   - Produksjon av video
+ - Ønsker å ta vare på eigen fagleg utvikling
+ - Vil gjerne beholde modellen med å lage korte læringsressursar (video med lærar i eit hjørne); ca. 200 ressursar på to år
+ - Skal arbeide på alle studiestader ved HVL, men ein er nøydd å ha ei viss minstekompetanse for å kunne drive
+
+
+
+**** Aasmund: Innspel/ønsker frå FIN
+  - Motivere / utfordre til å tenke nytt om undervising
+  - Utvikle konseptet "e-læringskafè"
+  - Integrert i fagmiljøa, gjerne med ein kontaktperson på kvart fakultet
+  - I alle fall ikkje adskilt frå resten av HVL
+  - Låg terskel for hjelp
+  - Ikkje sentralisert i Bergen
+ 
+
+
+
+**** Knut Steffen: Innspel/ønsker frå FØS
+ - Faren for endå eit nytt organisasjonskart
+ - Kursing i nye ting er sterkt ønska
+ - Få vite om kva som er mogleg teknisk
+ - Kursing i rettleiing / pedagogisk praksis
+ - For all del ikkje "tvinge" nye ting på pedagogisk tilsette (Haugesund har dårleg erfaring med innføring av streaming)
+ - Forsking på kva som er bra, ikkje berre synsing (som lett vert opplevd som press)
+
+
+**** Anne Kristin: Innspel/ønske frå FLKI
+ - Støtte til sensurarbeid
+ - Merittering av undervising
+ - Forsking på eiga undervising
+ - Opplegg for mentor for nytilsette
+ - Dokumentasjon av eigen kompetanse
+ - Rettleiing for praksis
+ - Læringslab
+
+
+**** Etterarbeid etter møtet
+ - Kven ved FIN kan eg bruke som "samtalepartner" når vi skal lufte idear? FLKI har eining for studiekvalitet, har vi noko slikt?
+ - Viktig at vi foreslår idear fortløpande, slik at vi kan snu oss rundt dersom dei vert "skutt ned".
+ - Kunne vi bygd opp eininga med utgangspunkt i Sfnm?
+
+
+*** FERDIG Kartlegging <2019-05-10 fre.>
+ - *Solveig*: Siren Erichsen, Bergen: oversikt over ressursar brukt på Høgskoleped.
+ - *Anne Kristin, Knut Steffen, Sissel, Aasmund*. Kvar vår prodekan for utdanning (samtale/e-post/...): kor mykje har vi per i dag. NB! Vi hjelper kvarandre til å finne ut kva vi skal telje (det er ulike tradisjonar ved dei ulike fakulteta), og om dette er ressursar som skal "vare", eller om det er tidsavgrensa ressursar.
+ - *Knut Erling*: IT
+ - *Xavier*: Innspelsrunde ("Lett høyring")
+
+
+
+*** FERDIG Skisse til rapport <2019-05-15 ons.>
+
+**** Aasmund arbeidsoppgåve
+
+***** FERDIG Kva gjer vi med UU? <2019-05-15 ons.>
+I kva grad skal eininga også ha (med)ansvaret for UU? 
+
+***** FERDIG Læringslab <2019-05-16 tor.>
+Eg arbeider vidare med ordlyden i avsnitt 1.1. c) om læringslab:
+
+****** Original
+ c) Eininga skal støtte utvikling av læringslabar på alle campus og knytte det opp mot nasjonalt og internasjonalt samarbeid. Ein læringslab er fasilitetar for utforsking, skaping og øving. Det er her viktig å presisere at dette ikkje dreier seg om øvings- eller simuleringsareal som i dag er bygd opp på fakulteta, men læringslab for utforsking og øving på undervisningssituasjonar og pedagogiske metodar. Kurs, konsultasjon og støtte i bruk av andre typar læringslabar/simulering vil og naturleg ligge under einingar, men ikkje eit overordna ansvar og drift som for meir generelle læringslabar. 
+
+****** FERDIG Revidert <2019-05-16 tor.>
+ c) Eininga skal støtte utvikling av læringslabar på alle campus og knytte det opp mot nasjonalt og internasjonalt samarbeid. Ein 'læringslab' er her meint som "fasilitetar for skaping, utforsking og øving på undervisingsretta aktivitetar". 
+
+Det er viktig å skilje læringslab frå det vi i dag kjenner som 'lab' i dei ulike fagmiljøa:
+- Ein lab i eit fagmiljø er fagspesifikk (simuleringslabar som SimArena, kjemilab, 'Hall of flame' i Haugesund, og liknande) og er administrert av fagmiljøet.
+- Ein læringslab vil vere retta mot undervisingsaktivitetar på tvers av alle fagmiljø. 
+
+(Eininga vil kunne gi støtte til det pedagogiske arbeidet i alle labber.)
+
+***** Kapittel 3.4 Samarbeid og tilgrensande einingar
+
+****** FERDIG Oppsummerande avsnitt om kva FIN har:<2019-05-16 tor.>
+Ved FIN er det i dag ca. 2,6 årsverk knytt til arbeidsoppgåver som høyrer inn under eininga. Med to unntak er dette svært små prosentdelar av stillingar (superbrukar Canvas, undervising på tvers av Bergen/Førde) som det ikkje er naturleg å organisere på nokon annan måte. Ein person har 50 % (løna over strategiske middel) knytt til Canvas og e-læring, og ein person er 100 % prosjektleiar for utvikling av undervising. Desse to stillingane er det ønskeleg å ha ved FIN for å sikre god tilknytting til fagmiljøet, men eit tett samarbeid med eininga vil vere bra. Det er per i dag eit godt samarbeid med FHS, mellom anna av di dei to prosjektleiarane ved FIN og FHS deler kontor.
+Utfordringane per i dag er delvis at tilgangen til fellestenester (som produksjon av læringsobjekt) vert opplevd som tungrodd, og også at det ikkje er noko felles forum for å arbeide med utvikling av undervising. Det vert difor mykje "prøving og feiling" i det enkelte fagmiljø.
+Det er svært viktig at den nye eininga ikkje vert "ein stat i staten", altså endå eit nytt organ som vert opplevd som fjernt frå fagmiljøet, og med høg terskel for å kome inn.  
+
+
+
+*** FERDIG Finlese rapporten <2019-05-27 må.>
+** GDPR-kurs [2018-12-13 tor.] 
+Personvernlovgiving, ikkje GDPR
+
+Personopplysingslova (2000) oppheva i 2018, erstatta av ny lov som er ei EU-forordning (POL, 15.06.2018).
+Denne forordninga vert /inkorporert/ i norsk lov, dvs. ord for ord (ikkje verbatim). Dette skaper vansker i dei tilfella der norsk lovtolking ikkje stemmer med EU-tolking.
+ *Direktiv* gir medlemslanda fridom til å velje metode/form for innføring
+ *Forordning* er lov utan å bli vedtatt av det enkelte land
+ *Fortalepunkta* er vurderingar gjort som forarbeid til forordninga (mykje som det norske lovforarbeidet)
+ *Artiklane* er lova
+ Artikkel 17 (Rett til å bli sletta): Denne gjeld ikkje for offentleg forvalting (unntak b og d).
+ Personvernreglane tar vare på den /psykiske/ integriteten, altså /opplysingar om/ oss.
+
+*** Artikkel 4
+**** Personopplysingar (4.1)
+"enhver opplysning som kan identifisere noen" - det betyr at alle statistiske undersøkingar der det ikkje er mogleg å knyte informasjonen til ein person er heilt OK.
+**** Behandling (4.2)
+Stort sett /alt/ som skjer (inkludert makulering)
+**** Register (4.6)
+Alle samlingar av data (elektronisk, papir, ...)
+
+**** Behandlingsansvarlig (4.7)
+Alle ved Høgskulen på Vestlandet, ikkje ein enkelt person.
+NB! Ved studentprosjekt er det i ytterste konsekvens /studenten/ som er behandlinsgansvarleg.
+
+**** Databehandler (4.8)
+Dette er alltid ein /ekstern/ person/ting/app/...
+
+App-er i Canvas: det er /to/ databehandlere her (Canvas /og/ selskapet bak app-en).
+
+**** Samtykke (4.11)
+Samtykket skal vere "utvetydig". Fortalepunkt 32: det må vere ei aktiv handling for at det skal vere samtykke. "Den som tier samtykker" gjeld altså ikkje!
+
+**** Sakleg virkeområde (POL § 2)
+ Gjeld ikkje personleg aktivitet (julekortlister, sosiale medier); fortalepunkt 18.
+Dessutan trumfer alle norske lover denne lova.
+
+**** Stedlig virkeområde (POL § 4)
+ Gjeld kvar som helst i verda, så lenge behandlingsansvarlege er i Norge. Gjeld også for sal av varer til Noreg.
+
+*** *Prinsipp* for behandling
+Artikkel 83 nr 5: gebyr på inntil 20 000 000 euro for brot på artikkel 5.
+
+**** Forordning artikkel 5 nr 1 
+
+***** Lovlighet, rettferdighet og gjennomsiktighet
+Har vi heimel ein stad for det vi gjer?
+Det skal vere "likt" og rettferdighet.
+Den registrerte skal ha innsyn i alle opplysingar HVL har. Artikkel 12 nr 1: Enkelt språk, tilpassa born. POL § 5: Aldersgrense 13 år for samtykke (Facebook, Snapchat, ...). Artikkel 13 og 14: Innsynsrett (nytt i forordninga). 
+
+***** Formålsbegrensing
+Data skal bli vrukt til det formålet dei opphaveleg var samla inn til, ikkje til andre ting. Til dømes seljast vidare.
+Dette kan ein kanskje omgå ved å lage samtykket så omfattande at "alt er lov"? Nei, for prinsippet om formålsbegrensing trumfer samtykkeerklæringa. 
+
+***** Dataminimiering
+Ikkje samle inn meir enn nødvendig; "hold deg til saken!"
+
+***** Riktighet
+FS må endrast slik at fødsels- og personnummer ikkje er inngangsvariabel. 
+
+***** Lagringsbegrensning
+Data må bli fjerna etter at formålet er "avslutta".
+
+***** Integritet og fortrolighet
+Systema må vere så sikre at data ikkje kjem på avvegar.
+
+**** Forordning artikkel 5 nr 2
+Behandlingsansvarleg skal sørge for at nr 1 er oppfylt. Bevisstgjering om reglane.
+
+*** *Vilkår* for behandling
+
+**** Forordningen artikkel 6
+ 1. Samtykke
+ 2. Nødvendig for å oppfylle avtaler
+ 3. Nødvendig for å overholde rettslig forpliktelse
+ 4. Nødvendig for å verne den registrertes vitale interesser ("nødrett")
+ 5. Nødvendig i allmenhetens interesse
+ 6.
+
+
+
+**** Forordningen artikkel 9
+Mange særforhold.
+
+
+** BigBlueButton som streaming-verktøy [2019-01-15 tir.]
+Webinaret ligg [[https://recordings.rna1.blindsidenetworks.com/bn/9181d489faa3a4efcafb60f6798796cf85fc68af-1546854469670/capture/][her]].
+
+Kort om eigenskaper:
+ - Instant messaging
+ - Shared webcams
+ - Audio
+ - Emojis
+ - Breakout rooms
+ - Polling
+ - Screensharing
+ - Multi-user whiteboard
+
+Bruker WebRTC
+
+Ikkje best på "lecture capturing".
+
+
+* Emacs
+
+** Github/Magit
+[[https://www.reddit.com/r/emacs/comments/abt3dp/its_magit_john_weigley_emacssf/][Video, 6.5 minutt]]
+
+
+* JavaScript
+
+** TamperMonkey
+
+*** Nytt skript
+Når eg starter eit nytt skript så vil @match vere URL-en som dette skriptet skal køyre på.
+
+
+* Kontaktpersonar ved HVL
+
+| Program/gruppe/funksjon | Person                | Kommentar                                    |
+|-------------------------+-----------------------+----------------------------------------------|
+| SurveyXact              | Åse Neraas            | ?                                            |
+| TimeEdit                | Tone Hølleland        | Kong Arthur: Heiko Scholze / Håkon Herskedal |
+|                         | Jarko Tijssen         | Rombestilling                                |
+| Vestibylen              | vestibylen@hvl.no     | Nyhetssaker/kalenderoppføringar              |
+| Eksamenskontoret        | Bernt Humberset Hagen | WISEflow                                     |
+|                         | Gunhild Raunsgard     | Overordna                                    |
+|                         | ???                   | EVO/FIN                                      |
+|                         | ???                   | EVO/FLKI                                     |
+|                         | ???                   | EVO/FHS                                      |
+|                         | ???                   | EVO/FØS                                      |
+
+
+* MySQL
+
+** Brukarnamn/passord
+root/Kalv3hag3n
+
+
+* Diverse
+
+** Literate programming i Emacs
+Start med ein SRC-blokk (snarveg: *<sTAB*), og fyll ut med "python :results output" for å få svaret rett under kodeblokken
+
+ #+BEGIN_SRC python :results output
+import sys
+print(sys.version)
+streng = "Eining for utvikling av undervising og læring"
+print(len(streng))
+
+ #+END_SRC
+
+ #+RESULTS:
+ : 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:59:51) [MSC v.1914 64 bit (AMD64)]
+ : 45
+
+Her er ein navngitt kodeblokk for å prøve ut om eg kan vise til ting utanfor blokka:
+
+#+NAME: aldersliste
+| Namn          |   År |
+|---------------+------|
+| Aasmund       | 1963 |
+| Johannes      | 1992 |
+| Andreas       | 1995 |
+| Bjørg Kristin | 1961 |
+
+Det eg må hugse er å oppgi variabelen som "inndata". Dette er ikkje nødvendig i Jupyter.
+
+#+BEGIN_SRC python :results output :var liste = aldersliste :exports both
+for i in liste:
+    print(i[0]+': '+str(2018-int(i[1])))
+
+#+END_SRC
+
+#+RESULTS:
+: Aasmund: 55
+: Johannes: 26
+: Andreas: 23
+: Bjørg Kristin: 57

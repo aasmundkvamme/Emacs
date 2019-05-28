@@ -1,0 +1,36 @@
+* FERDIG Slå saman subtrær <2019-05-10 fr.>
+Korleis kan eg slå saman to subtrær på same nivå?
+Det bør eg kanskje gjere med Refile (C-c C-w)?
+* FERDIG Helm <2019-05-13 må.>
+Les grundig om Helm og korleis eg kan bruke den
+* 2019
+** 2019-05 mai
+*** 2019-05-10 fredag
+* VENTER Lese Outlook frå Emacs <2019-05-12 søn.>
+Kan eg laste data frå Outlook (kalenderen) til Emacs?
+* FERDIG Analytics beta <2019-05-13 må.>
+Les om [[https://community.canvaslms.com/docs/DOC-15878-analytics-beta-table-of-contents][Analytics beta]] i Canvas
+* VENTER Kontroll over vindu Emacs <2019-05-12 sø.>
+Korleis kan eg sikre at ein 'split' er horisontal (vindauge attmed kvarandre) og ikkje vertikal (vindauge under kvarandre)?
+* FERDIG Gudstenester i påsken <2019-05-13 må.>
+Starte på brev til biskopen. Moment:
+ - ønsker eit byggande fellesskap
+ - demotiverande at det er veldig få
+ - burde vere eit godt middel for å auke samarbeid med nabomenigheter
+* FERDIG Bernt om 3. juni <2019-05-21 tir.>
+Kan Bernt vere med meg på møte med polakkane 3. juni (e-post frå Ove Jan)
+* FERDIG Nummerert liste org mode <2019-05-14 tir.>
+Kan eg endre teiknet i nummererte lister i org mode? Helst a) b) ...
+* FERDIG Timeliste Caspar <2019-05-14 ty.>
+* FERDIG Feltarbeid <2019-05-16 to.>                                 :BYG102:
+Sjekk samanliknin av to standardavvik når det ikkje er målingar som grunnlag (null frihetsgrader ...)
+* FERDIG Filter i Agenda <2019-05-22 ons.>
+Korleis vise forelda TODO?
+* FERDIG Ring murer <2019-05-21 tir.>
+* FERDIG Skjema for K2 <2019-05-22 ons.>
+Les Knut sine dokument og rediger
+* FERDIG Les e-post frå Gaute <2019-05-22 on.>
+* FERDIG Tangenten 2/2017 <2019-05-23 to.>
+Legg 2/2017 på nettet
+* TODO Installere GIThub og Magit <2019-05-28 ty.>
+* FERDIG Brev til nominasjonskomiteen <2019-05-27 man.>

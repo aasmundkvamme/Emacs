@@ -1,0 +1,1036 @@
+
+* Administrasjon
+
+** TODO Difi-kurs i UU <2019-05-29 ons.>
+ Korleis importere dette til Canvas(epost frå David [2019-05-23 to.])
+
+
+** Field Admin UI
+E-post [2019-05-24 fr.]
+
+Summary: We have updated the support Field Admin UI and want you to start using the new Field Admin UI. We will turn off the legacy support UI in May 2020.
+
+Hi there!
+We are happy to announce that the Field Admin UI in the support administration console has been updated, refreshed, and revitalized!  This new UI will help you focus on the features that are more important to managing support ticket workflow, such as:
+
+- Easier Ticket escalations
+- Define and modify field admins
+- Better UI layout and user experience
+- Improved overall support workflow
+- Easy access to reports
+
+On June 3rd, 2019, we will turn this on in the new support console to give you access to the new UI to manage the support workflow. You will have the option to go back to the old UI if you are not completely ready to switch over to the new interface. We ask that you take some time to go into the new user interface and familiarize yourself with the layout and features. In May of 2020 we will completely turn off the existing user interface. We want to make sure there is ample time for you and your support team to move to the new interface and become comfortable with the layout.
+
+We will also provide access to updated guides and support materials on the new UI available on June 3rd, 2019.
+
+
+** FERDIG Tre eksterne <2019-05-28 tir.>
+ Paola Valero, paola.valero@mnd.su.se [ekte ekstern] 
+ Anne Birgitte Fyhn, anne.fyhn@uit.no [Feide?]
+ Tod Shockey, todshockey@gmail.com [ekte ekstern]
+
+Send melding om pålogging (og endre passord)
+
+* Registrering av brukarar
+
+** 2019
+
+*** Mai
+
+**** [2019-05-27 man.] Tre eksterne (phd908)
+hvl190527-p1-akv,paola.valero@mnd.su.se,Paola,Valera,paola.valero@mnd.su.se,active,canvas,mandag42
+hvl190527-p2-akv,todshockey@gmail.com,Tod,Shockey,todshockey@gmail.com,active,canvas,mandag42
+hvl190528-p3-akv,abf000@uit.no,Anne Birgitte,Fyhn,anne.fyhn@uit.no,active
+
+**** [2019-05-28 tir.] Ein (SSB801)
+hvl190528-p1-akv,xxx@usn.no,Magnhild,Selås,magnhild.selas@uia.no,active
+
+** TODO Ekstern USN <2019-05-28 tir.>
+ magnhild.selas@uia.no
+
+
+* Pureservice-saker
+
+** Speedgrader [2/2]
+ - [X] Manglande merkepenn
+ - [X] Rart teikn ved merkepenn
+
+
+
+** Lenker frå OneDrive [/]
+ - [ ] Sjekk med Meinrad Pohl om han har gitt rette løyver på videoklippet [[https://hvl365-my.sharepoint.com/personal/mpo_hvl_no/Documents/Folkevandringene.mp4][video: folkevandringene]]
+
+
+
+* Grupper og innleveringar
+** Oversikt
+Her samler eg tanker omkring "Innleveringar", særleg med fokus på "Grupper"
+** Testemne
+Fylle dette med studentar, og prøve ut ulike kombinasjonar:
+ 1. Melde alle inn i grupper
+ 2. Tilordne oppgåva berre til grupper
+ 3. Bytte medlem i grupper etter innlevering
+ 4. Melde seg inn i gruppe etter innlevering
+
+** Ulike vanskelege scenarier (bytte av grupper og liknande)
+*** Melde seg inn i gruppe etter innlevering, men før tilbakemelding
+
+**** Situasjon
+Test02 melder seg inn i ei gruppe (Innlevering nr 1-2), og leverer ei fil. Før lærar får gitt tilbakemelding melder Test01 seg også inn i gruppa.
+
+**** Konsekvens
+Test01 får tydeleg melding om "Ikkje levert", men kan (i karakteroversikta) sjå kommentaren som er gitt i høgre felt, og får vite karakteren som er gitt til gruppa. Men får ikkje sjå kommentarane i dokumentet.
+Test02 har det berre bra, og får tilbakemelding på innleveringa.
+
+*** Skifte gruppe etter at tilbakemelding er gitt (første tilfelle: du har ei tilbakemelding frå den første gruppa)
+
+**** Situasjon 1
+Test01 (som ikkje hadde nokon tilbakemelding) har meldt seg inn i ei anna gruppe, og levert. No melder Test02 (som hadde tilbakemelding frå ei gruppe) seg over i denne gruppa.
+
+**** Konsekvens 1
+No ser det i SpeedGrader ut som om det /ikkje er levert noko for gruppa/. Men lærar kan laste ned innleveringane, og dei ligg i gruppa sitt filarkiv (men sjølvsagt ikkje kommentert). 
+
+**** Situasjon 2
+Test01 og Test02 er meldt inn i same gruppe, og har fått tilbakemelding. Så melder Test01 seg over i ei anna gruppe, og får tilbakemelding, og så melder Test03 seg inn i den nye gruppa.
+
+**** Konsekvens 2
+Test01 får med seg karakteren og innleveringa (med kommentarar) over til ny gruppe. Når Test03 
+
+*** Skifte gruppe etter at tilbakemelding er gitt (andre tilfelle: du har inga tilbakemelding frå den første gruppa)
+
+**** Situasjon
+Test01 (som ikkje hadde fått tilbakemelding frå Gruppe 2) melder overgang til ei anna gruppe.
+
+**** Konsekvens
+Test01 får med seg karakteren og kommentaren frå førre gruppe. Karakteren vert også foreslått som karakter for den nye innleveringa.
+
+*** Melde seg inn i gruppe etter at du har levert som åleineperson
+
+**** Situasjon
+Test03 leverer åleine på Innlevering 4. Etter at tilbakemeldingar er gitt melder ho seg inn i gruppe 4:1
+
+**** Konsekvens
+Test03 si innlevering overstyrer den gruppe 4:1 alt hadde levert. [Karakter også???]
+
+*** Levere noko etter at du har meldt deg inn i gruppa (og etter at resten av gruppa har levert noko)
+
+**** Situasjon
+Test01 melder seg inn i ei gruppe, og leverer. Før tilbakmelding melder så Test02 seg inn i same gruppa, og leverer noko. 
+
+**** Konsekvens 
+Dette går heilt fint; Test02 si innlevering er den som får kommentarar og karakter, og både Test01 og Test02 ser dette. NB! Begge innleveringane ligg i gruppa si "Filer"-mappe.
+
+**** Situasjon
+Test01 byter no gruppe. Då vert for det første /ikkje/ den innleverte fila hans med over. Han får med seg Test02 si innleverte fil, og karakteren og kommentaren til denne. Han kan skrive ein ny kommentar, som lærar ser i SpeedGrader, men det vert ikkje registrert nokon innlevert fil i SpeedGrader. NB! Den aller første fila Test01 leverte ligg no som "Ikkje sist leverte fil". Lærar kan kommentere den, men den er ikkje registrert som innlevert til Innlevering 3, så studenten ser aldri desse kommentarane ...
+
+*** Tildele eit arbeidskrav til nokre få
+
+**** Situasjon
+Du vil tvinge studentane til å arbeide i grupper.
+
+**** Konsekvens
+Du må /manuelt/ tildele til ei og ei gruppe i det gruppesettet du har valt; dette kan bli veldig mykje trykking dersom det er mange grupper.
+
+**** Situasjon
+Du har /meir enn fem/ grupper, og vil tildele til gruppe nr seks (eller større nummer)
+
+**** Konsekvens
+Du ser ikkje gruppa i lista, og må skrive inn gruppenamnet
+
+** Ulike scenarier i samband med kommentarar til studentar
+
+*** Bjella slått av, skriv kommentarar
+Her er situasjonen at studentane oppfører seg "pent"; dei melder seg inn i ei gruppe og /vert i den gruppa/.
+**** Situasjon 1:
+Trykker "Send". 
+
+**** Konsekvens 1:
+Når eg slår av bjella vert kommentaren synleg
+
+**** Situasjon 2:
+Trykker /ikkje/ "Send", og får melding om at kommentaren er autolagra
+
+**** Konsekvens 2:
+Når eg slår av bjella vert ikkje kommentaren synleg for studentane, men når eg trykker "Send" vert den synleg for alle i gruppa.
+
+*** Skriv kommentar etter at nokon har meldt seg inn i gruppa
+
+
+* SpeedGrader
+
+** Zoom på PDF
+Meldt av Arthur Uno Rognmo via David Rene <2019-04-12 fre.>:
+Zoom i SpeedGrader oppfører seg rart; i eitt [[https://hvl.instructure.com/courses/6304/gradebook/speed_grader?assignment_id=13826&student_id=7887][tilfelle]] får vi ikkje zooma ut, i eit anna [[https://hvl.instructure.com/courses/6304/gradebook/speed_grader?assignment_id=12548&student_id=19994][tilfelle]] får vi ikkje zooma godt nok inn. I begge tilfeller er det betre kontroll over zoom når vi laster ned fila.
+
+** Manglande merkepenn og rart merke ved godkjenning <2019-04-25 tor.>
+
+*** Problemstilling 1
+i emne Praksisstudier – felles alle praksiser Haugesund – T 3 – eks Pasientfokusoppgave – der er det merka ein blyant som eg før kunne bruke, og velge kva farge eg ville – for å merke ord / setning i oppgåvene – og med felt for merknad.
+  Nå er den blyantfunksjonen ute av drift. Har høyrt at andre kollegaer og har same erfaring
+
+*** Løysing 1
+Dette har med nettlesar å gjere, skift frå IE til Chrome
+
+*** Problemstilling 2
+ved godkjenning på oppgåver I Canvas kjem det grøn hake ved gjennomgang/godkjent – men diverre ikkje for alle. Har nokre studentar denne grøne haka ikkje vil slå ut på …" I same emne Praksisstudier – felles alle praksiser Haugesund – T 3 Veiledningssituasjon 1 – er det eit døme på dette – Narges Meriem Mohammad
+
+*** Løysing 2
+Studenten har levert på nytt etter at godkjenning vart gitt, og dermed kjem det ein oransje sirkel i SpeedGrader. Det er ikkje ein feil, meir eit utslag av dårleg programmering.
+
+
+* Gjeremål.
+** Endringsønske [0/1]
+ - [ ] Er det mogleg å få versjonering av filer? (Som vi hadde i itslearning ...)
+ - [ ] Kan brukaren få et merke som viser "Sist besøkt?" for alle element?
+ - [ ] Kan vi gå rett inn i redigering når vi oppretter et nytt element?
+ - [ ] Liste grupper som grupper og ikkje som enkeltpersonar?
+ - [ ] "Upload failed" når dei leverer zip-filer
+** Språk [/]
+ - [ ] Meld inn "Juster karakterar" (Nynorsk) og "Resultatkarakter" (Bokmål) 
+** Python-program
+*** Enkeltstudent
+Eit lite skript som henter ut alle opplysingar om ein enkelt student, slik at eg slepp å ta ut ein provisioning report (eller fylle inn alle opplysingar for hand).
+ 
+** TimeEdit
+*** [2019-02-22 fre.] Integrasjonsproblem
+ - Eg har meldt inn tre aktivitetar frå BYG119 (e-post til Heiko [2019-02-22 fre.] med svar frå han)
+ - Johan har meldt til meg ein aktivitet i BRA211 (15. mai, ID 276990, e-post [2019-02-22 fre.]), eg har bedt Mona Vestbøstad om det er andre også. 
+** Gamle
+*** DONE Sjekk manglande kommentarar i ELDHELS1006
+ Mogleg løysing:
+  1. Hent alle filane kobla mot innlevering 7779: select file_id from submission_file_fact where assignment_id = 107470000000007779;
+  2. For kvar fil prøver eg å finne alt mogleg via submission_file_fact og submission_comment_fact (også submission_fact?)
+  3. Sjekk også (litt meir kuriøst) når test- og beta-instansane vart oppdatert sist; sjekk rapporten "siste brukaraktivitet"
+
+
+
+*** DONE Sjekk nynorskfeil i Quiz ("Fjerna frå oppgåvebank ...")
+*** DONE Sjekk med Kandise om ikkje dei tre filene som UiB har tilgang til vert importert i Canvas?
+ [2018-10-05 fr.] Dette har Karianne ved UiB gjort
+*** DONE Be om tilleggsteneste frå Kong Arthur
+**** Innspel frå Aasmund
+ Kan vi i feltet under "Emneoversikt" i Canvas få opplysingar om studieprogram, rom, og om det er obligatorisk?
+
+ Ei linje ville då sjå slik ut i Timeedit:
+ <bilde> 
+
+ Og slik i Canvas:
+
+ Tys 18 sep 2018 Øving MAS100 (Allmenn maskin 18H) E252 
+
+ Der koden bak er
+
+ «Felt 1»+« »+«Felt 2»+« »+«Felt 3»+« »+«Felt 4»+« »+«Felt 5»+« »+«Felt 6»+« »+«Felt 7»
+
+ Dersom «Felt 4» (Studieprogram (Navn)) vert for langt kan ein vurdere å bruke (Studieprogram (kode) i staden for.
+**** Innspel frå studentar (Bjørnar Alvestad, ELE108 haust 2018)
+ Er det mulig å bli kvitt overflødig kopiering av timeplan fra TimeEdit i canvas?
+ Slik det er nå, så ser det ut at "Å gjøre" listen er den eneste plassen man kan få en oversikt over innleveringer o.l. Men denne listen, slik det er nå, er så og si ubrukelig ettersom den er full av forelesningstimer.
+ Det samme gjelder "Kommer snart" listen. Hvis det ikke er mulig for dere å fikse slik at forelesningstimene ikke lengre kopieres:
+ Finnes det da noen plass hvor det er mulig å hente ut denne listen i ett eller annet tekstformat (som inkluderer om oblig er levert / rettet etc.), slik at vi kunne fått laget et skikkelig program selv som fikser "Å gjøre" listen?
+
+ Det ideelle ville uansett vært å hatt én liste over innleveringer i alle fag man tar.
+
+ "Kalender" (og "Å gjøre") ser ut til å ha bra potensiale (ettersom alle obliger ser ut til å komme der).Hvis man hadde fjernet koblingen mot TimeEdit, så tror jeg livet hadde blitt mye lettere for mange studenter.Eller i minstefall gjøre at obligene for fagene og TimeEdit dupliseringen kommer som forskjellige emner på kalenderen, slik at elevene selv kan fjerne TimeEdit duplikatene.
+ Slik vi gjør det nå, så tar de fleste elevene jeg har snakket med og fører egen liste over obligene for å klare å ha en oversikt.
+
+ Et annet problem er at vi ikke har klart å finne en oversikt hvor vi lett kan se om det er kommet nye dokumenter ut.Å eksportere hele emnet for så å sammenligne mot filene i forrige eksport med et fil-sammenlignings program, eller å finkjemme siden for alle emnene hver dag er inefektivt og irriterende.Men kanskje det finnes en funksjon som på ItsLearning hvor man kan se en oversikt over alle filer, og hvilke som man ikke har sett på enda?
+
+
+*** DONE Kva er galt med import av karakterar?
+ Det ser ut som om vi ikkje får lest inn "nye" karakterar i ei oppgåve etter at innleveringsfristen er gått ut?
+*** DONE Sjekk med Iana kvifor kontorolla "Informasjonskonsulent" ikkje er redigerbar!
+*** DONE Håvard om korleis konte-studentar vert registrert?
+*** DONE Sjekk med Brit om vi skal evaluer innføring og bruk av Canvas ved FIN
+ Er dette interessant for FIN?
+*** DONE Planlegge samlingar i Fyrrommet
+ Andrea har reservert tre datoar. Når vi har bestemt tema på den første ber vi om å få det i kalenderen.
+ Framlegg til tema:
+  * Grupper (gjentaking?)
+  * Innsamling av data via Quiz (frarådes!)
+*** DONE Sjekk velkomst-epost
+**** Første forsøk 
+ Laga manuelt; kryss av for send e-post. *Resultat:* alt OK. Får laga passord ved velkomst, og får endra passordet.
+**** Andre forsøk
+ Laga manuelt; kryss /ikkje/ av for send e-post. *Resultat:* alt OK. Får e-post om å endre passordet, og får endra det seinare sjølv.
+**** Tredje forsøk
+ Oppretter via SIS-import. Ingen e-post, og genererer heller ikkje passord via feltet "authentication-provider". *Resultat:* Fiasko. E-post om at passordet skulle vore laga av administrator.
+**** Fjerde forsøk
+ Oppretter via SIS-impot, med passord generert av "authentication_provider". *Resultat:* alt OK. Får logga meg inn med passordet, og får lov til å endre passord seinare.
+*** DONE Erfaringsmelding om Quiz til å samle inn data
+ Data frå ein Quiz vert herpa i CSV-fila. Det er tre ting:
+ 1. Linjeskift i spørsmåla (og svara) vert til linjeskift i fila. Dette øydelegg den fine strukturen, og vi må (manuelt?!!??) fjerne desse før vi kan trekke ut data.
+ 2. CSV-filene er (sjølvsagt) kommaseparert, og Excel tolker ikkje desse rett (vi må mekke for å endre komma til semikolon, og komma mellom hermeteikn skal *ikkje* bli skifta ut).
+ 3. UTF-8: kodinga her vert fort øydelagt i Excel.
+
+*** DONE Rapport over emne og brukarar H2017, V2018, H2018
+
+ | Semester (samla) | Semester (spesifikke) | Emne (Samla) | Emne (spesifikke) |
+ | H2017            |                       |           34 |                   |
+ |                  | H2017                 |              |                24 |
+ |                  | H2017-H2018           |              |                 6 |
+ |                  | H2017-H2019           |              |                 2 |
+ |                  | H2017-V2019           |              |                 1 |
+ |                  | H2017-V2021           |              |                 1 |
+ | V2018            |                       |           93 |                   |
+ |                  | V2018                 |              |                59 |
+ |                  | V2018-H2018           |              |                23 |
+ |                  | V2018-V2019           |              |                 9 |
+ |                  | V2018-H2019           |              |                 1 |
+ |                  | V2018-H2021           |              |                 1 |
+ | H2018            |                       |         2007 |                   |
+ |                  | H2018                 |              |              1563 |
+ |                  | H2018-V2019           |              |               426 |
+ |                  | H2018-H2019           |              |                 9 |
+ |                  | H2018-H2020           |              |                 5 |
+ |                  | H2018-H2022           |              |                 4 |
+
+*** DONE Organisere overnatting i London
+ Ber alle om å sei *når* dei kjem og reiser, og om det er av interesse å sjå på Airbnb 
+
+*** DONE Fjern muligheten for at studentassistent kan fjerne personar frå emnet
+*** DONE Korleis sende mange nesten like e-postar frå Word?
+ Løysing: 
+ 1. Lag eit Word-dokument som inneheld all tekst
+ 2. Definer eit rekneark som "datakjelde"
+
+*** DONE Lag "reglement" for å legge inn nye brukarar
+ Har laga ei [[https://hvl365-my.sharepoint.com/:w:/g/personal/akv_hvl_no/EX_P6byEssVPv---9ittBP0Blwg4Gmw50QCCM9zFiisZFA?e=gQtCmC][Word-fil]] om dette.
+
+
+* Språk
+** Nynorsk hjå Instructure
+Det er tydeleg at nynorsk ikkje er støtta godt nok.
+*** Quizar.Neste 
+Her kjenner systemet ikkje att komma som desimalskiljeteikn. Når *emnet* er satt til "Bokmål" så vert dette reflektert også hos den enkelte student, uavhengig av språkval hos studenten (heldigvis).
+*** Transifex-filer
+Sjekk med Kandise om ikkje dei tre filene som UiB har tilgang til vert importert i Canvas? 
+*** Vurdering/Tilbakemelding?
+Menyvalet "Grading" er omsett til "Karakterer" (bokmål, av Instructure) og "Karakterar" (nynorsk, av UiB). Dette er ikkje det beste norske ordet for denne funksjonen, og "Vurderinger"/"Tilbakemeldinger" har vore lufta som alternativ. Begge orda har sine fordelar og ulemper:
+ * "Vurdering" er ofte brukt i samband med eksamen, og det er ikkje sikkert det er greitt å la ordet ha to ulike tydingar. Samstundes er det jo nettopp det ein gjer: ei innlevert oppgåve vert vurdert, og vurderinga vert meldt tilbake til studenten. 
+ * "Tilbakemelding" er kanskje litt for muntleg? Samstundes er det jo nettopp det ein gjer: vi melder tilbake til studenten.
+
+Eit anna aspekt er at menyvalet «Karakterer» ofte vert brukt for å administrere dei obligatoriske arbeidskrava i eit emne, så kanskje ordet «Arbeidskrav» eller «Obligatoriske oppgaver» kunne vore brukt?
+** Nynorsk hjå UiB
+Her er ein del tekststrengar som eg bør melde inn til UiB:
+ * "Gruppesett" - det er ein del rot her.
+ * "Lat opp data" - import til Karakterar, det bør vere "Last opp data"
+ * "Legg til ei ny seksjon" - det bør vere "Legg til ein ny seksjon"
+
+   
+* Nyttige kodar
+
+** SIS-ID for kontoar (Fakultet og institutt)
+| Fakultet | Institutt  | SIS-ID        | Instituttnamn                                     |
+|----------+------------+---------------+---------------------------------------------------|
+| FHS      | Fakultetet | ST_0203100000 |                                                   |
+|          | IHF        | ST_0203100200 |                                                   |
+|          | IHO        | ST_0203100100 |                                                   |
+|          | IVD        | ST_0203100300 |                                                   |
+| FIN      | Fakultetet | ST_0203200000 |                                                   |
+|          | DU         | ST_0203200800 | Dykkarutdanninga                                  |
+|          | IB         | ST_0203200200 | Institutt for byggfag                             |
+|          | IBH        | ST_0203200700 | Institutt for brannsikkerheit og HMS              |
+|          | IBK        | ST_0203200500 | Institutt for bio- og kjemiingeniørfag            |
+|          | IDR        | ST_0203200400 | Institutt for data- og realfag                    |
+|          | IE         | ST_0203200600 | Institutt for elektrofag                          |
+|          | IMN        | ST_0203200300 | Institutt for miljø- og naturvitskap              |
+|          | IMM        | ST_0203200100 | Institutt for maskin- og marinfag                 |
+|          | MIRU       | ST_0203200900 | Mohnsenteret for innovasjon og regional utvikling |
+| FLKI     | Fakultetet | ST_0203300000 |                                                   |
+|          | IPRS       | ST_0203300200 |                                                   |
+|          | IIKN       | ST_0203300100 |                                                   |
+|          | IKUN (IK)  | ST_0203300400 |                                                   |
+|          | ISLMT      | ST_0203300300 |                                                   |
+| FØS      | Fakultetet | ST_0203400000 |                                                   |
+|          | IMS        | ST_0203400100 |                                                   |
+|          | ISV        | ST_0203400300 |                                                   |
+|          | IØA        | ST_0203400200 |                                                   |
+
+
+** API
+
+
+** Echo
+| Forbrukarnøkkel   | e867279e-6bef-485b-87e4-69ebf6b8ff88                            |
+| Delt hemmelegheit | 45bd8f28-b95e-448f-b8f3-6c6c34188d01                            |
+| Launch URL:       | https://echo360.org.uk/lti/56343606-8b02-4ad1-976c-d5ca4b52b4d3 |
+
+
+** Ulike LTI
+*** Office 365
+No står det: https://office365-dub-prod.instructure.com/lti/course-navigation
+
+I følge Svein-Ove Urdal bør det stå https://hvl365.onmicrosoft.com
+
+
+** Canvas Data Portal
+
+CD_API_KEY: 07092e5797021d5d490502aba77f64d73113e906
+CD_API_SECRET: 907773baae4d7188e848e3d5b8dc5a671e621d7b
+*Synkronisering* (gjer dette gjerne kvar dag): 'canvasDataCli sync -c .\config.js'
+*Utpakking* (av ein eller fleire tabelar): 'canvasDataCli unpack -c .\config.js -f user_dim account_dim'
+
+*** For å lese slike filer inn i SQLite
+1. Start SQLite [sqlite3 database]
+2. Sett modus "csv" [.mode csv]
+3. Sett separator til tabulator [.separator "\t"]
+4. Les inn fila [.import filnamn tabellnamn]
+
+
+*** Rutine for å lese statistikk
+Vi kan oppdatere våre lokale filer kvar dag med kommandoen 'canvasDataCli sync -c .\config.js'. Dette tar eit par minutt, og kan gå i bakgrunnen. Ved behov kan vi så pakke ut ei og ei (eller fleire); desse vert lagra (inntil vidare) i C:/Users/Aasmund/unpackedfiles. Det er ingen vits i å lese dei inn i ein eksisterande SQLite-fil, for dei legg seg då berre dobbelt opp med dei gamle. Det enklaste er å opprette ei ny SQLite-base for dei nye filane, eller slette den gamle tabellen og lese inn den nye kvar gang. Det siste er kanskje det beste, for då kan eg endre berre den tabellen eg treng.
+
+Korleis oppretter vi ein ny tabell gjennom Python? Eg skal køyre desse sqlite3-kommandoane:
+ sqlite3 database
+ .mode csv
+ .separator "\t"
+ .import C:/Users/Aasmund/unpackedFiles/filnamn tabellnamn
+ .import C:/Users/akv/unpackedFiles/filnamn tabellnamn
+
+[2018-11-21 on.]Det ser ikkje ut til at dette er råd gjennom Python; eg må altså opprette databasen på ein annan måte. Eg kan alltid gjere dette i Emacs (M-x sql-sqlite), eller i PowerShell.
+
+
+*** Python for å køyre SQLite (innleiing)
+# Sjekk om eg er heime eller på jobb (dvs. finn namnet på brukaren av PC-en eg køyrer dette programmet på)
+from os import getcwd
+sti = 'C://' + getcwd().split('\\')[2] + '/unpackedFiles/'
+    
+import sqlite3
+import re                  # for å kunne køyre REGEXP _etter_ at eg har lese frå tabellen
+conn = sqlite3.connect(sti + 'canvas')
+c = conn.cursor()
+
+
+*** Alle dimensjonane
+
+| Dimension                                 | Forklaring    | Tabellnamn  | Kommentar                                               |
+|-------------------------------------------+---------------+-------------+---------------------------------------------------------|
+| account                                   |               |             |                                                         |
+| assignment                                | Innleveringar | innlevering |                                                         |
+| assignment_group                          |               |             |                                                         |
+| assignment_group_rule                     |               |             |                                                         |
+| assignment_group_score                    |               |             |                                                         |
+| assignment_override                       |               |             |                                                         |
+| assignment_override_user                  |               |             |                                                         |
+| assignment_rule                           |               |             |                                                         |
+| communication_channel                     |               |             |                                                         |
+| conference                                |               |             |                                                         |
+| conference_participant                    |               |             |                                                         |
+| conversation                              |               |             |                                                         |
+| conversation_message                      |               |             |                                                         |
+| course                                    |               | kurs        |                                                         |
+| course_score                              |               |             |                                                         |
+| course_section                            |               |             |                                                         |
+| course_ui_canvas_navigation               |               |             |                                                         |
+| course_ui_navigation_item                 |               |             |                                                         |
+| discussion_entry                          |               |             |                                                         |
+| discussion_topic                          |               |             |                                                         |
+| enrollment                                |               | medlemskap  |                                                         |
+| enrollment_rollup                         |               |             |                                                         |
+| enrollment_term                           |               |             |                                                         |
+| external_tool_activation                  |               |             |                                                         |
+| file                                      |               | fil         |                                                         |
+| grading_period                            |               |             |                                                         |
+| grading_period_group                      |               |             |                                                         |
+| grading_period_score                      |               |             |                                                         |
+| group                                     |               |             |                                                         |
+| group_membership                          |               |             |                                                         |
+| module_completion_requirement             |               |             |                                                         |
+| module                                    |               |             |                                                         |
+| module_item                               |               |             |                                                         |
+| module_prerequisite                       |               |             |                                                         |
+| module_progression_completion_requirement |               |             |                                                         |
+| module_progression                        |               |             |                                                         |
+| pseudonym                                 |               |             |                                                         |
+| quiz                                      |               | quiz        |                                                         |
+| quiz_question_answer                      |               |             |                                                         |
+| quiz_question                             |               | quizoppgave |                                                         |
+| quiz_question_group                       |               |             |                                                         |
+| quiz_submission                           |               |             |                                                         |
+| quiz_submission_historical                |               |             |                                                         |
+| role                                      |               |             |                                                         |
+| submission_comment                        |               |             |                                                         |
+| submission                                |               | innlevering | deleted, unsubmitted, submitted, graded, pending_review |
+| user                                      |               |             |                                                         |
+| wiki                                      |               |             |                                                         |
+| wiki_page                                 |               |             |                                                         |
+|                                           |               |             |                                                         |
+
+
+** FS
+
+*** Hente eit heilt kull
+For å liste *alle* i eit kull (ikkje berre dei som har meldt seg til undervising i eit emne):
+- Programstudent -> Rapport -> Studenter i studiekull (FS301.010)
+
+
+** ceres
+WinSCP
+Vertsnamn: w3prod-datasync02.uio.no
+Brukarnamn: ceres
+Passord: cein7kaiJa
+
+
+** Lenker til hjelpedokument
+
+*** Legge til personar i emnet
+https://hvl365-my.sharepoint.com/:b:/g/personal/akv_hvl_no/EVigGWkz8JlGoyn0RqZM0K4BLJl_bC7dnA-MK8W44uHFsQ?e=ffAxUC
+
+*** Logge på med Feide frå andre institusjonar
+https://hvl365-my.sharepoint.com/:b:/g/personal/akv_hvl_no/ERV0hbVsOWxPoM1TWRIWl_YBe1P2FWv5Qdp97DfZAOXeuQ?e=KhHndB
+
+*** Endre språkinnstillingar og passord for eksterne (engelsk)
+https://hvl365-my.sharepoint.com/:b:/g/personal/akv_hvl_no/ESAVsOGJ9yxCj5NRgfS8w2YBpck4OoJiIYlOxkmrP0fM8w?e=DNcPdU
+
+
+* Rutinar
+
+** Legge inn brukarar
+Sjå detaljert rettleiing [[https://hvl365-my.sharepoint.com/:w:/g/personal/akv_hvl_no/EX_P6byEssVPv---9ittBP0Blwg4Gmw50QCCM9zFiisZFA?e=82inUf][her]].
+
+** Rydde opp i brukarar som har to roller (ofte er den eine sletta, og hindrer den andre)
+1. Ta ut ein rapport med sletta brukarar
+2. Finn den personen som er sletta
+3. Endre "deleted" til "active"
+   1. Kanskje må du endre påloggingsid; sett den i så fall til "ikkjeibrukx@hvl.no" (x = 1,2,3 dersom det er fleire samtidig)
+4. Importer med SIS-import
+5. Rydd i pålogginga, slik at den pålogginga som er i bruk vert kobla til SIS-ID (du må kanskje slå saman to brukarar først))
+6. Slett den andre pålogginga
+7. 
+8. Til seinare: får Ingrid Gilje Heiberg trøbbel, når ho har både student. og tilsettrolle i FS?
+1553,fs:203:243972,,,132401@hvl.no,Ingrid Gilje,Heiberg,Ingrid Gilje Heiberg,"Heiberg, Ingrid Gilje",,ingrid.heiberg@hvl.no,active,true
+
+** Melde saker oppover i systemet
+1) Logg deg på https://hvl.instructure.com/login/canvas med
+   *Brukarnamn* canvas@hvl.no
+   *Passord* hvl2017no
+2) Opne ei ny fane i nettlesaren, og gå til =cases.canvaslms.com=
+
+
+* Webinar
+
+** SpeedGrader og grupper <2018-10-31 ons.>
+
+*** Oversikt over innhaldet i webinaret
+1. Opprette ei innlevering
+2. Lage eit gruppesett
+3. Resten av detaljane rundt innlevering
+4. Vise korleis ei innlevering ser ut frå studenten si side
+5. Vise korleis innlevering ser ut frå læraren si side
+*** Gode innspel frå USN sine webinar
+Innspel frå det første [[https://usn.instructure.com/courses/12791/pages/webinar-08-dot-09-dot-2017-oppgaver-innlevering-og-retting-med-speedgrader-i-canvas][Webinar ved USN]] (september 2017):
+ * Bruk tannhjulet i SpeedGrader til å velje korleis du sorterer studentane
+ * Gå /først/ gjennom tvungne grupper, og /så/ gjennom frivillige grupper
+ * Start webinaret med ein plakat som viser kva vi skal gå gjennom
+ * Sjekk ut Gruppeleiar si rolle før seminaret.
+ * Nevn Internet Explorer/Edge som /dårlege/ nettlesarar
+ * Studentane kan levere mange ganger, men dei kan berre sjå den siste. Lærar kan sjå alle.
+
+Innspel frå eit anna [[https://usn.instructure.com/courses/12791/pages/webinar-15-dot-03-dot-2018-innleveringer-og-grupper-i-canvas][Webinar ved USN]] (15. mars 2018)
+ * /Ikkje/ ver så uforberedt som denne føredragshaldaren ("Søren heller, dette skulle jo fungere!", og ho "oppdager" ting undervegs)
+ * Ho er litt streng i stemma ...
+ * Veldig bra at ulike personar har ulike innfallsvinklar (september hadde poeng, mars har ikkje poeng)
+ * Ta med poenget med egenpåmelding, og at denne må slåes av ved ein gitt dato
+ * Kv gjer vi med oppgåver som ikkje er av "standardtypen"? Til dømes: alle studentane skal kunne sjå dei andre studentane sine innleveringar. 
+
+Innspel frå eit tredje [[https://mediasite.usn.no/Mediasite/Play/cc441c1ec12a45dba3670f1649186dc71d?playFrom=2294640&autoStart=false][Webinar ved USN]] (april 2018, om å halde Webinar)
+ * Kan vi bruke avstemming ("poll") undervegs? Mellom anna til å sjekke deltakarane sitt erfaringsnivå.
+
+*** Manus for webinar
+1. Starte med ein plakat som viser det vi skal snakke om. Medan den står på skjermen presenterer Aasmund kort det faglege målet med økta, og Jan Erik snakker om opplegget og bruken av Connect. 
+2. Gjennomgang
+   1. Opprette ei innlevering
+      1. Eg oppretter innleveringa frå ein modul. Då vert den automatisk plassert i "Oppgåver" også. Viser /kort/ korleis vi kan bruke RTE til å legge ut informasjon; mellom anna lenke til ferdige filer, eller skrive inn teksten sjølv.
+      2. Sei litt om innleveringsdetaljane, og at det er greitt å setje eitt poeng (sjølv om du ikkje nyttar poeng). Det ser så rart ut med "av 0". Vis dei ulike måtane å levere inn på, og dei ulike filtypene.
+   2. Lage eit gruppesett
+      1. Forklare kort kva eit "Gruppesett" er. Presisere at det er fullt mogleg (og sikkert veldig ofte ønskeleg) å bruke same gruppesett om att. Eventuelt kan du kopiere eit sett og gjere mindre endringar.
+      2. Problematisere "Sjølvregistrering"
+      3. Vise manuell og automatisk gruppering
+      4. Opprette n grupper no, med maksimalt m studentar i kvar gruppe
+      5. Kva gjer (gjer ikkje) "Gruppeleiar"? Svar: ingen ting anna enn at han kan rote til kven som skal vere med i gruppa. Spesielt er det /ikkje/ nødvendigvis han som leverer på vegne av gruppa.
+   3. Resten av detaljane rundt innlevering
+      1. Går gjennom innleveringsfrister, og forskjellen på "Frist" og "Tilgjengeleg til". Sei også noko om "Tildel til", og at det er viktig å /legge til/ individuelle frister. Sei også korleis ein skal gjere det dersom ein /berre/ vil ha innleveringar frå grupper. (Dersom du ikkje gjer noko så er det lov å levere individuelt, eller i grupper.)
+   4. Vise korleis ei innlevering ser ut frå studenten si side
+      1. Dersom det er "Sjølvregistrering" så må studentane bli orientert om dette. Du bør også ha ein dato for når du /stoggar/ sjølvregistreringa.
+      2. Vis korleis studenten ser kva som er levert, og tilbakemeldingane frå lærar.
+   5. Vise korleis innlevering ser ut frå læraren si side
+      1. Vis korleis ein går til SpeedGrader.
+      2. Forklar dei ulike sidene i skjermbiletet:
+	 1. Korleis ser du kven som har levert eller ikkje?
+	 2. Korleis ser du /kva/ dei har levert?
+	 3. Korleis gir du kommentarar til heile oppgåva under eitt (og litt om kladdar og "Send"-knappen).
+	 4. Korleis gir du kommentarar til spesielle ting i innleveringa (kartnål, merkepenn, frihand, ramme).
+	 5. Korleis slår du av visinga medan du arbeider med kommentarane, og korleis frigir du dei?
+	 6. Korleis kan du finne fleire innleveringar frå same student/gruppe?
+      3. Vis studenten sitt bilete ved å hoppe mellom nettlesarar. [NB! ulikt fargetema i dei to nettlesarane, slik at det vert lettare å sjå forskjell!]
+
+
+* Samskriving
+HiØ : #03669296, "When we look into it it is clear that the functionality were you can pick persons to participate from the left column and add them to the collaboration (Right column) does not work. We are actually able to make a collaboration, but the functionality to decide who the collaborators are does not work as expected."
+
+Når vi oppretter eit samarbeid går det bra, men når vi skal /redigere/ (altså deltakarane) kjem den rosa feilmeldinga opp.
+Problemet vert adressert [[https://community.canvaslms.com/thread/17495-unexpected-error-at-collaborations][her]].
+[[https://www.uis.no/article.php?articleID=99624&categoryID=11198][Arve Mellemstrand]] seier at han har ei løysing, men eg får ikkje ringt han :-(
+
+
+* Konferansar
+** Canvascon 2018 London
+*** Læringsanalyse (Claus Wang, London 181008)
+ Vi har /veldig/ mykje data om ein student [eller lærar]. Men det er slett ikkje alt av dette vi skal bruke til /læringsanalyse/.
+ "Eg er ikkje opptatt av det, men eg trur ikkje studentane er opptatt av det heller." "Vi har meir enn nok data, og vi klarer jo allikevel å måle om studentane har lært eller ikkje [ved eksamen]"
+ "Eg har rubrikker med konkrete læringsmål og knytter dette til oppgåver. Eg får dermed den oversikten eg treng over den /faglege/ tviklinga til ein student[han er åleine om det ved UiA]"
+
+ USA, 2012: Fokus på /undervisinga/ (korleis kan vi betre undervising?). Europa, 2014: Fokus på /studenten/ (utan at studenten deltar aktivt har dette inga hensikt)
+
+ Canvas: dei har rett til å bruke "user behaviour data" til å "forbedre produktet"
+
+ Før vi tar læringsanalyse i bruk må skuleeigar ha avklart:
+   * Lovleg grunn
+   * Formålsavgrensing
+   * Dataminimalitet []
+   * Datakvalitet
+   * Rettar til data
+   * Informasjonssikkerhet
+
+ Open University [i England] har laga eit slikt regelverk, til liks med mange andre [lenkesamling kjem].
+
+ Kommentarar:
+   * Vi har ikkje nødvendigvis lovhjemmel  dagens UH-lov til å samle inn data på generelt grunnlag.
+   * Det vert samla inn data over ein lav sko alt no, med dei aller beste hensikter
+   * Ved første gangs pålogging samtykker brukaren til at Instructure gjer "mange rare ting", mellom anna innsamling av data.
+
+*** Tysdag 181009
+**** Jared Stein, CEO
+***** "Nudging" students
+ Det ligg data i Canvas om kor tidleg eller seint ein student vanlegvis leverer eit arbeid. Kan vi bruke dette til å "mase" på studentar om å levere tidsnok?
+ [Dette er kanskej litt /vel/ påtrengande?]
+
+***** Tilbakemeldingar på innleveringar
+ Dette oppfordrer studenten til å levere på nytt etter tilbakemeldingar. [Det krev at læraren mestrer SpeedGrader]
+
+***** Ulike måtar å "straffe" dei som leverer for seint
+ "Automagic reducing points": trekk automatisk x % per dag etter fristen ...
+ "Non-scoring rubrics"
+
+**** Breakout 1: Big data, Little data, Cardboard box
+ "How big data influences ROI (Return on investment)"
+ The Choice Factory (Ricard Shotton)
+
+ "[[https://papers.ssrn.com/abstract=2827277][The Myth of 'Free']]" by John M Williams.
+
+ (Inntekt - Utgift)/Utgift = ROI
+ Men fokus er mykje på Utgift. 
+ Korleis unngår vi "Single Point of Failure" - system som er avhengige av den eine personen?
+ Kan vi kople informasjon frå alle datakjelder om ein student? På den måten kan vi legge til rette for at til dømes innleveringsfrister kjem på slike tidspunkt at vi får fleire til å levere inn?
+ Vi måte /kva/ vi treng før vi starter å leite etter det i "Big Data".
+ *Døme*: data viser at studentar er på mobil-app på buss/tog. Det betyr at vi kanskje burde legge til rette for at materialet er lett å laste ned/raskt å prosessere?
+
+**** Breakout 2: Digital transformation
+  * *Student Pre-arrival*: informasjon om Studentweb, Canvas, campus-info, ...
+  * *Personal Academic Tutoring*: sjekkliste for studentar som dei kan følge gjennom heile studieløpet [[https://www.pebblepad.co.uk/]]
+  * *Engaging with Academic Integrity*: ?
+  * *Lecture Capture*: Videoopptak og Whiteboard automatisk lenka inn i Canvas [her er vi foran på Whiteboard, men bak på video]
+  * *Building Canvas Modules*: [modules = emne] basert på
+    * studentane sin forventingar
+    * konsistens, brukarvennlighet
+    * [[https://canvas-guide.bham.ac.uk][eigen styleguide]]
+    * Learning Design Best Practice
+  * *Flipping the Learning*: Canvas knyter saman Kaltura, Maple TA, ...
+    * *Pre-lab*: informasjonsmateriell, ulikt lesestoff og videoar
+    * *In-lab*: arbeidsbøker 
+    * *Post-lab*: innleveringar i Canvas
+  * *International students*: Campus i Dubai (!)
+  * *Støtte*:
+    * *24/7 Canvas-støtte*
+    * *Teaching and Learning gateway* [[https://www.birmingham.ac.uk/gateway]]
+    * *Face-to-face* training
+    * *Canvas guide* [[https://canvas-guide.bham.ac.uk]]
+  * *Evaluering*: Usikre på korleis studentane opplever dette (heilt nytt frå 2017)
+
+**** Keynote speaker: Alex Beard "Natural Born Learners" 
+ Vi drøymer om ein skule på landet, med ein lærar som snakker om idear og draumar ("Carpe diem"-filmen).
+ Mange elevar/studentar slit med bakgrunnen, og at mange av jobbane vert automatisert.
+ Sør-koreansk eksamen (standardisert) med ekstreme krav og konsekvensar. "Ikkje tenk, berre gå inn i flyten."
+ Dette er ein konsekvens av eit brennande ønske om å styrke nasjonen, når dei berre har hjernekraft og lite ressursar.
+ Men dei har verdas høgaste sjølvmordsrate blant ungdom.
+
+ Sjakkturneringar der menneske /og/ maskin speler saman er ofte den beste kombinasjonen.
+
+ "Don't ask what our tools can do for us, but what we can do with our tools."
+
+ /The future of employment/ (Oxford Martin School)
+
+ "Practice makes perfect, but not new"
+ "The romance stage": to fall in love with your craft/skill/devotion, and /then/ start the 10000 hours of practice to become an expert.
+ Montessori-skulen får skryt.
+ "Passion is a driving force"
+
+ Finsk lærar: stiller spørsmål i starten av timen, og ber studentane svare via telefon. Så avslører han ikkje svaret, men ber studentane diskutere seg i mellom /kva/ dei svarte og /kvifor/. Etter ei stund ber han alle svare ein gang til. Og no har svara (svært ofte) blitt mykje meir korrekte.
+
+ "Teachers are born, not made."
+ But this has been said about doctors also. Semmelweiss' handwashing practice was ridiculed, because doctors were "born, not made". Should we apply moderne medica education to teacher education also?
+ "Great teachers /can/ be made!" But it requires love/devotion, patience, and hard work.
+
+**** Breakout 3: Future-Proof People?
+  * [X] We've got a clear vision
+  * [X] We have the tools necessary to reach that goal
+  * [ ] Are every member of our organisation working collectively towards this goal?
+ 
+ Darwin: Small, inherited variations increase the [organisations] ability to compete, survive and reproduce.
+
+ What are our "small inherited variations"?
+
+ What triggers an interest in changing? 
+  * Some are best motivated by others [but who are these others?]
+  * Demonstration trumps argument
+
+ Seven simple tips:
+ 1. Beer mats and Beach balls
+ 2. Modify training based on feedback
+ 3. Concrete examples
+ 4. Cross-account groups
+ 5. Share the timelines
+ 6. Communicate feedback
+ 7. Celebrate
+
+
+**** Breakout 4: EvaluationKIT
+ Eit evalueringsverktøy som er saumlaust integrert i Canvas (dei held mellom anna på stylesheet frå Canvas).
+ Positive sider:
+ 1. Påminning om spørjeskjema legg seg "oppå" Canvas, og tvinger studentane til å i alle fall /opne/ skjemaet. Du kan la skjemaet vere frivillig inntil ein bestemt dag, og obligatorisk etter det.
+ 2. Veldig mykje same funksjonane som SurveyXact.
+ 3. Pene rapportar
+ 4. Skal vere GDPR-sertifisert
+
+ Negative sider:
+ 1. Pris?
+
+**** Breakout 5: Designing a course
+ There is no right or wrong!
+ Function over form!
+
+ 1. Navigation
+    * Course setting (navigation menu)
+    * Modules can be both content and activity
+ 2. Consistency
+    * Terminology ("clicking on" or "navigating to"?)
+    * Layout
+ 3. Variation
+    * Use different tools
+ 4. Home Pages
+    * Should we put some guidelines on using home pages?
+    * We could think of changing the home page during the course (to focus on specific aspects of the course)
+ 5. Help!
+    * ???
+
+ Quick tips
+ 1. Announcements on the Home Page
+    * We can prepare announcements that will pop up at given times
+ 2. Files
+    * 25 MB max. file size (the same as most email attachements)
+    * Consider the file type (Word, PDF, ...) and how this appears on the mobile app (reactive content)
+    * Canvas-created content adhers to UU settings
+    * Click in the file name before saving the page, and check the options there.
+ 3. Images as links
+    * Ctrl-K when the image is selected gives you options
+ 4. Student View
+ 5. Modules on Mobile
+    * Text headers (with emojies ...) turns out really nice on mobile devices.
+
+** Matematikk-MOOC 190109 UiS, Drammen
+
+*** Generell oversikt ved Tore (UiO)/Jan Erik (HVL)/Christian (USN)
+ - *Tampermonkey* er ein plugin i nettlesaren, difor kan den brukast til /personlege/ tilpassingar og utvikling
+ - *opplasta script* er det beste for mange brukarar [det er dette Terje gjer], men det er alltid ein fare for at dei vert "øydelagt" i oppdateringar
+ - *eigne program* er best for admin-verktøy
+ - *LTI* sjølvstendige program som ikkje risikerer (i så stor grad) å bli øydelagt av oppdateringar
+ - *kortare ventetid* utviklingssyklusen i Instructure er sein
+ - *norske løysingar* som ikkje er prioritert av Instructure
+ - *rapportar* vi ønsker ofte betre rapportar
+ - *endra utsjånad* til dømes progresjonsbar
+ - *ny funksjonalitet* som kan vere
+   - skjule tidsstempel
+   - avkryssing under "Innstillinger" for kva JavaScript som skal vere med (gjerne med tooltips)
+   - opne "Flere valg" som standard
+ - *sikkerhet* dersom alle script ligg berre på github så kan ein enkelt person øydelegge for andre.
+ - *rapportering* om kvar ulike script ligg, og kor mykje dei vert brukt (automatiske!)
+
+*** Unit v/Elisabeth Guillot
+ Mange gode innspel frå salen, Unit har veldig lyst til å hjelpe til med 
+
+*** Jelena, UiT
+ - *Vedlikehold* av koden frå Instructure
+ - *Vidareutvikling* Innomhus eller kjøpe inn?
+ - *Support* Kven? Når? 
+ - *Systemeigar* kan vere vanskeleg å samarbeide med?
+ - *ROS* og *GDPR*
+ - *Ressursar* er det ikkje for mange av ...
+ - *cidilabs*
+   - *teknologi* <-> *læringsmål*
+   - *tilpassing* av modular i Canvas slik at dei vert betre reint visuelt
+   - *lisens* koster sikkert pengar ...
+
+
+*** Python, Canvas API og Canvas Data v/Sven Haaø (USN)
+ - Canvas Data -> AWS Redshift -> Tableau/Power BI/Qlik
+ - Canvas API -> Python REST API
+
+
+**** Kva vil vi med læringsanalyse?
+ - Kva plattformer er det studentane bruker? Bruk "request-tabell" til å finne dette
+ - Kva LTI-ar vert mest brukt?
+   - Kanskje eit fagmiljø burde betale for å bruke ein rådyr LTI?
+ - Frafall?
+ - Aktivitet på ulike fagmiljø
+ - "Caniuse.com"
+
+
+**** Canvas Data
+ Kan kjøpe teneste frå Amazon som gjer data om til SQL, men dette er visst ganske dyrt.
+
+**** Klargjering av data med Python
+ Slik eg gjer det, men kanskje meir automatisert.
+ Alternativt kan eg hente data rett frå dei flate .txt-filene
+ Visualisere i Python eller Power BI
+
+**** Python og REST-API til å manipulere Canvas
+ - Legge til/reorganisere innhald (modular, ...)
+ - Eigendefinerte rapportar
+ - Kalenderavtaler
+ - Organisere grupper/seksjonar
+ - Lese innhald i kurs
+ - Obligatorisk info
+ - [Sjå foto for døme på kode]
+
+
+*** Canvas Data v/Per Bisseberg
+  - Eigendefinert backup via API (hent kode frå [[https://github.com/hiof/canvas_reports][Github]])
+  - Kopiere seksjonar mellom emne (i motsetnad til å kryssliste)
+
+ NB! Her treng vi access code (har Terje det?). Det hadde også vore kjekt med ein dedikert server som kan køyre Linux ...
+
+*** Diskusjon om innhald
+
+**** Nils Kristian Hansen, UiA [2019-01-07 man.]
+
+  Jeg har hatt et møte med Linn Flaten, som er vår mest erfarne bruker av matte-Moocen, og vi har satt opp ei liste med de punktene hun mener gir viktig funksjonalitet i mooc-en, de tre viktigste  i prioritert rekkefølge. Vi  kunne ønsket oss mulighet for å aktivisere koden punkt for punkt, i stedet for alt eller ingenting.
+
+  Vil gjerne høre andres synspunkter. Her er lista:
+
+  1: Faglærerweb. Aktivitetsoversikt per studiegruppe.
+  2: Bobler i venstre marg når det kommer nye innlegg, osv. + varsler for siste aktivitet.
+  3: Knapp for å tilkalle veileder i diskusjonsforum.
+  Ikoner med symboler for innholdstype på forside, med oversikt over kursinnhold.
+  Gruppediskusjoner.
+  Lukkede grupper.
+  "Helsesjekk", det vil si en automatisk validering av innhold.
+  Fane med å gjøre-liste.
+  Toppmeny i tillegg til sidemeny.
+
+**** Terje Rudi, HVL [2019-01-07 man.]
+ Matte-Mooc-pakken er vel bygget slik at de enkelte funksjonene har avhengighet til andre. Derfor bør hele pakken på 300-400 KB inn (eller en må komponere sin egen versjon). Eller tar jeg feil?
+
+ Hos oss (utenfor Moocen) er hver scriptpakke tilpasset hva URLen på canvas-sida er, f.eks. om den slutter på «calendar» eller «users». Det kan målstyres helt ned på emnenivå.
+
+ Bruker PHP til å styre dette, men det er også mulig å gjøre med javascript (uten JQuery-rammeverk). (Med PHP kutter man ett ledd).
+
+
+* Python API
+
+** API-kode
+
+*** Skaffe ny API-kode:
+ 1. Konto -> Innstillingar -> Nytt tilgangstoken (set dato eit par veker fram i tid)
+ 2. Legg denne (for å gjere det enkelt) i fila  "C:\Users\akv\AppData\Roaming\Python\Python37\site-packages\aasmund.py", slik at eg kan importere den i Python-program
+
+Gyldig til 30.04.2019 0:00: 	10747~nM2NvcPvi0OhnLGgKZO1Kf3oJWl53ytxWqrrlRziW8cydGEZkuP6TNijswIrczK6
+
+
+
+** Data frå ceres
+Dette er formatet på dei datafilene som ceres henter frå FS, og som dei gjer om til .csv-filer som igjen vert importert til Canvas. 
+
+*** Person -> users.csv
+tree = ET.parse("Person_UPDATE_dd_mm_åååå-hh_mm_ss.xml")
+root = tree.getroot()
+personliste = root[1][0][0]
+for person in personliste:
+    id = person[0][0].text                 # På forma "fs:203:xxxxxx"
+    fornamn = person[1][1][0][1].text
+    etternamn = person[1][1][1][1].text
+    epost = person[1][2].text
+    brukarnamn = person[1][3][0].text      # Påloggingsid, på forma "xxxxxx@hvl.no" eller "init@hvl.no"
+    rolle = person[1][4][0].text           # student/teacher/ta/observer
+    primaryRoleType = person[1][4][1].text # Litt usikker på kva denne er, den er alltid "true" 
+    datakjelde = person[1][5].text         # Denne er visst alltid "NO-FS"?
+
+*** Membership -> enrollment.csv
+tree = ET.parse("Membership_UPDATE_dd_mm_åååå-hh_mm_ss.xml")
+root = tree.getroot()
+medlemsliste = root[1][0][0]
+for medlem in medlemsliste:
+    emnekode = medlem[1][0][0].text        # Dette er koden frå FS ("UE_203_...")
+    personkode = medlem[1][1][0][0].text   # "fs:203:xxxxxx"
+    rolletype = medlem[1][1][1][0].text    # Eit tosifra tal; 01=student, 02=faglærar, 04=observatør (og nokre til som nesten aldri er brukt)
+
+** Filer per emne
+
+*** Emne hausten 2018
+Her er ei liste over alle emne som har undervising hausten 2018:
+
+[465, 529, 1888, 1949, 1950, 1951, 1952, 1953, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 2135, 2136, 2137, 2138, 2139, 2140, 2141, 2142, 2143, 2144, 2145, 2146, 2147, 2148, 2149, 2150, 2151, 2152, 2153, 2154, 2155, 2156, 2157, 2158, 2159, 2160, 2161, 2162, 2163, 2164, 2165, 2166, 2167, 2168, 2169, 2324, 2325, 2326, 2327, 2328, 2329, 2330, 2331, 2332, 2333, 2334, 2335, 2336, 2337, 2338, 2339, 2340, 2341, 2342, 2343, 2344, 2345, 2346, 2347, 2348, 2349, 2350, 2351, 2352, 2353, 2354, 2355, 2356, 2357, 2358, 2359, 2360, 2361, 2362, 2363, 2364, 2365, 2368, 2370, 2371, 2373, 2375, 2377, 2435, 2450, 2451, 2452, 2453, 2458, 2459, 2468, 2469, 2470, 2471, 2472, 2493, 2494, 2495, 2496, 2497, 2498, 2499, 2500, 2501, 2502, 2503, 2504, 2505, 2506, 2507, 2511, 2512, 2513, 2514, 2515, 2516, 2517, 2518, 2519, 2520, 2521, 2522, 2523, 2524, 2525, 2526, 2527, 2531, 2532, 2726, 2727, 2729, 2740, 2741, 2744, 2745, 2750, 2751, 2752, 2753, 2762, 2766, 2771, 2773, 2774, 2782, 2783, 2785, 2786, 2788, 2793, 2794, 2795, 2796, 2800, 2805, 2810, 2811, 2816, 2817, 2818, 2823, 2824, 2825, 2826, 2830, 2831, 2834, 2835, 2836, 2847, 2852, 2873, 2875, 2877, 2879, 2881, 2882, 2887, 2888, 2889, 2890, 2891, 2896, 2899, 2902, 2905, 2907, 2913, 2914, 2915, 2918, 2919, 2920, 2922, 2923, 2928, 2932, 2933, 2934, 2936, 2950, 2951, 2954, 2955, 2956, 2957, 2958, 2964, 2965, 2968, 2972, 2975, 2978, 2979, 2980, 2981, 2983, 2984, 2987, 2989, 2990, 2992, 2994, 2995, 2997, 3000, 3001, 3002, 3003, 3005, 3006, 3008, 3011, 3012, 3013, 3015, 3017, 3018, 3020, 3022, 3023, 3025, 3026, 3028, 3029, 3031, 3032, 3033, 3035, 3038, 3039, 3040, 3042, 3043, 3045, 3046, 3050, 3051, 3053, 3054, 3057, 3060, 3066, 3070, 3072, 3074, 3075, 3078, 3082, 3083, 3085, 3086, 3089, 3090, 3092, 3093, 3095, 3096, 3097, 3098, 3102, 3104, 3111, 3112, 3114, 3115, 3118, 3120, 3127, 3129, 3132, 3134, 3136, 3138, 3140, 3142, 3144, 3145, 3150, 3151, 3153, 3155, 3157, 3158, 3161, 3162, 3163, 3164, 3165, 3169, 3170, 3171, 3174, 3176, 3177, 3179, 3186, 3188, 3190, 3192, 3195, 3198, 3199, 3201, 3210, 3211, 3218, 3219, 3221, 3223, 3225, 3226, 3227, 3229, 3232, 3234, 3241, 3244, 3248, 3250, 3254, 3255, 3258, 3259, 3261, 3262, 3264, 3265, 3266, 3268, 3271, 3277, 3280, 3281, 3285, 3290, 3294, 3298, 3300, 3302, 3304, 3305, 3306, 3307, 3311, 3313, 3317, 3319, 3321, 3326, 3329, 3333, 3337, 3352, 3354, 3357, 3375, 3376, 3379, 3381, 3384, 3385, 3386, 3387, 3388, 3389, 3393, 3397, 3398, 3399, 3400, 3401, 3405, 3406, 3433, 3438, 3439, 3441, 3445, 3447, 3451, 3456, 3457, 3460, 3461, 3462, 3464, 3467, 3470, 3475, 3476, 3479, 3481, 3482, 3483, 3484, 3486, 3487, 3489, 3490, 3500, 3504, 3505, 3507, 3509, 3512, 3515, 3517, 3519, 3521, 3526, 3527, 3530, 3532, 3534, 3536, 3540, 3542, 3546, 3548, 3549, 3552, 3553, 3558, 3559, 3563, 3564, 3568, 3569, 3575, 3576, 3577, 3579, 3581, 3582, 3583, 3584, 3585, 3587, 3588, 3589, 3593, 3596, 3599, 3603, 3604, 3606, 3607, 3609, 3612, 3613, 3614, 3616, 3619, 3620, 3621, 3624, 3627, 3629, 3630, 3631, 3632, 3639, 3641, 3643, 3649, 3650, 3651, 3654, 3659, 3660, 3661, 3663, 3667, 3669, 3671, 3672, 3674, 3676, 3677, 3678, 3683, 3684, 3687, 3688, 3695, 3696, 3697, 3698, 3699, 3701, 3702, 3703, 3705, 3708, 3710, 3711, 3712, 3713, 3714, 3715, 3716, 3717, 3718, 3719, 3720, 3721, 3724, 3725, 3726, 3727, 3728, 3729, 3730, 3731, 3732, 3733, 3734, 3735, 3736, 3737, 3738, 3739, 3740, 3741, 3742, 3743, 3744, 3747, 3748, 3749, 3750, 3754, 3756, 3757, 3759, 3760, 3761, 3762, 3763, 3764, 3765, 3766, 3767, 3768, 3769, 3770, 3774, 3775, 3776, 3777, 3778, 3779, 3781, 3784, 3785, 3786, 3787, 3788, 3789, 3790, 3792, 3793, 3794, 3795, 3796, 3797, 3798, 3799, 3800, 3801, 3802, 3803, 3804, 3806, 3807, 3808, 3809, 3810, 3816, 3817, 3822, 3826, 3828, 3830, 3832, 3833, 3837, 3841, 3842, 3844, 3848, 3852, 3854, 3855, 3856, 3857, 3859, 3862, 3863, 3864, 3866, 3869, 3870, 3871, 3872, 3873, 3874, 3876, 3879, 3891, 3894, 3896, 3898, 3899, 3900, 3911, 3912, 3914, 3916, 3919, 3920, 3921, 3927, 3928, 3929, 3930, 3931, 3956, 3957, 3958, 3959, 3960, 3964, 3965, 3973, 3974, 3976, 3977, 3978, 3982, 3983, 3985, 3987, 3991, 3993, 3994, 3996, 4070, 4075, 4076, 4077, 4079, 4081, 4083, 4084, 4086, 4089, 4091, 4094, 4095, 4096, 4097, 4100, 4101, 4102, 4103, 4104, 4105, 4107, 4108, 4109, 4112, 4113, 4114, 4134, 4136, 4138, 4141, 4142, 4143, 4144, 4145, 4148, 4152, 4157, 4158, 4165, 4167, 4169, 4170, 4175, 4178, 4179, 4180, 4182, 4183, 4184, 4185, 4186, 4188, 4191, 4202, 4203, 4207, 4216, 4219, 4224, 4227, 4228, 4229, 4231, 4232, 4233, 4235, 4238, 4239, 4242, 4244, 4246, 4248, 4250, 4251, 4254, 4255, 4256, 4257, 4258, 4260, 4261, 4262, 4263, 4265, 4266, 4267, 4269, 4270, 4272, 4275, 4276, 4277, 4278, 4279, 4280, 4282, 4285, 4288, 4290, 4292, 4293, 4294, 4296, 4300, 4301, 4304, 4305, 4307, 4308, 4311, 4312, 4314, 4315, 4317, 4318, 4319, 4320, 4322, 4331, 4332, 4333, 4335, 4337, 4338, 4339, 4341, 4342, 4343, 4344, 4345, 4346, 4347, 4348, 4351, 4353, 4356, 4357, 4358, 4359, 4360, 4361, 4362, 4363, 4364, 4365, 4366, 4367, 4368, 4369, 4370, 4371, 4372, 4373, 4375, 4376, 4377, 4378, 4379, 4381, 4383, 4385, 4388, 4393, 4394, 4395, 4396, 4398, 4399, 4400, 4401, 4403, 4405, 4406, 4407, 4408, 4414, 4415, 4416, 4417, 4418, 4419, 4420, 4421, 4422, 4423, 4424, 4425, 4426, 4427, 4428, 4429, 4430, 4431, 4432, 4435, 4436, 4437, 4438, 4439, 4440, 4441, 4443, 4444, 4445, 4446, 4447, 4448, 4449, 4450, 4451, 4452, 4453, 4460, 4461, 4462, 4463, 4464, 4465, 4467, 4468, 4469, 4470, 4471, 4472, 4473, 4478, 4479, 4480, 4481, 4486, 4487, 4488, 4489, 4490, 4491, 4492, 4493, 4494, 4495, 4496, 4497, 4498, 4499, 4500, 4501, 4502, 4503, 4504, 4505, 4506, 4507, 4508, 4509, 4510, 4511, 4512, 4513, 4514, 4515, 4516, 4517, 4518, 4519, 4520, 4521, 4522, 4523, 4524, 4525, 4526, 4527, 4528, 4531, 4532, 4533, 4534, 4535, 4536, 4540, 4541, 4542, 4543, 4544, 4545, 4546, 4550, 4551, 4552, 4553, 4554, 4555, 4556, 4558, 4559, 4560, 4561, 4563, 4564, 4565, 4566, 4569, 4570, 4571, 4572, 4573, 4575, 4577, 4579, 4580, 4581, 4582, 4583, 4584, 4585, 4586, 4587, 4588, 4589, 4590, 4591, 4592, 4593, 4594, 4595, 4596, 4597, 4598, 4599, 4600, 4601, 4602, 4603, 4604, 4605, 4606, 4607, 4608, 4609, 4610, 4612, 4613, 4614, 4615, 4616, 4617, 4618, 4619, 4623, 4624, 4625, 4630, 4631, 4633, 4634, 4635, 4636, 4637, 4638, 4639, 4640, 4641, 4642, 4643, 4644, 4645, 4646, 4647, 4650, 4651, 4652, 4660, 4661, 4662, 4663, 4664, 4665, 4666, 4667, 4668, 4669, 4670, 4671, 4672, 4673, 4677, 4678, 4679, 4680, 4682, 4694, 4695, 4696, 4697, 4699, 4700, 4701, 4720, 4721, 4722, 4723, 4724, 4725, 4726, 4727, 4730, 4731, 4732, 4733, 4734, 4735, 4736, 4737, 4738, 4739, 4740, 4741, 4742, 4743, 4744, 4745, 4746, 4748, 4749, 4750, 4751, 4752, 4753, 4754, 4755, 4756, 4757, 4758, 4759, 4760, 4761, 4762, 4763, 4764, 4765, 4766, 4767, 4768, 4769, 4770, 4771, 4772, 4773, 4774, 4775, 4776, 4777, 4778, 4779, 4780, 4781, 4782, 4783, 4784, 4785, 4787, 4788, 4789, 4790, 4791, 4792, 4793, 4794, 4795, 4796, 4797, 4798, 4799, 4800, 4801, 4802, 4803, 4804, 4805, 4806, 4807, 4808, 4809, 4810, 4811, 4812, 4813, 4814, 4815, 4816, 4817, 4818, 4819, 4820, 4821, 4822, 4823, 4824, 4825, 4826, 4827, 4828, 4829, 4830, 4831, 4832, 4833, 4834, 4835, 4836, 4837, 4838, 4839, 4840, 4841, 4842, 4843, 4844, 4845, 4846, 4847, 4848, 4849, 4850, 4851, 4852, 4853, 4854, 4855, 4856, 4857, 4858, 4859, 4860, 4861, 4862, 4863, 4864, 4865, 4866, 4867, 4868, 4869, 4876, 4877, 4878, 4879, 4880, 4881, 4882, 4886, 4887, 4888, 4889, 4890, 4891, 4894, 4895, 4896, 4897, 4898, 4899, 4900, 4901, 4902, 4903, 4904, 4905, 4906, 4907, 4908, 4909, 4910, 4911, 4912, 4915, 4916, 4917, 4918, 4919, 4920, 4921, 4922, 4924, 4925, 4926, 4927, 4928, 4929, 4930, 4931, 4932, 4933, 4934, 4935, 4936, 4937, 4938, 4939, 4940, 4941, 4942, 4946, 4947, 4953, 4991, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010, 5011, 5012, 5013, 5015, 5016, 5017, 5018, 5019, 5020, 5021, 5022, 5024, 5025, 5026, 5027, 5028, 5029, 5030, 5031, 5032, 5033, 5034, 5035, 5036, 5037, 5038, 5039, 5040, 5041, 5042, 5043, 5044, 5045, 5046, 5047, 5049, 5063, 5064, 5071, 5072, 5073, 5074, 5075, 5076, 5077, 5078, 5079, 5084, 5096, 5101, 5109, 5114, 5121, 5123, 5129, 5130, 5132, 5133, 5164, 5165, 5166, 5183, 5185, 5186, 5188, 5189, 5190, 5191, 5192, 5193, 5194, 5195, 5196, 5197, 5198, 5200, 5201, 5202, 5203, 5204, 5220, 5221, 5222, 5230, 5231, 5232, 5233, 5236, 5241, 5242, 5243, 5244, 5245, 5247, 5248, 5257, 5258, 5259, 5260, 5262, 5265, 5271, 5273, 5276, 5282, 5285, 5294, 5295, 5296, 5324, 5331, 5332, 5333, 5336, 5337, 5340, 5341, 5342, 5343, 5347, 5348, 5349, 5350, 5355, 5356, 5357, 5358, 5367, 5368, 5369, 5370, 5371, 5372, 5373, 5374, 5375, 5376, 5377, 5378, 5379, 5380, 5381, 5382, 5383, 5384, 5385, 5386, 5387, 5388, 5389, 5390, 5391, 5392, 5393, 5394, 5395, 5396, 5397, 5398, 5399, 5400, 5401, 5402, 5403, 5404, 5405, 5406, 5407, 5408, 5411, 5412, 5413, 5417, 5423, 5424, 5425, 5426, 5427, 5428, 5432, 5433, 5451, 5452, 5453, 5454, 5455, 5456, 5457, 5458, 5459, 5464, 5471, 5477, 5481, 6650, 6654, 6680, 6688, 6699, 6702, 6703, 6713, 6716, 6718, 6719, 6721, 6722, 6730, 6731, 6738, 6742, 6743, 6744, 6745, 6748, 6763, 6766, 6829, 6830, 6831, 6834, 6835, 6836, 6837, 6838, 6839, 6866, 6868, 6888, 6889, 6890, 6894, 6895, 6896, 6917, 6918, 6919, 6946, 6947, 6952, 6962, 6976, 7027, 7048, 7059, 7067, 7080, 7128, 7129, 7137, 7145, 7146, 7147, 7158, 7162, 7163, 7164, 7165, 7180, 7189, 7210, 7211, 7214, 7216, 7224, 7259, 7269, 7271, 7413, 7414, 7858]
+
+
+
+
+* Ulikt
+** UE og UA 2019 [38/38]
+
+*** DONE BIO129
+ 2 UA, undervising i den eine, spør Signe Steinkopf
+
+*** DONE BYG101
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE BYG109
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE BYG111
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE BYG112
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** BYG114
+ 2 UA, undervising i den eine, spør Loftur Thor Jonsson
+
+*** DONE BYG119
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE BYG122
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE BYG130
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DAT100
+ 5 UA, ikkje undervising, spør Sven-Olai Høyland
+
+*** DONE DAT103
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE DAT108
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE DAT150
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE DAT152
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE DAT155
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE ELE103
+ 6 UA, ikkje undervising, UA som seksjon
+
+*** DONE ELE104
+ 4 UA, undervising i alle 4, ikkje eksporter UE
+
+*** DONE ELE114
+ 3 UA, ikkje undervising, UA som seksjon
+
+*** DONE ELE118
+ 3 UA, ikkje undervising, UA som seksjon
+
+*** DONE ELE124
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE ING0010
+ Ingen UA eksportert, berre UE??? (Sjekk med Brit)
+
+*** DONE ING0011
+ Ingen emne eksportert? (Sjekk med Brit)
+
+*** DONE ING101
+ 7 UA, ikkje undervising, UA som seksjon
+
+*** DONE ING102
+ 5 UA, ikkje undervising, UA som seksjon, men spør (kven?)
+
+*** DONE ING104
+ 5 UA, undervising, UA som eigne emne og UE som eige emne
+
+*** DONE ING106
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE ING107
+ 5 UA, ikkje undervising, UA som seksjon
+
+*** DONE KJE100
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE KJE117
+ 9 UA, ikkje undervising, UA som seksjon, men sjekk med Jarle Sidney Diesen
+
+*** DONE MAS108
+ 6 UA, ikkje undervising, UA som seksjon, sjekk med kven?
+
+*** DONE MAS112
+ 3UA, ikkje undervising, UA som seksjon
+
+*** DONE MAS117
+ 5 UA, undervising, UA som eigne emne og UE som eige emne
+
+*** DONE MAS130
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE MAS137
+ 5 UA, ikkje undervising, UA som seksjon, men sjekk med Nils-Ottar Antonsen kven som underviser MAS137
+
+*** DONE MAT101
+ 5 UA,  undervising, UA som eigne emne og UE som eige emne
+
+*** DONE MAT102
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE MAT151
+ 6 UA, alle som eigne emne, også UE som eige emne
+
+*** DONE MAT152
+ 6 UA, alle som eigne emne, også UE som eige emne
+
+*** DONE MOB250
+ 2 UA, ikkje undervising, UA som seksjon
+
+*** DONE PCS954
+ Ingen UA eksportert??? (Sjekk med Håvard)
+
+
+** Tilbakemeldingar
+*** Positive
+*Thomas Impeluso*: "I don't know if you want or need feeback -- or if it even matters to you. But I think your selection of Canvas was a great choice!!"
+*Jarle Sydney Diesen*: Ikke noe viktig, men jeg ville bare si at at CANVAS er en hit. Studentene mine liker CANVAS og det gjør jeg og (til tross for at jeg var litt skeptisk da vi måtte bytte fra it’s learning). Det er en glimrende og intuitiv læringsplattform.
+*** Negative
+[2018-10-10 ons.]"subject": "fiks det", "description": "ingenting funke og får ikke med meg det eg ska og sykt uoversiktlig det e heilt forferdelig" "Platform: Unknown iPhone, OS Version: 12.0"
+
+[2018-10-24 ons.]nå har jeg holdt på Canvas noen uker. Jeg synes det er et dårlig system. Er det noen HVL har brukt penger på eller er det noe som er laget av EDB-avdelingen ved skolen og som er under utprøving?
+
+
+** [2019-01-31 tor.] Fjerna lærarar
+*** Ivar, FHS Bergen
+UA_203_MAMET500_1_2019_VÅR_1_6
+UA_203_MAMET500_1_2018_HØST_1_2
+
+
+* Kontaktpersonar
+** Arealforvalting
+| Generelt      | ToneReigstad   |
+| FLKI          | Camilla Flatøy |
+| FIN           |                |
+| FØS           |                |
+| FHS           |                |
+| Rombestilling | Jarko Tijssen  |
+|               |                |
+

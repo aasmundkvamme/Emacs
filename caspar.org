@@ -1,0 +1,793 @@
+
+* InDesign tips & triks
+
+** Forankre objekt
+ - Klikk i den fylte firkanten og dra inn i teksten.
+ - Høgreklikk og velg som i illustrasjonen i mappa "typografisk stoff"
+
+** Punkt og millimeter
+1 PostScript punkt = 0.352777778 millimeter
+
+| Punkt | Millimeter |
+|-------+------------|
+|    10 | 3,53       |
+|    11 | 3,88       |
+|    12 | 4,23       |
+|    13 | 4,49       |
+|    14 | 4,94       |
+|    15 | 5,29       |
+|    16 | 5,64       |
+
+** Velge deler av eit objekt
+
+
+* Manus
+** Fosnot 2018
+*** Sjekkliste i manus
+**** Hugs figurar
+Alle figurane eg har er laga i Illustrator, eg må setje dei på plass
+**** Alle brøkar som likningar
+Skriv alle brøkar alltid som "norske" med teljar over horisontal strek over nemnar.
+**** Margnotat
+Gjer desse om til løpande tekst i staden for; det flyter lettare då.
+
+
+Søk etter feil bruk av "du" etter anvising frå Marit.
+
+
+s. 83: går fra
+s. 84: nedenfor vises arealet til soltakene som er beregnet så langt.
+*** Omslag
+Svakare gult: 
+Gulare 1 måndag: 33 5 92 0
+Gulare 2 måndag: 19 0 68 4
+
+
+** Barnehageboka 2019
+
+*** Generelt
+
+**** FERDIG Sjekk alle figurar
+Sjekk alle figurar for rett fargekoding, og at dei er samla på ein stad.
+
+
+*** Kapittel 1 [5/5]
+ * [X] Figur 1 og 2: korleis setje desse?
+ * [X] Figur 5: "midtVolga-området"????
+ * [X] Avsnittet "Posisjonssystem": skal figurane flyte i teksten utan nummerering?
+ * [X] Betre figur av fingertelling
+ * [X] Ta vekk u---u' frå Chimpu
+ 
+*** Kapittel 2 [7/7]
+ * [X] Kva gjer eg med undertittel til kapitlet?
+ * [X] Trekantane (likeforma) med brune "pinner" som strekar?
+ * [X] Lag firkant delt i to av diagonal (saman med figuren over)
+ * [X] Tre parallelogram med like lange sider (parvis), men med vinkel 90, 60, 20 (skew)
+ * [X] Sida med firkanter satt som sida med trekanter
+ * [X] "Fiskeglobe" inn før "Barnehagebarns matematikk" (som starter på ny side)
+ * [X] Sjekk lang strek på fotnote på fortsettelsesside
+
+
+*** Kapittel 3 [5/5]
+ * [ ] Kapittelet må vente med ferdig setjing til vi har fått den siste figuren frå Linda 
+ * [X] Her har Marit innført overskrifter i fleire nivå
+ * [X] Er dette rett plassert komma?: "For en god leser, vil skriftspråk fungere som språk av 1. orden."
+ * [X] Be om hjelp til layout her: "Viktig at layout fungerer her, med teksten" (to stader)
+ * [X] Rett etter "FIGUR av prosessen Tre trekanter" må Marit sei kva matematiske operasjonar som er tenkt (send utskrift av skjermbiletet for å vise kva eg meiner)
+ * [X] Alle samtaler gjennom heile boka må vere av same type, ellers kjem Rune til å få fnatt.
+
+*** Kapittel 4 [4/4]
+ * [X] Alle sider etter læringsløypene venter på rett sidebrekking av læringsløypene
+ * [X] Læringsløype 1: "Læring foregår [linjeskift] mellom"
+ * [X] Læringsløyp 3: snu, slik at den vert flatare og litt mindre
+ * [X] Læringsløype 4: flatare
+
+*** Kapittel 5
+
+*** Kapittel 6
+
+
+** Heinemann 2019
+
+*** Froskehopp
+
+**** Figurar
+Vi skal sikkert ikkje bruke fotografia, og alle "tekniske" teikningar er OK å lage sjølv. Barneteikningane kan vi sikkert lage sjølv, for dei må kanskje bli "omsatt" til norske forhold etter teksten?
+
+
+*** Tidleg talforståing
+
+**** Figurar
+- Vi skal sikkert ikkje bruke fotografia, og alle "tekniske" teikningar er OK å lage sjølv.
+- Opne alle Appendix i Illustrator; nokre kanskje gjennom Photoshop?
+- Norsk tekst plassert inn til erstatting for amerikansk
+
+
+
+*** FERDIG Heinemann 2019 <2019-05-13 må.>
+  Kan eg få tilgang til originalfiler (barneteikningar), eller skal vi like godt lage dei sjølve? Det er relativt enkelt.
+
+
+* Tangenten
+
+** Trykking
+*** Fraktbrev hjå Bring
+**** Adresse
+https://eordre.posten.no/OA_HTML/ibeCCtpSctDspRte.jsp?minisite=10020
+
+**** Gramvekt
+ 64 sider: 137,9
+ 72 sider: 152,6
+ 80 sider: 
+
+**** Format
+Små
+
+**** Rabattkategori
+Maskin MV3
+
+**** Innlevering
+Stavanger Postterminal, Svanholmen 4, 4033 Stavanger
+
+
+*** Adresselister
+Hent ut "Kundeliste med aktive abonnement" frå Uni Micro. NB! Sjekk at Nasjonalbiblioteket får fem eksemplar!
+Nettsky: 233ElHo/Caspar2017
+Uni Micro: 175elho/pass01
+
+
+** Typografiske og andre standardar
+*** Forfattarboksar
+Skal innehalde tre linjer per forfatter:
+
+Namn
+Arbeidsstad
+epost@dresse
+
+Arbeidsstaden er skrevet fullt ut, med unntak av NTNU og andre lett kjennelege forkortingar (NMBU).
+
+**** Unntak
+Pensjonistar kan ha tidlegare arbeidsstad, eller tidlegare yrke:
+
+Tor Hjalmar Johannessen
+Tidligere lektor i realfag
+tor.hjalmar.johannessen@gmail.com
+
+**** Andre opplysingar
+Dersom det er andre opplysingar kjem dei /etter/ forfattarane.
+
+
+*** Nummererte figurar i tekst
+
+Figur 1: Kort tittel (ingen punktum her)
+
+
+Figur 2: Lengre tittel, med meir enn ei setning. Vert brukt i unntakstilfelle.
+
+
+*** Referanser
+Overskrift: "Referanser" (uansett kva forfattaren vil).
+Følgjer så langt som råd APA-standarden; Rune har siste ord her.
+
+
+*** Dialog
+ - Person utan kolon; dialogen rykka inn med tabulator slik at det passer med namnet (innanfor rimelege grenser).
+ - Informasjon/gester i [] i avsnittet dei høyrer til. 
+ - Ikkje sitatteikn.
+
+
+*** Typografiske teikn
+Diverse typografiske standardar, helst med tilvising til kjelde. (Dersom ingen ting er nevnt er det [[www.korrekturavdelingen.no][Korrekturavdelingen]]). 
+
+- *Skråstrek* Det skal være mellomrom mellom skråstreken og tegnene før/etter. Men dersom et eller begge alternativene består av to eller flere ord, brukes mellomrom: Ett ord / flere ord.
+
+
+
+*** Omslag 
+Så lenge det er Werner & Werner som lager: sjekk i "Delt med meg/Forsider Tangenten" på Google drive (aasmund.kvamme@gmail.com).
+
+Bakgrunnsfargen bør vere lysare.
+
+*** TODO Nivå 1-tekstar
+Sjå på korleis Nivå 1-tekster vert markert. Fint om det er diskret, men kan merkes litt til dømes med at botntekst får den same fargen som ramma sin bakgrunn. Fil litt meir på teksten i boksen.
+
+** 2018
+*** 4/2018
+NB! Temanummer: "Fagfornying"
+
+**** Innhaldsliste
+|     Nr | Nr. 4, 2018       | Ansvar           | s. | Info/status                                          |
+|--------+-------------------+------------------+----+------------------------------------------------------|
+| 180401 | Rune, leiar       | Marit            |  1 | Tekst ikkje komen                                    |
+| 180402 | Naylor            | Gry, Aasmund     |  3 | Tekst komen [2018-10-14 sø.]                         |
+| 180403 | Ole Einar         | Rune, Aasmund    |  1 | Klar (ikkje brukt i nr. 3)                           |
+| 180404 | Wiik & Vos        | Trude, Ole Einar |  6 | Om logaritmar, komen                                 |
+| 180405 | Hovik             | Terje, Gry       |  5 | Klar (ikkje brukt i nr. 3)                           |
+| 180406 | Christensen, T.   | Terje, Toril     |  6 | Jordmåling, komen                                    |
+| 180407 | Nordbakke         | Janneke, Trude   |  6 | Kjerneelement, komen                                 |
+| 180408 | Om utkastet 17.10 | Renate, Aasmund  |  4 | Toril, Bjørn – ikkje komen. Status?                  |
+| 180409 | Siri & Hermansen  |                  |  6 |                                                      |
+| 180410 | Rothaugen/Rune    | Marit, Terje     |  3 | Matematikk og arbeidsliv, Ikkje komen                |
+| 180411 | Smestad, Bjørn    | Trude, Ole Einar |  3 | Generelt om dybdelæring, komen                       |
+| 180412 | Jensen & Tangen   | Terje, Gry       |  4 | Intervju med lærarar knytt til fagfornyinga. Status? |
+| 180413 | Kirfel, Christoph | Gry, Bjørn       |  6 | Algoritmisk tenking, programmering? Komen            |
+| 180414 | Klausen           |                  |    | Artikkel frå Matematik                               |
+|        | NSMO              | NSMO             |  5 | Kjem                                                 |
+|        | LAMIS             | LAMIS            | 13 | Kjem                                                 |
+**** 180401 Leiar
+**** 180402 Naylor
+[2018-10-14 sø.]Artikkel og mappe med illustrasjonar kommet
+**** 180403 Ole Einar
+[2018-10-15 må.]Klar til språkvask 
+**** 180414 Klausen
+[2018-10-14 sø.]Artikkel med illustrasjonar kommet
+**** 180404 Wiik & Vos
+Anders Wiik <anders.wiik@uia.no>
+Pauline Vos <pauline.vos@uia.no>
+***** Sjekkliste [5/5]
+    * [X] Rett Rösling til Rosling
+    * [X] Bruk "Figur", ikkje "Bilde"
+    * [X] Sett figur 3 over to spalter
+    * [X] Ta vekk kolon i dialogane
+    * [X] Ta vekk kursiv
+
+**** 180406 Christensen
+***** Sjekkliste [3/3]
+  * [X] Legg inn indikatorar for Askøy og Salhus på kartet
+  * [X] Lag tabellen for hand i InDesign
+  * [X] Sjekk alle formlane
+
+
+**** 180409 Siri og Hermansen
+
+***** Sjekkliste [1/1]
+     * [X] Sett inn figurar
+
+
+**** 180411 Smestad
+
+**** 180407 Nordbakke
+Skal starte på partalside om mogleg.
+
+
+**** 1804 Hovik
+
+
+** 2019
+
+*** 1/2019
+
+**** Innhaldsliste
+|       Nr | Forfattar              | Tittel | Ansvar  | Kommentar                 |
+|----------+------------------------+--------+---------+---------------------------|
+|   190101 |                        |        |         |                           |
+|   190102 |                        |        |         |                           |
+|   190103 |                        |        |         |                           |
+|   190104 |                        |        |         |                           |
+|   190105 |                        |        |         |                           |
+|   190106 |                        |        |         |                           |
+|   190107 |                        |        |         |                           |
+|   190108 |                        |        |         |                           |
+|   190109 |                        |        |         |                           |
+|   190110 |                        |        |         |                           |
+|   190111 |                        |        |         |                           |
+|   190112 |                        |        |         |                           |
+|   190113 |                        |        |         |                           |
+|   190115 |                        |        |         |                           |
+|   190116 |                        |        |         |                           |
+|----------+------------------------+--------+---------+---------------------------|
+|  Annonse | Universitetet i Bergen |        | Aasmund | Lag annonsa frå bunnen av |
+| Senteret |                        |        |         |                           |
+|    LAMIS |                        |        |         |                           |
+
+
+**** Korrektur
+
+***** Marit (gjort, eller overlatt til Rune)
+Ville egentlig likt å stryke lærerens roller.... men antar det ikke lar seg gjøre pga innholdet.
+
+S.6
+
+Figur 4 – burde vært tegnet over med tusj før fotografering. Blir disse tydelige?
+
+Side 16
+
+Overskriften:  Aktivitet for å motivere og engasjere. Eller : Aktiviteter. Jeg har ikke lest artikkelen (og nå er jeg på vei ut for å se flotte «ting» i Delhi), men likte ikke Elevaktivitet og prøvde å korte. Kanskje:Aktivitet – motivasjon og engasjement.  
+
+Side 18
+
+Det er noe med teksten i figuren som går inn i det grønne feltet.... kan det gjøres noe med?
+
+Side 20:
+
+Overskriften:  Studenters forskning i DIM-prosjektet. Skal begge rammene ha samme farge? Husker ikke hva vi var enige om 
+
+Side 31. Olav Fjæra er pensjonert høgskolelektor i matematikk. Eller pensjonert lærerutdanner i matematikk. 
+
+Side 33
+
+Overskriften: Indiske røtter – algoritmisk tenkning
+
+Side 48. Aksepterer at det noen ganger er nødvendig å ha fortsettelser fra artikler sli, men fortsettelsen kan ikke begynne med et delt ord?
+
+***** Anne Fyhn
+To illustrasjonar sendt på ny (Birra birra og Spiehcun)
+
+***** Holmboe
+To bilete, bruk eitt av dei.
+
+
+
+
+*** 2/2019
+
+**** Sjekkliste ved korrektur [7/7]
+ * [X] Lenke til Tangenten si side i Stenseth at al, side 9
+ * [X] Referanse til "artikkelen om masteroppgavene i prosjektet" Kjeberg/Dean, side 17? 
+ * [X] Referanse til Tangenten sine artiklar i den svenske side 27?
+ * [X] Justere figurane i Fyrstikkoppgåva
+ * [X] Figur 2 og 3 side 9
+ * [X] Litt meir frå Marit si fil?
+ * [X] Referanser
+
+
+*** 3/2019 
+
+**** Heildagsmøte [2019-05-23 to.]
+Referent: Toril
+
+**** PÅGÅR Gjøvik/Torkildsen <2019-05-31 fr.>
+Janneke og eg gir tilbakemelding om at dei må kutte vekk 1/3 av artikkelen. Ingen enkeltdelar, men ostehøvelprinsippet ...
+
+**** TODO Les om Jens Kraft <2019-05-31 fr.>
+** Nettside
+
+*** Første tilnærming (Rune)
+ 1. Er det mulig å oppretta www.tangenten.no (må vera tydeleg at det er ei Caspar-side)? Men at ein beheld slik det står i dag i menyen på Caspar.no?
+ 2. Alltid ta med stolpe-bilde når leiarane vert lagt ut på startsida til Caspar.no
+ 3. Søkemotoren manglar i fane-menyen (nå må du gå inn på «Liste over tidligere nummer» ...)
+ 4. Sida med liste over tidlegare nummer, årstala treng ikkje stå under kvarandre langt nedover … kan stå slik: «Årgang 2017, 2016, 2015, …
+ 5. Når du så klikkar deg inn på ein årstall, så er det ein ide å ha bilete av framsidene til dei ulike tangenten-blada i høgre kolonna
+ 6. Alle tekstar som vert gjort tilgjengelege må vera i bladet sin trykte lay-out, også leiarane.
+ 7. Når det gjeld overskrift til leiarane, så bør det ikkje stå «Leder» på bokmål sidan teksten er på nynorsk. Det bør enten stå Leiar eller Korden.
+ 8. Kan me laga kortare URL-ar til dei der retningslinene til forfattarar, både nivå 1 og vanlege?
+
+
+*** Andre tilnærming (Werner & Werner)
+
+
+** Statistikk
+ | Nummer | Årgang | Caspar | LAMIS |
+ |--------+--------+--------+-------|
+ |      1 |   2006 |    633 |  3862 |
+ |      2 |        |    634 |  4018 |
+ |      3 |        |    628 |  3878 |
+ |      4 |        |    636 |  4026 |
+ |      1 |   2007 |    628 |  4088 |
+ |      2 |        |    628 |  4291 |
+ |      3 |        |    641 |  4139 |
+ |      4 |        |    645 |  4220 |
+ |      1 |   2008 |    644 |  4191 |
+ |      2 |        |    643 |  4237 |
+ |      3 |        |    650 |  4076 |
+ |      4 |        |    654 |  4020 |
+ |      1 |   2009 |    643 |  3882 |
+ |      2 |        |    643 |  3984 |
+ |      3 |        |    647 |  3785 |
+ |      4 |        |    650 |  3841 |
+ |      1 |   2010 |    646 |  3780 |
+ |      2 |        |    658 |  3759 |
+ |      3 |        |    656 |  3597 |
+ |      4 |        |    665 |  3663 |
+ |      1 |   2011 |    625 |  3600 |
+ |      2 |        |    594 |  3543 |
+ |      3 |        |    584 |  3561 |
+ |      4 |        |    601 |  3550 |
+ |      1 |   2012 |        |  3465 |
+ |      2 |        |    600 |  3154 |
+ |      3 |        |    577 |  3282 |
+ |      4 |        |    577 |  3366 |
+ |      1 |   2013 |        |  4269 |
+ |      2 |        |    592 |  3299 |
+ |      3 |        |    442 |  3360 |
+ |      4 |        |    468 |  3446 |
+ |      1 |   2014 |    407 |  3268 |
+ |      2 |        |    415 |  3198 |
+ |      3 |        |    434 |  3253 |
+ |      4 |        |    436 |  3305 |
+ |      1 |   2015 |    420 |  3195 |
+ |      2 |        |    413 |  3212 |
+ |      3 |        |    400 |  3106 |
+ |      4 |        |    444 |  3234 |
+ |      1 |   2016 |    373 |  2969 |
+ |      2 |        |    369 |  2998 |
+ |      3 |        |    382 |  2998 |
+ |      4 |        |    387 |  2990 |
+ |      1 |   2017 |    361 |  2825 |
+ |      2 |        |        |  2778 |
+ |      3 |        |    355 |  2785 |
+ |      4 |        |        |       |
+ |      1 |   2018 |    404 |  2553 |
+ |      2 |        |    364 |  2568 |
+ |      3 |        |    335 |  2544 |
+ |      4 |        |    351 |  2514 |
+ |      1 |   2019 |        |       |
+ |      2 |        |        |       |
+ |      3 |        |        |       |
+ |      4 |        |        |       |
+ |        |        |        |       |
+
+
+
+** TODO Rydd i APA på nettartiklane<2019-05-31 fr.>
+* Diverse
+
+** Bokliste
+
+*** 2019
+**** På lager hos Fagbokforlaget:
+  |             ISBN | Tittel                                                | Pris      |
+  |------------------+-------------------------------------------------------+-----------|
+  | 978-82-90898-088 | De små teller også                                    | kr. 300,- |
+  | 978-82-90898-484 | VP Avbildninger og symmetri                           | kr. 370,- |
+  | 978-82-90898-521 | VP Tallteori                                          | kr. 440,- |
+  | 978-82-90898-323 | VP Lineæralgebra                                      | kr. 370,- |
+  | 978-82-90898-378 | Sannsynlighetsregning, en fagdidaktisk innføring      | kr. 370,- |
+  | 978-82-90898-408 | Begynnaropplæring og tilpassa undervisning            | kr. 365,- |
+  | 978-82-90898-422 | MS Statistikk og sannsynlighetsregning                | kr. 310,- |
+  | 978-82-90898-446 | MS Tallære                                            | kr. 310,- |
+  | 978-82-90898-439 | MS Algebra og funksjonslære                           | kr. 355,- |
+  | 978-82-90898-453 | MS Geometri                                           | kr. 310,- |
+  | 978-82-90898-460 | Det matematiske barnet (gammel utg)                   | kr. 510,- |
+  | 978-82-90898-477 | Begynneropplæringen                                   | kr. 525,- |
+  | 978-82-90898-712 | Matematikk med mening - mening for alle               | kr. 525,- |
+  | 978-82-90898-507 | Læringsfellesskap i matematikk                        | kr. 430,- |
+  | 978-82-90898-538 | I tallenes verden                                     | kr. 350,- |
+  | 978-82-90898-545 | Sannsynlighetsregning og statistisk metodelære        | kr. 525,- |
+  | 978-82-90898-569 | Å lære algebraisk tenkning                            | kr. 525,- |
+  | 978-82-90898-804 | Stillaser for barns læring                            | kr. 285,- |
+  | 978-82-90898-965 | Eksperimentering med matematikk                       | kr. 345,- |
+  | 978-82-90898-576 | Rom for matematikk - i barnehagen                     | kr. 395,- |
+  | 978-82-90898-682 | Læringssamtalen i matematikkfagets praksis 1          | kr. 330,- |
+  | 978-82-90898-590 | Læringssamtalen i matematikkfagets praksis 2          | kr. 365,- |
+  | 978-82-90898-583 | Matematiske byggesteiner metamatematikk..             | kr. 525,- |
+  | 978-82-90898-637 | Matematiske tenkemåter metamatematikk..               | kr. 525,- |
+  | 978-82-90898-613 | I tallkongruensens verden                             | kr. 380,- |
+  | 978-82-90898-620 | Kultur og matematikk                                  | kr. 375,- |
+  | 978-82-90898-675 | Matematiske horisonter 1                              | kr. 410,- |
+  | 978-82-90898-736 | Matematikksamtaler. Undervisning og læring            | kr. 420,- |
+  | 978-82-90898-705 | Matematikklæring for framtiden                        | kr. 410,- |
+  | 978-82-90898-750 | Beste kjøp                                            | kr. 295,- |
+  | 978-82-90898-774 | Dagligvarer                                           | kr. 295,- |
+  | 978-82-93598-008 | Køyesenger                                            | kr. 295,- |
+  | 978-82-93598-039 | Arkitektprosjektet                                    | kr. 295,- |
+  | 978-82-93598-015 | Det matematiske barnet (ny utg. 2017)                 | kr. 525,- |
+  | 978-82-90898-743 | Sannsynlighetsregning og statistisk metodelære (2017) | kr. 525,- |
+
+**** På lager hos Caspar Forlag AS:
+
+  |               | Snø ski Geometri                                  | kr. 125,- |
+  |               | Geometri jordmåling                               | kr. 265,- |
+  |               | Matematiske utfordringer (både nynorsk og bokmål) | kr. 460,- |
+  |               | Tenk Kreativt 1 og 2 (både nynorsk og bokmål)     | kr. 450,- |
+  |               | Tangentens Inspirasjonsbok for matematikklærere   | kr. 160,- |
+  |               | Daglige bilder                                    | kr. 200,- |
+  | 9788290898125 | Perspektiver på matematikkvansker                 | kr. 220,- |
+  | 9788290898134 | Sorgarbeid i skolen                               | kr. 225,- |
+  | 9788290898304 | Fleksible språkrom                                | kr. 205,- |
+  | 9788290898118 | Matematikkhistorie i miniatyr                     | kr. 110,- |
+  | 9788290898029 | Samtalen som forskningsmetode                     | kr. 210,- |
+
+
+** Adresseliste
+
+*** Nord
+ | Mohamed el Ghami                  | mohamed.el-ghami@nord.no   |
+ | Tsehaye Kahsu Araaya              | tsehaye.k.araaya@nord.no   |
+ | Kjetil Brinchmann Halvorsen       | kjetil.b.halvorsen@nord.no |
+ | Maria Klaussen Herset             | maria.herset@nord.no       |
+ | Reza Saeidinvar                   | reza.saei@nord.no          |
+ | Asif Mushtaq                      | asif.mushtaq@nord.no       |
+ | Dag Oskar Madsen                  | dag.o.madsen@nord.no       |
+ | Knut Berg                         | knut.berg@nord.no          |
+ | Kyrre Odd Johannesen              | kyrre.o.johannesen@nord.no |
+ | Svein Aastrup                     | svein.aastrup@nord.no      |
+ | Kjærand Iversen                   | kjarand.iversen@nord.no    |
+ | Tore Heggem                       | tore.heggem@nord.no        |
+ | Antoine Laurent Christophe Julien | antoine.julien@nord.no     |
+ | Mona Reitan Rosenlund             | mona.r.rosenlund@nord.no   |
+ | Maren Berre                       | maren.berre@nord.no        |
+ | Dag Tore Forstrøm Gulaker         | dag.t.gulaker@nord.no      |
+
+*** UiS
+ | Siri Ovedal Anfinsen      | siri.o.anfinsen@uis.no     |
+ | Arne Jakobsen             | arne.jakobsen@uis.no       |
+ | Åsmund Lillevik Gjære     | asmund.l.gjere@uis.no      |
+ | Gaute Hovtun              | gaute.hovtun@uis.no        |
+ | Morten Søyland Kristensen | morten.s.kristensen@uis.no |
+ | Kjersti Melhus            | kjersti.melhus@uis.no      |
+ | Arne Jakobsen             | arne.jakobsen@uis.no       |
+ | Dag Torvanger             | dag.torvanger@uis.no       |
+ | Tone Bulien               | tone.bulien@uis.no         |
+ | Raymond Bjuland           | raymond.bjuland@uis.no     |
+ | Janne Fauskanger          | janne.fauskanger@uis.no    |
+ |                           | per-einar.saebbe@uis.no    |
+ |                           | reidar.mosvold@uis.no      |
+ 
+*** UiB
+ | Trond Gustavsen         | Trond.Gustavsen@uib.no                         |
+ | Christoph Kirfel        | Christoph.Kirfel@uib.no                        |
+ | Mette Andresen          | Mette.Andresen@uib.no                          |
+ | Bettina Dahl Søndergård | Bettina.Dahl.Soendergaard@uib.no               |
+ | Andreas Christiansen    | Andreas.Christiansen@hsh.no (nb: @hsh stemmer) |
+ | Anne Bjørnestad         | Anne.Bjornestad@hfk.no                         |
+ | Arnt Frode Stava        | Arnt.F.Stava@danielsen-skoler.no               |
+ | Tor Espen Kristiansen   | tork73@gmail.com                               |
+ 
+*** HVL
+ | Andrea Synnøve Blomsø Eikset  | Andrea.Synnove.Blomso.Eikset@hvl.no  |
+ | Andrey Chesnokov              | Andrey.Chesnokov@hvl.no              |
+ | Annette Stavseth Furnes       | Annette.Stavseth.Furnes@hvl.no       |
+ | Beate Lode                    | Beate.Lode@hvl.no                    |
+ | Bodil Stakkestad Kristensen   | Bodil.Stakkestad.Kristensen@hvl.no   |
+ | Camilla Meidell               | Camilla.Meidell@hvl.no               |
+ | Dorota Lembrér                | Dorota.Lembrer@hvl.no                |
+ | Elena Severina                | Elena.Severina@hvl.no                |
+ | Erik Eikeland                 | Erik.Eikeland@hvl.no                 |
+ | Georgia Kasari                | Georgia.Kasari@hvl.no                |
+ | Gjert Anders Askevold         | Gjert.Anders.Askevold@hvl.no         |
+ | Inge Olav Hauge               | Inge.Olav.Hauge@hvl.no               |
+ | Inge Skjælaaen                | Inge.Skjelaaen@hvl.no                |
+ | Inger Elin Lilland            | Inger.Elin.Lilland@hvl.no            |
+ | Kjetil Kjellesvik Stordrange  | Kjetil.Kjellesvik.Stordrange@hvl.no  |
+ | Lars Olav Hammer              | Lars.Olav.Hammer@hvl.no              |
+ | Lisa Steffensen               | Lisa.Steffensen@hvl.no               |
+ | Magni Elen Hope Lossius       | Magni.Elen.Hope.Lossius@hvl.no       |
+ | Magnus Bjørnsen Løberg        | Magnus.Bjornsen.Loberg@hvl.no        |
+ | Nils Henry Williams Rasmussen | Nils.Henry.Williams.Rasmussen@hvl.no |
+ | Peter Gøtze                   | Peter.Gotze@hvl.no                   |
+ | Ragnhild Hansen               | Ragnhild.Hansen@hvl.no               |
+ | Randi Øksnes                  | Randi.Oksnes@hvl.no                  |
+ | Rune Herheim                  | Rune.Herheim@hvl.no                  |
+ | Shengtian Zhou                | Shengtian.Zhou@hvl.no                |
+ | Sikunder Ali                  | Sikunder.Ali@hvl.no                  |
+ | Silke Lekaus                  | Silke.Lekaus@hvl.no                  |
+ | Suela Kacerja                 | Suela.Kacerja@hvl.no                 |
+ | Tamsin Jillian Meaney         | Tamsin.Jillian.Meaney@hvl.no         |
+ | Terje Olav Lerø               | Terje.Olav.Lero@hvl.no               |
+ | Toril Eskeland Rangnes        | Toril.Eskeland.Rangnes@hvl.no        |
+ | Troels Lange                  | Troels.Lange@hvl.no                  |
+ | Trude Fosse                   | Trude.Fosse@hvl.no                   |
+ | Yasmine Abtahi                | Yasmine.Abtahi@hvl.no                |
+ | Anne Norstein                 | Anne.Norstein@hvl.no                 |
+ | Bente Nikolaisen Sollid       | Bente.Nikolaisen.Sollid@hvl.no       |
+ | Frode Olav Haara              | Frode.Olav.Haara@hvl.no              |
+ | Helene Hauge                  | Helene.Hauge@hvl.no                  |
+ | Jon Ingulf Medbø              | Jon.Ingulf.Medbo@hvl.no              |
+ | Kirsti Lunde                  | Kirsti.Lunde@hvl.no                  |
+ | Kristin Sæterdal Myhra        | Kristin.Seterdal.Myhra@hvl.no        |
+ | Lene Hayden Taraldsen         | Lene.Hayden.Taraldsen@hvl.no         |
+ | Mona Christin Mossestad       | Mona.Christin.Mossestad@hvl.no       |
+ | Mona Karbaschi Vee            | Mona.Karbaschi.Vee@hvl.no            |
+ | Nils Melvær Nornes            | Nils.Melver.Nornes@hvl.no            |
+ | Oda Heidi Bolstad             | Oda.Heidi.Bolstad@hvl.no             |
+ | Terje Myklebust               | Terje.Myklebust@hvl.no               |
+ | Tom Rune Kongelf              | Tom.Rune.Kongelf@hvl.no              |
+ | Anna Sfard                    | Anna.Sfard@hvl.no                    |
+ | Gry Anette Tuset              | gry.tuset@hvl.no                     |
+ | Kjetil Vestfossen             | Kjetil.Vestfossen@hvl.no             |
+ | Maru Alamirew Guadie          | Maru.Guadie@hvl.no                   |
+ | Oksana Singh                  | Oksana.Singh@hvl.no                  |
+ | Tesfa Yigrem Mengestie        | Tesfa.Yigrem.Mengestie@hvl.no        |
+ | Åshild Skorpen Heggland       | ashild.heggland@hvl.no               |
+ | Aasmund Kvamme                | aasmund.kvamme@hvl.no                |
+ | Marit Johnsen-Høines          | mjh@hvl.no                           |
+  
+*** HiVolda
+ | Øyvind Halse              | oyvindh@hivolda.no                    |
+ |                           | antje.meier@hivolda.no                |
+ |                           | ingeborg.katrin.berget@hivolda.no     |
+ |                           | arve.fiskerstrand@hivolda.no          |
+ |                           | eivind.patrik.hanevik@hivolda.no      |
+ |                           | septina.selma.einarsdottir@hivolda.no |
+ | Hilde Opsahl              | ho@hivolda.no                         |
+ | Frode Opsvik              | frodeo@hivolda.no                     |
+ | Kim Andre Refvik          | kim.refvik@hivolda.no                 |
+ | Leif Bjørn Skorpen        | leifbs@hivolda.no                     |
+ | Odd Helge Mjellem Tonheim | oddht@hivolda.no                      |
+ | Arne Kåre Topphol         | akt@hivolda.no                        |
+ |                           |                                       |
+
+*** HiOf
+ | Marianne Maugesten        | marianne.maugesten@hiof.no |
+ | Stein Arnold Berggren     | stein.a.berggren@hiof.no   |
+ | Odd Tore Kaufmann         | odd.t.kaufmann@hiof.no     |
+ | Khaled Ben Latief Jemai   | khaled.jemai@hiof.no       |
+ | Pål Espen Olvik Jom       | pal.jom@hiof.no            |
+ | Russell Hatami            | russell.hatami@hiof.no     |
+ | Natalia Bredrup           | natalia.bredrup@hiof.no    |
+ | Henrik Stigberg           | henrik.stigberg@hiof.no    |
+ | Johan Per Ivar B Bredberg | johan.bredberg@hiof.no     |
+ | Sanna Erika Forsström     | sanna.forsstrom@hiof.no    |
+ | Audun Rojahn Olafsen      | audun.r.olafsen@hiof.no    |
+ | Hege Marie Poulaki Mandt  | hege.m.mandt@hiof.no       |
+ | Monica Nordbakke          | monica.nordbakke@hiof.no   |
+
+*** USN
+ Porsgrunn
+ |   | ali.ghaderi@usn.no    |
+ |   | bente.h.sannas@usn.no |
+ |   | Dan.Roaldsoy@usn.no   |
+ |   | Njal.Sterri@usn.no    |
+ |   | siv.svendsen@usn.no   |
+
+ Vestfold
+ |   | Annica.Andersson@usn.no      |
+ |   | Beate.H.Bigseth@usn.no       |
+ |   | Cecilie.Swift@usn.no         |
+ |   | Elise.Klaveness@usn.no       |
+ |   | Inger.Nergaard@usn.no        |
+ |   | Lars.K.Lokkevik@usn.no       |
+ |   | Lisbet.Karlsen@usn.no        |
+ |   | Per.Vinje-Christensen@usn.no |
+ |   | Signe.H.Knudtzon@usn.no      |
+ |   | Sigurd.Hals@usn.no           |
+ |   | Svanhild.Breive@usn.no       |
+
+ Notodden
+ |   | Bjorn.Lauritzen@usn.no    |
+ |   | kjell.e.stokkeland@usn.no |
+ |   | kjetil.l.nielsen@usn.no   |
+ |   | Peer.Andersen@usn.no      |
+ |   | Reiar.Kravik@usn.no       |
+ |   |                           |
+
+ Drammen
+ |   | Anders.Mansson@usn.no       |
+ |   | Andrea.Hofmann@usn.no       |
+ |   | Eli.Haug@usn.no             |
+ |   | Hanna.Slabikowska@usn.no    |
+ |   | Henrik.Forssell@usn.no      |
+ |   | Natalia.Aaseth@usn.no       |
+ |   | vivi-ann.p.bekkeseth@usn.no |
+
+*** OsloMet
+ | Annette Hessen Bjerke     | annette.hessen@oslomet.no         |
+ | Eyvind Martol Briseid     | Eyvind-Martol.Briseid@oslomet.no  |
+ | Elisabeta Iuliana Eriksen | elisabeta.eriksen@oslomet.no      |
+ | Aleksandra Hara Fadum     | aleksandra.hara.fadum@oslomet.no  |
+ | Aina Fossum               | Aina.Fossum@oslomet.no            |
+ | Trine Foyn                | Trine.Foyn@oslomet.no             |
+ | William James Andrew Gray | James.Gray@oslomet.no             |
+ | George Harry Hitching     | george.hitching@oslomet.no        |
+ | Sigrun Holmedal           | Sigrun.Holmedal@oslomet.no        |
+ | Ellen Konstanse Hovik     | Ellen-Konstanse.Hovik@oslomet.no  |
+ | Hilja Lisa Huru           | Hilja-Lisa.Huru@oslomet.no        |
+ | Olav Gravir Imenes        | Olav-Gravir.Imenes@oslomet.no     |
+ | Cathrine Vembre Jensen    | Cathrine-Vembre.Jensen@oslomet.no |
+ | Grethe Kjensli            | Grethe.Kjensli@oslomet.no         |
+ | Bodil Kleve               | Bodil.Kleve@oslomet.no            |
+ | Morten Misfeldt           | M.Misfeldt@oslomet.no             |
+ | Hans Wilhelm Mørch        | hanswilhelm.morch@oslomet.no      |
+ | Siri Krogh Nordby         | Siri-Krogh.Nordby@oslomet.no      |
+ | Lars Reinholdtsen         | Lars.Reinholdtsen@oslomet.no      |
+ | Camilla Rodal             | Camilla.Rodal@oslomet.no          |
+ | Andre Rognes              | Andre.Rognes@oslomet.no           |
+ | Vetle Rohde               | Vetle.Rohde@oslomet.no            |
+ | Bjørn Smestad             | Bjorn.Smestad@oslomet.no          |
+ | Ida Heiberg Solem         | Ida.Solem@oslomet.no              |
+ | Yvette Solomon            | Yvette.Solomon@oslomet.no         |
+ | Trude Sundtjønn           | Trude.Sundtjonn@oslomet.no        |
+ | Helga Kufaas Tellefsen    | HelgaKufaas.Tellefsen@oslomet.no  |
+ | Arne Kåre Topphol         | Arne-Kare.Topphol@oslomet.no      |
+ | Gerd Ånestad              | gerd.anestad@oslomet.no           |
+ |                           |                                   |
+
+*** UiT
+ |   | per.oystein.haavold@uit.no |
+ |   | anne.fyhn@uit.no           |
+ |   | alv.birkeland@uit.no       |
+ |   | ove.gunnar.drageset@uit.no |
+ |   | frode.sirnes.larsen@uit.no |
+ |   | geir.olaf.pettersen@uit.no |
+ |   | monica.volden@uit.no       |
+ |   | anita.m.simensen@uit.no    |
+ |   | saeed.d.manshadi@uit.no    |
+ |   | ida.pedersen@uit.no        |
+ |   |                            |
+
+*** UiA
+ | Anders Wiik                     | anders.wiik@uia.no         |
+ | Claire Vaugelade Berg           | claire.v.berg@uia.no       |
+ | Cornelia Brodahl                | cornelia.brodahl@uia.no    |
+ | Hans Kristian Nilsen            | hans.k.nilsen@uia.no       |
+ | Inger Johanne Håland Knutson    | inger.j.knutson@uia.no     |
+ | Ingvald Erfjord                 | ingvald.erfjord@uia.no     |
+ | Jorunn Reinhardtsen             | jorunn.reinhardtsen@uia.no |
+ | Kirsten Bjørkestøl              | kirsten.bjorkestol@uia.no  |
+ | Linda Gurvin Opheim             | linda.g.opheim@uia.no      |
+ | Linn Flaten                     | linn.flaten@uia.no         |
+ | Martin Carlsen                  | martin.carlsen@uia.no      |
+ | Niclas Larson                   | niclas.larson@uia.no       |
+ | Nils Kristian Hansen            | nils.k.hansen@uia.no       |
+ | Nils Mikael Signal              | mikael.signal@uia.no       |
+ | Ninni Marie Hogstad             | ninni.m.hogstad@uia.no     |
+ | Olav Kristian Gunnarson Dovland | olav.nygaard@uia.no        |
+ | Peder Kristian Knutson          | peder.knutson@uia.no       |
+ | Per Arne Birkeland              | per.a.birkeland@uia.no     |
+ | Per Sigurd Hundeland            | per.s.hundeland@uia.no     |
+ | Said Hadjerrouit                | said.hadjerrouit@uia.no    |
+ | Simon Goodchild                 | simon.goodchild@uia.no     |
+ | Trond Arnold Abrahamsen         | trond.a.abrahamsen@uia.no  |
+ | Unni Wathne                     | unni.wathne@uia.no         |
+ | Yannis Liakos                   | ioannis.liakos@uia.no      |
+
+
+** Timelister
+
+*** Juni 2018 - Mai 2019
+ |            |  Caspar |    Caspar |      Caspar |                     Caspar |        |
+ |            | Diverse | Tangenten | Fosnot 2018 | Barn, spåråk og matematikk |  TOTAL |
+ | 18.06.2018 |         |     09:00 |             |                            |  09:00 |
+ | 10.07.2018 |         |           |       03:00 |                            |  03:00 |
+ | 12.07.2018 |         |           |       04:26 |                            |  04:26 |
+ | 13.07.2018 |         |           |       02:53 |                            |  02:53 |
+ | 14.07.2018 |         |           |       04:22 |                            |  04:22 |
+ | 16.07.2018 |         |           |       03:10 |                            |  03:10 |
+ | 17.07.2018 |         |           |       01:55 |                            |  01:55 |
+ | 18.07.2018 |         |           |       03:24 |                            |  03:24 |
+ | 20.07.2018 |         |           |       02:28 |                            |  02:28 |
+ | 06.08.2018 |         |           |       01:31 |                            |  01:31 |
+ | 15.08.2018 |         |     03:15 |             |                            |  03:15 |
+ | 16.08.2018 |         |     02:26 |             |                            |  02:26 |
+ | 18.08.2018 |         |     00:59 |             |                            |  00:59 |
+ | 20.08.2018 |         |     03:00 |             |                            |  03:00 |
+ | 21.08.2018 |         |     04:27 |             |                            |  04:27 |
+ | 23.08.2018 |         |     03:44 |             |                            |  03:44 |
+ | 25.08.2018 |         |     06:00 |             |                            |  06:00 |
+ | 26.08.2018 |         |     01:30 |             |                            |  01:30 |
+ | 27.08.2018 |         |     03:22 |             |                            |  03:22 |
+ | 01.09.2018 |         |     04:14 |             |                            |  04:14 |
+ | 02.09.2018 |         |     08:30 |             |                            |  08:30 |
+ | 05.09.2018 |         |           |       02:32 |                            |  02:32 |
+ | 06.09.2018 |         |           |       03:00 |                            |  03:00 |
+ | 09.09.2018 |   01:00 |           |             |                            |  01:00 |
+ | 22.10.2018 |         |     03:12 |             |                            |  03:12 |
+ | 23.10.2018 |         |     06:39 |             |                            |  06:39 |
+ | 25.10.2018 |         |     04:36 |             |                            |  04:36 |
+ | 26.10.2018 |         |     01:33 |             |                            |  01:33 |
+ | 27.10.2018 |         |     03:00 |             |                            |  03:00 |
+ | 30.10.2018 |         |           |             |                            |  00:00 |
+ | 18.11.2018 |         |     04:16 |             |                            |  04:16 |
+ | 22.11.2018 |         |     03:16 |             |                            |  03:16 |
+ | 07.01.2019 |         |     03:14 |             |                            |  03:14 |
+ | 10.01.2019 |   01:59 |           |             |                            |  01:59 |
+ | 12.01.2019 |         |     00:00 |             |                            |  00:00 |
+ | 15.01.2019 |         |     03:34 |             |                            |  03:34 |
+ | 19.01.2019 |         |     05:13 |             |                            |  05:13 |
+ | 21.01.2019 |         |     04:45 |             |                            |  04:45 |
+ | 23.01.2019 |         |     03:00 |             |                            |  03:00 |
+ | 25.01.2019 |         |     02:07 |             |                            |  02:07 |
+ | 27.01.2019 |         |     02:33 |             |                            |  02:33 |
+ | 29.01.2019 |         |     03:30 |             |                            |  03:30 |
+ | 31.01.2019 |         |     02:15 |             |                            |  02:15 |
+ | 07.02.2019 |         |     01:11 |             |                            |  01:11 |
+ | 20.02.2019 |         |     01:04 |             |                            |  01:04 |
+ | 21.02.2019 |         |     01:36 |             |                            |  01:36 |
+ | 25.02.2019 |         |           |             |                      03:13 |  03:13 |
+ | 02.03.2019 |         |           |             |                      02:38 |  02:38 |
+ | 06.03.2019 |         |     02:30 |             |                            |  02:30 |
+ | 11.03.2019 |         |           |             |                      01:29 |  01:29 |
+ | 21.03.2019 |         |           |             |                      03:30 |  03:30 |
+ | 23.03.2019 |         |           |             |                      01:28 |  01:28 |
+ | 24.03.2019 |         |           |             |                      03:31 |  03:31 |
+ | 26.03.2019 |         |           |             |                      01:49 |  01:49 |
+ | 28.03.2019 |         |     02:45 |             |                            |  02:45 |
+ | 29.03.2019 |         |     03:00 |             |                            |  03:00 |
+ | 30.03.2019 |         |     02:10 |             |                            |  02:10 |
+ | 01.04.2019 |         |     01:31 |             |                            |  01:31 |
+ | 02.04.2019 |         |     01:00 |             |                            |  01:00 |
+ | 12.05.2019 |         |           |             |                            |  00:13 |
+ |      Total |   02:59 |    123:57 |       32:54 |                      17:38 | 177:28 |
+ |          % |      2% |       70% |         19% |                        10% |   100% |
+
